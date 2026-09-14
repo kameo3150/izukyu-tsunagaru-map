@@ -4,66 +4,51 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0b1220" />
-<title>伊豆急つながるMAP β</title>
+<title>伊豆つながるMAP β2</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
 <style>
   :root{
-    --bg:#0b1220; --card:#141d2d; --muted:#8fa1b8; --text:#f7fafc;
-    --good:#20c77a; --weak:#f3b63f; --dead:#ef5a5a; --accent:#62a8ff;
-    --line:#34425a;
+    --bg:#0b1220;--card:#141d2d;--muted:#8fa1b8;--text:#f7fafc;
+    --good:#20c77a;--weak:#f3b63f;--dead:#ef5a5a;--accent:#62a8ff;--line:#34425a;
   }
-  *{box-sizing:border-box}
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
   body{margin:0;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}
-  header{padding:18px 16px 8px;position:sticky;top:0;background:linear-gradient(var(--bg) 80%,transparent);z-index:3}
-  h1{font-size:20px;margin:0 0 4px}
-  .sub{font-size:12px;color:var(--muted)}
-  main{max-width:720px;margin:auto;padding:10px 14px 40px}
+  header{padding:16px 14px 10px;position:sticky;top:0;background:rgba(11,18,32,.95);backdrop-filter:blur(8px);z-index:1000;border-bottom:1px solid #1d2a40}
+  h1{font-size:20px;margin:0 0 4px}.sub{font-size:12px;color:var(--muted)}
+  main{max-width:780px;margin:auto;padding:12px 14px 44px}
   .card{background:var(--card);border:1px solid #223049;border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:0 10px 24px rgba(0,0,0,.15)}
-  .row{display:flex;gap:8px;flex-wrap:wrap}
-  button,select{font:inherit}
-  button{border:0;border-radius:12px;padding:13px 12px;font-weight:700;cursor:pointer}
-  .status{flex:1;min-width:95px;color:white}
-  .good{background:var(--good)} .weak{background:var(--weak);color:#302100} .dead{background:var(--dead)}
-  .secondary{background:#25334a;color:var(--text)}
-  .primary{background:var(--accent);color:#07111f}
-  select{width:100%;padding:12px;border-radius:10px;background:#0f1725;color:white;border:1px solid #314059}
-  label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .small{font-size:12px;color:var(--muted);line-height:1.6}
-  #msg{min-height:22px;margin-top:8px;font-size:13px;color:#cfe4ff}
-  .route{position:relative;padding:4px 2px 4px 34px}
-  .route:before{content:"";position:absolute;left:14px;top:20px;bottom:20px;width:4px;background:var(--line);border-radius:4px}
-  .station{position:relative;padding:8px 8px 8px 18px;border-radius:10px}
-  .station:before{content:"";position:absolute;left:-25px;top:16px;width:13px;height:13px;background:#dce6f3;border:3px solid var(--bg);border-radius:50%;z-index:2}
-  .station b{font-size:14px}
-  .seg{font-size:11px;color:var(--muted);padding:0 0 3px 18px}
-  .history{display:grid;gap:8px}
-  .entry{background:#0f1725;border:1px solid #263550;border-radius:12px;padding:10px;font-size:13px}
-  .tag{display:inline-block;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:800;margin-right:5px}
-  .tag.good{color:white}.tag.weak{color:#302100}.tag.dead{color:white}
-  footer{text-align:center;color:var(--muted);font-size:11px;padding:6px 0}
+  .row{display:flex;gap:8px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}.status{min-width:28%!important}}
+  button,select,input{font:inherit} button{border:0;border-radius:12px;padding:13px 12px;font-weight:700;cursor:pointer}
+  .status{flex:1;min-width:95px;color:white}.good{background:var(--good)}.weak{background:var(--weak);color:#302100}.dead{background:var(--dead)}
+  .secondary{background:#25334a;color:var(--text)}.primary{background:var(--accent);color:#07111f}
+  select,input{width:100%;padding:12px;border-radius:10px;background:#0f1725;color:white;border:1px solid #314059}
+  label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}.small{font-size:12px;color:var(--muted);line-height:1.6}
+  #msg{min-height:22px;margin-top:8px;font-size:13px;color:#cfe4ff}.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:#0f1725;color:#cbd8e8;font-size:11px;margin:2px 4px 2px 0}
+  #map{height:390px;border-radius:14px;overflow:hidden;border:1px solid #2b3b57;background:#0f1725}.leaflet-container{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif}
+  .legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--muted)}.dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:4px}
+  .route{position:relative;padding:4px 2px 4px 34px}.route:before{content:"";position:absolute;left:14px;top:20px;bottom:20px;width:4px;background:var(--line);border-radius:4px}
+  .station{position:relative;padding:8px 8px 8px 18px;border-radius:10px}.station:before{content:"";position:absolute;left:-25px;top:16px;width:13px;height:13px;background:#dce6f3;border:3px solid var(--bg);border-radius:50%;z-index:2}
+  .station b{font-size:14px}.seg{font-size:11px;color:var(--muted);padding:0 0 3px 18px}
+  .history{display:grid;gap:8px}.entry{background:#0f1725;border:1px solid #263550;border-radius:12px;padding:10px;font-size:13px}
+  .tag{display:inline-block;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:800;margin-right:5px}.tag.good{color:white}.tag.weak{color:#302100}.tag.dead{color:white}
+  .weather{font-size:14px;line-height:1.7}.warn{background:#211a0c;border-color:#5a4718}.ok{color:#a8f0ca}footer{text-align:center;color:var(--muted);font-size:11px;padding:8px 0}
 </style>
 </head>
 <body>
 <header>
-  <h1>伊豆急つながるMAP β</h1>
-  <div class="sub">みんなの実測で育てる、伊豆急線の携帯電波メモ</div>
+  <h1>伊豆つながるMAP β2</h1>
+  <div class="sub">伊豆急から伊豆半島へ。実測で育てる通信状況マップ</div>
 </header>
 <main>
   <section class="card">
     <div class="grid">
-      <div>
-        <label>キャリア</label>
-        <select id="carrier">
-          <option>docomo</option><option>au</option><option>SoftBank</option><option>楽天モバイル</option><option>その他</option>
-        </select>
-      </div>
-      <div>
-        <label>現在の駅間</label>
-        <select id="segment"></select>
-      </div>
+      <div><label>キャリア</label><select id="carrier"><option>docomo</option><option>au</option><option>SoftBank</option><option>楽天モバイル</option><option>その他</option></select></div>
+      <div><label>場所タイプ</label><select id="placeType" onchange="togglePlaceFields()"><option value="rail">伊豆急の駅間</option><option value="road">道路・観光地</option><option value="other">その他</option></select></div>
+      <div id="railBox"><label>現在の駅間</label><select id="segment"></select></div>
+      <div id="nameBox" style="display:none"><label>場所名</label><input id="placeName" placeholder="例：国道135号 ○○付近 / 城ヶ崎海岸" /></div>
     </div>
-
-    <p class="small">気づいた時だけ1タップ。位置情報は許可した場合だけ記録します。圏外でも端末内に保存できます。</p>
+    <p class="small">位置情報を取ってから押すと、地図上にも実測ポイントが残ります。位置情報なしでも記録できます。</p>
     <div class="row">
       <button class="status good" onclick="record('good')">📶 良好</button>
       <button class="status weak" onclick="record('weak')">△ 弱い</button>
@@ -74,16 +59,35 @@
 
   <section class="card">
     <div class="row">
-      <button class="secondary" onclick="getLocation()">📍 現在地を取得</button>
-      <button class="secondary" onclick="exportData()">⬇ 記録を書き出す</button>
-      <button class="secondary" onclick="clearData()">🗑 履歴を消す</button>
+      <button class="primary" onclick="getLocation(true)">📍 現在地を取得</button>
+      <button class="secondary" onclick="centerOnMe()">🎯 現在地へ</button>
+      <button class="secondary" onclick="loadWeather()">🌦 現在地の天気</button>
     </div>
     <div id="loc" class="small" style="margin-top:8px">位置情報：未取得</div>
+    <div id="weather" class="weather" style="margin-top:8px"></div>
   </section>
 
   <section class="card">
-    <b>路線</b>
-    <div id="route" class="route"></div>
+    <div class="row" style="align-items:end">
+      <div style="flex:1;min-width:150px"><label>地図のキャリア絞り込み</label><select id="filterCarrier" onchange="renderMap()"><option value="all">全部</option><option>docomo</option><option>au</option><option>SoftBank</option><option>楽天モバイル</option><option>その他</option></select></div>
+      <button class="secondary" onclick="fitReports()">🗺 記録全体を表示</button>
+    </div>
+    <div id="map" style="margin-top:10px"></div>
+    <div class="legend"><span><i class="dot" style="background:#20c77a"></i>良好</span><span><i class="dot" style="background:#f3b63f"></i>弱い</span><span><i class="dot" style="background:#ef5a5a"></i>圏外</span></div>
+  </section>
+
+  <section class="card">
+    <b>伊豆急線の駅間集計</b>
+    <div id="route" class="route" style="margin-top:8px"></div>
+  </section>
+
+  <section class="card">
+    <div class="row">
+      <button class="secondary" onclick="exportData()">⬇ 記録を書き出す</button>
+      <label class="secondary" style="padding:13px 12px;border-radius:12px;font-weight:700;cursor:pointer;margin:0">⬆ JSONを読み込む<input type="file" accept="application/json" onchange="importData(event)" style="display:none"></label>
+      <button class="secondary" onclick="clearData()">🗑 履歴を消す</button>
+    </div>
+    <p class="small">今はこの端末内保存。JSONの書き出し/読込みでバックアップや手動統合ができます。</p>
   </section>
 
   <section class="card">
@@ -91,98 +95,41 @@
     <div id="history" class="history" style="margin-top:10px"></div>
   </section>
 
-  <footer>
-    β版：投稿はこの端末内だけに保存されます。公開共有機能は次段階で追加予定。
-  </footer>
+  <section class="card warn">
+    <b>共有投稿について</b>
+    <p class="small">このβ2は「地図・伊豆全域入力・天気・絞り込み」まで拡張済み。みんなの投稿を自動で1つに集めるには、次に共有データベースを接続します。</p>
+  </section>
+
+  <footer>β2：OpenStreetMap / Leaflet を利用。投稿データは現在この端末内に保存されます。</footer>
 </main>
-
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-const stations = [
-  "伊東","南伊東","川奈","富戸","城ヶ崎海岸","伊豆高原","伊豆大川","伊豆北川",
-  "伊豆熱川","片瀬白田","伊豆稲取","今井浜海岸","河津","稲梓","蓮台寺","伊豆急下田"
-];
-const segments = stations.slice(0,-1).map((s,i)=>`${s}〜${stations[i+1]}`);
-const segSelect = document.getElementById('segment');
-segments.forEach(x=>{const o=document.createElement('option');o.textContent=x;segSelect.appendChild(o)});
+const stations=["伊東","南伊東","川奈","富戸","城ヶ崎海岸","伊豆高原","伊豆大川","伊豆北川","伊豆熱川","片瀬白田","伊豆稲取","今井浜海岸","河津","稲梓","蓮台寺","伊豆急下田"];
+const segments=stations.slice(0,-1).map((s,i)=>`${s}〜${stations[i+1]}`);
+const segSelect=document.getElementById('segment'); segments.forEach(x=>{const o=document.createElement('option');o.textContent=x;segSelect.appendChild(o)});
+let lastLocation=null, myMarker=null, reportLayer=null;
+const map=L.map('map',{zoomControl:true}).setView([34.86,138.95],10);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+reportLayer=L.layerGroup().addTo(map);
 
-let lastLocation = null;
-
-function load(){
-  return JSON.parse(localStorage.getItem('izukyu_signal_reports') || '[]');
-}
-function save(a){
-  localStorage.setItem('izukyu_signal_reports', JSON.stringify(a));
-}
-function getLocation(){
-  const loc = document.getElementById('loc');
-  if(!navigator.geolocation){
-    loc.textContent='位置情報：このブラウザでは利用できません';
-    return;
-  }
-  loc.textContent='位置情報：取得中…';
-  navigator.geolocation.getCurrentPosition(
-    p=>{
-      lastLocation={lat:+p.coords.latitude.toFixed(6), lon:+p.coords.longitude.toFixed(6), accuracy:Math.round(p.coords.accuracy)};
-      loc.textContent=`位置情報：${lastLocation.lat}, ${lastLocation.lon}（±${lastLocation.accuracy}m）`;
-    },
-    e=>{loc.textContent='位置情報：取得できませんでした。駅間だけでも記録できます。';}
-  );
-}
-function record(status){
-  const arr=load();
-  const report={
-    id:Date.now(),
-    at:new Date().toISOString(),
-    carrier:document.getElementById('carrier').value,
-    segment:segSelect.value,
-    status,
-    location:lastLocation
-  };
-  arr.unshift(report); save(arr); renderHistory();
-  const label={good:'良好',weak:'弱い',dead:'圏外'}[status];
-  document.getElementById('msg').textContent=`記録しました：${report.segment} / ${report.carrier} / ${label}`;
-}
-function renderRoute(){
-  const reports=load();
-  const route=document.getElementById('route');
-  route.innerHTML='';
-  stations.forEach((s,i)=>{
-    const st=document.createElement('div');st.className='station';st.innerHTML=`<b>${s}</b>`;route.appendChild(st);
-    if(i<segments.length){
-      const here=reports.filter(r=>r.segment===segments[i]);
-      let summary='報告なし';
-      if(here.length){
-        const c={good:0,weak:0,dead:0}; here.forEach(r=>c[r.status]++);
-        const max=Object.entries(c).sort((a,b)=>b[1]-a[1])[0][0];
-        summary=`${{good:'📶 良好',weak:'△ 弱い',dead:'❌ 圏外'}[max]} ・ ${here.length}件`;
-      }
-      const sg=document.createElement('div');sg.className='seg';sg.textContent=summary;route.appendChild(sg);
-    }
-  });
-}
-function renderHistory(){
-  renderRoute();
-  const arr=load().slice(0,12), box=document.getElementById('history');
-  if(!arr.length){box.innerHTML='<div class="small">まだ記録はありません。</div>';return}
-  box.innerHTML=arr.map(r=>{
-    const label={good:'良好',weak:'弱い',dead:'圏外'}[r.status];
-    const date=new Date(r.at).toLocaleString('ja-JP');
-    const pos=r.location?`<br>📍 ${r.location.lat}, ${r.location.lon}`:'';
-    return `<div class="entry"><span class="tag ${r.status}">${label}</span>${r.carrier}<br><b>${r.segment}</b><br><span class="small">${date}${pos}</span></div>`;
-  }).join('');
-}
-function exportData(){
-  const data=JSON.stringify(load(),null,2);
-  const blob=new Blob([data],{type:'application/json'});
-  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='izukyu_signal_reports.json';a.click();
-  setTimeout(()=>URL.revokeObjectURL(a.href),500);
-}
-function clearData(){
-  if(confirm('この端末の記録をすべて消しますか？')){
-    localStorage.removeItem('izukyu_signal_reports');renderHistory();
-  }
-}
-renderHistory();
+function load(){try{return JSON.parse(localStorage.getItem('izukyu_signal_reports')||'[]')}catch(e){return[]}}
+function save(a){localStorage.setItem('izukyu_signal_reports',JSON.stringify(a))}
+function togglePlaceFields(){const rail=document.getElementById('placeType').value==='rail';document.getElementById('railBox').style.display=rail?'block':'none';document.getElementById('nameBox').style.display=rail?'none':'block'}
+function getLocation(center=false){const loc=document.getElementById('loc');if(!navigator.geolocation){loc.textContent='位置情報：このブラウザでは利用できません';return}loc.textContent='位置情報：取得中…';navigator.geolocation.getCurrentPosition(p=>{lastLocation={lat:+p.coords.latitude.toFixed(6),lon:+p.coords.longitude.toFixed(6),accuracy:Math.round(p.coords.accuracy)};loc.innerHTML=`位置情報：<span class="ok">${lastLocation.lat}, ${lastLocation.lon}</span>（±${lastLocation.accuracy}m）`;if(myMarker)map.removeLayer(myMarker);myMarker=L.circleMarker([lastLocation.lat,lastLocation.lon],{radius:8,color:'#62a8ff',weight:3,fillColor:'#fff',fillOpacity:1}).addTo(map).bindPopup('現在地');if(center)map.setView([lastLocation.lat,lastLocation.lon],15)},()=>{loc.textContent='位置情報：取得できませんでした。ブラウザの位置情報許可を確認してください。'},{enableHighAccuracy:true,timeout:10000,maximumAge:15000})}
+function centerOnMe(){if(lastLocation){map.setView([lastLocation.lat,lastLocation.lon],15)}else getLocation(true)}
+function record(status){const type=document.getElementById('placeType').value;let place=type==='rail'?segSelect.value:document.getElementById('placeName').value.trim();if(type!=='rail'&&!place){document.getElementById('msg').textContent='場所名を入力してください。';return}const arr=load();const report={id:Date.now(),at:new Date().toISOString(),carrier:document.getElementById('carrier').value,segment:type==='rail'?segSelect.value:null,placeType:type,place,status,location:lastLocation};arr.unshift(report);save(arr);renderAll();const label={good:'良好',weak:'弱い',dead:'圏外'}[status];document.getElementById('msg').textContent=`記録しました：${place} / ${report.carrier} / ${label}`}
+function markerColor(status){return status==='good'?'#20c77a':status==='weak'?'#f3b63f':'#ef5a5a'}
+function renderMap(){reportLayer.clearLayers();const fc=document.getElementById('filterCarrier').value;load().filter(r=>r.location&&(fc==='all'||r.carrier===fc)).forEach(r=>{const label={good:'良好',weak:'弱い',dead:'圏外'}[r.status];L.circleMarker([r.location.lat,r.location.lon],{radius:8,color:'#0b1220',weight:2,fillColor:markerColor(r.status),fillOpacity:.95}).addTo(reportLayer).bindPopup(`<b>${escapeHtml(r.place||r.segment||'地点')}</b><br>${escapeHtml(r.carrier)} / ${label}<br><small>${new Date(r.at).toLocaleString('ja-JP')}</small>`)});}
+function fitReports(){const pts=load().filter(r=>r.location).map(r=>[r.location.lat,r.location.lon]);if(lastLocation)pts.push([lastLocation.lat,lastLocation.lon]);if(pts.length)map.fitBounds(pts,{padding:[25,25],maxZoom:15});else map.setView([34.86,138.95],10)}
+function renderRoute(){const reports=load();const route=document.getElementById('route');route.innerHTML='';stations.forEach((s,i)=>{const st=document.createElement('div');st.className='station';st.innerHTML=`<b>${s}</b>`;route.appendChild(st);if(i<segments.length){const here=reports.filter(r=>(r.segment||r.place)===segments[i]);let summary='報告なし';if(here.length){const c={good:0,weak:0,dead:0};here.forEach(r=>c[r.status]++);const max=Object.entries(c).sort((a,b)=>b[1]-a[1])[0][0];summary=`${{good:'📶 良好',weak:'△ 弱い',dead:'❌ 圏外'}[max]} ・ ${here.length}件`}const sg=document.createElement('div');sg.className='seg';sg.textContent=summary;route.appendChild(sg)}})}
+function renderHistory(){const arr=load().slice(0,20),box=document.getElementById('history');if(!arr.length){box.innerHTML='<div class="small">まだ記録はありません。</div>';return}box.innerHTML=arr.map(r=>{const label={good:'良好',weak:'弱い',dead:'圏外'}[r.status];const date=new Date(r.at).toLocaleString('ja-JP');const pos=r.location?`<br>📍 ${r.location.lat}, ${r.location.lon}（±${r.location.accuracy||'?'}m）`:'';return `<div class="entry"><span class="tag ${r.status}">${label}</span>${escapeHtml(r.carrier)}<br><b>${escapeHtml(r.place||r.segment||'地点')}</b><br><span class="small">${date}${pos}</span></div>`}).join('')}
+function renderAll(){renderRoute();renderHistory();renderMap()}
+function exportData(){const data=JSON.stringify(load(),null,2),blob=new Blob([data],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='izu_signal_reports.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
+function importData(ev){const f=ev.target.files&&ev.target.files[0];if(!f)return;const reader=new FileReader();reader.onload=()=>{try{const incoming=JSON.parse(reader.result);if(!Array.isArray(incoming))throw new Error('形式エラー');const merged=[...load(),...incoming];const unique=[...new Map(merged.map(x=>[x.id||`${x.at}-${x.carrier}-${x.place||x.segment}`,x])).values()].sort((a,b)=>new Date(b.at)-new Date(a.at));save(unique);renderAll();document.getElementById('msg').textContent=`${incoming.length}件を読み込みました。`}catch(e){alert('JSONを読み込めませんでした。')}};reader.readAsText(f);ev.target.value=''}
+function clearData(){if(confirm('この端末の記録をすべて消しますか？')){localStorage.removeItem('izukyu_signal_reports');renderAll()}}
+async function loadWeather(){const box=document.getElementById('weather');if(!lastLocation){box.textContent='先に「現在地を取得」を押してください。';return}box.textContent='天気を取得中…';try{const url=`https://api.open-meteo.com/v1/forecast?latitude=${lastLocation.lat}&longitude=${lastLocation.lon}&current=temperature_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&timezone=Asia%2FTokyo`;const r=await fetch(url);if(!r.ok)throw new Error('fetch');const j=await r.json(),c=j.current;box.innerHTML=`🌡 ${c.temperature_2m}℃（体感 ${c.apparent_temperature}℃）　💧降水 ${c.precipitation}mm　💨風 ${c.wind_speed_10m}km/h<br><span class="small">現在地周辺のOpen-Meteoデータ / 更新 ${new Date(c.time).toLocaleString('ja-JP')}</span>`}catch(e){box.textContent='天気を取得できませんでした。通信状態を確認してください。'}}
+function escapeHtml(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+renderAll();
 </script>
 </body>
 </html>
