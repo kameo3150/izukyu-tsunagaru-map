@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1220" />
+<title>伊豆急つながるMAP β</title>
+<style>
+  :root{
+    --bg:#0b1220; --card:#141d2d; --muted:#8fa1b8; --text:#f7fafc;
+    --good:#20c77a; --weak:#f3b63f; --dead:#ef5a5a; --accent:#62a8ff;
+    --line:#34425a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}
+  header{padding:18px 16px 8px;position:sticky;top:0;background:linear-gradient(var(--bg) 80%,transparent);z-index:3}
+  h1{font-size:20px;margin:0 0 4px}
+  .sub{font-size:12px;color:var(--muted)}
+  main{max-width:720px;margin:auto;padding:10px 14px 40px}
+  .card{background:var(--card);border:1px solid #223049;border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:0 10px 24px rgba(0,0,0,.15)}
+  .row{display:flex;gap:8px;flex-wrap:wrap}
+  button,select{font:inherit}
+  button{border:0;border-radius:12px;padding:13px 12px;font-weight:700;cursor:pointer}
+  .status{flex:1;min-width:95px;color:white}
+  .good{background:var(--good)} .weak{background:var(--weak);color:#302100} .dead{background:var(--dead)}
+  .secondary{background:#25334a;color:var(--text)}
+  .primary{background:var(--accent);color:#07111f}
+  select{width:100%;padding:12px;border-radius:10px;background:#0f1725;color:white;border:1px solid #314059}
+  label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .small{font-size:12px;color:var(--muted);line-height:1.6}
+  #msg{min-height:22px;margin-top:8px;font-size:13px;color:#cfe4ff}
+  .route{position:relative;padding:4px 2px 4px 34px}
+  .route:before{content:"";position:absolute;left:14px;top:20px;bottom:20px;width:4px;background:var(--line);border-radius:4px}
+  .station{position:relative;padding:8px 8px 8px 18px;border-radius:10px}
+  .station:before{content:"";position:absolute;left:-25px;top:16px;width:13px;height:13px;background:#dce6f3;border:3px solid var(--bg);border-radius:50%;z-index:2}
+  .station b{font-size:14px}
+  .seg{font-size:11px;color:var(--muted);padding:0 0 3px 18px}
+  .history{display:grid;gap:8px}
+  .entry{background:#0f1725;border:1px solid #263550;border-radius:12px;padding:10px;font-size:13px}
+  .tag{display:inline-block;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:800;margin-right:5px}
+  .tag.good{color:white}.tag.weak{color:#302100}.tag.dead{color:white}
+  footer{text-align:center;color:var(--muted);font-size:11px;padding:6px 0}
+</style>
+</head>
+<body>
+<header>
+  <h1>伊豆急つながるMAP β</h1>
+  <div class="sub">みんなの実測で育てる、伊豆急線の携帯電波メモ</div>
+</header>
+<main>
+  <section class="card">
+    <div class="grid">
+      <div>
+        <label>キャリア</label>
+        <select id="carrier">
+          <option>docomo</option><option>au</option><option>SoftBank</option><option>楽天モバイル</option><option>その他</option>
+        </select>
+      </div>
+      <div>
+        <label>現在の駅間</label>
+        <select id="segment"></select>
+      </div>
+    </div>
+
+    <p class="small">気づいた時だけ1タップ。位置情報は許可した場合だけ記録します。圏外でも端末内に保存できます。</p>
+    <div class="row">
+      <button class="status good" onclick="record('good')">📶 良好</button>
+      <button class="status weak" onclick="record('weak')">△ 弱い</button>
+      <button class="status dead" onclick="record('dead')">❌ 圏外</button>
+    </div>
+    <div id="msg"></div>
+  </section>
+
+  <section class="card">
+    <div class="row">
+      <button class="secondary" onclick="getLocation()">📍 現在地を取得</button>
+      <button class="secondary" onclick="exportData()">⬇ 記録を書き出す</button>
+      <button class="secondary" onclick="clearData()">🗑 履歴を消す</button>
+    </div>
+    <div id="loc" class="small" style="margin-top:8px">位置情報：未取得</div>
+  </section>
+
+  <section class="card">
+    <b>路線</b>
+    <div id="route" class="route"></div>
+  </section>
+
+  <section class="card">
+    <b>この端末の最近の記録</b>
+    <div id="history" class="history" style="margin-top:10px"></div>
+  </section>
+
+  <footer>
+    β版：投稿はこの端末内だけに保存されます。公開共有機能は次段階で追加予定。
+  </footer>
+</main>
+
+<script>
+const stations = [
+  "伊東","南伊東","川奈","富戸","城ヶ崎海岸","伊豆高原","伊豆大川","伊豆北川",
+  "伊豆熱川","片瀬白田","伊豆稲取","今井浜海岸","河津","稲梓","蓮台寺","伊豆急下田"
+];
+const segments = stations.slice(0,-1).map((s,i)=>`${s}〜${stations[i+1]}`);
+const segSelect = document.getElementById('segment');
+segments.forEach(x=>{const o=document.createElement('option');o.textContent=x;segSelect.appendChild(o)});
+
+let lastLocation = null;
+
+function load(){
+  return JSON.parse(localStorage.getItem('izukyu_signal_reports') || '[]');
+}
+function save(a){
+  localStorage.setItem('izukyu_signal_reports', JSON.stringify(a));
+}
+function getLocation(){
+  const loc = document.getElementById('loc');
+  if(!navigator.geolocation){
+    loc.textContent='位置情報：このブラウザでは利用できません';
+    return;
+  }
+  loc.textContent='位置情報：取得中…';
+  navigator.geolocation.getCurrentPosition(
+    p=>{
+      lastLocation={lat:+p.coords.latitude.toFixed(6), lon:+p.coords.longitude.toFixed(6), accuracy:Math.round(p.coords.accuracy)};
+      loc.textContent=`位置情報：${lastLocation.lat}, ${lastLocation.lon}（±${lastLocation.accuracy}m）`;
+    },
+    e=>{loc.textContent='位置情報：取得できませんでした。駅間だけでも記録できます。';}
+  );
+}
+function record(status){
+  const arr=load();
+  const report={
+    id:Date.now(),
+    at:new Date().toISOString(),
+    carrier:document.getElementById('carrier').value,
+    segment:segSelect.value,
+    status,
+    location:lastLocation
+  };
+  arr.unshift(report); save(arr); renderHistory();
+  const label={good:'良好',weak:'弱い',dead:'圏外'}[status];
+  document.getElementById('msg').textContent=`記録しました：${report.segment} / ${report.carrier} / ${label}`;
+}
+function renderRoute(){
+  const reports=load();
+  const route=document.getElementById('route');
+  route.innerHTML='';
+  stations.forEach((s,i)=>{
+    const st=document.createElement('div');st.className='station';st.innerHTML=`<b>${s}</b>`;route.appendChild(st);
+    if(i<segments.length){
+      const here=reports.filter(r=>r.segment===segments[i]);
+      let summary='報告なし';
+      if(here.length){
+        const c={good:0,weak:0,dead:0}; here.forEach(r=>c[r.status]++);
+        const max=Object.entries(c).sort((a,b)=>b[1]-a[1])[0][0];
+        summary=`${{good:'📶 良好',weak:'△ 弱い',dead:'❌ 圏外'}[max]} ・ ${here.length}件`;
+      }
+      const sg=document.createElement('div');sg.className='seg';sg.textContent=summary;route.appendChild(sg);
+    }
+  });
+}
+function renderHistory(){
+  renderRoute();
+  const arr=load().slice(0,12), box=document.getElementById('history');
+  if(!arr.length){box.innerHTML='<div class="small">まだ記録はありません。</div>';return}
+  box.innerHTML=arr.map(r=>{
+    const label={good:'良好',weak:'弱い',dead:'圏外'}[r.status];
+    const date=new Date(r.at).toLocaleString('ja-JP');
+    const pos=r.location?`<br>📍 ${r.location.lat}, ${r.location.lon}`:'';
+    return `<div class="entry"><span class="tag ${r.status}">${label}</span>${r.carrier}<br><b>${r.segment}</b><br><span class="small">${date}${pos}</span></div>`;
+  }).join('');
+}
+function exportData(){
+  const data=JSON.stringify(load(),null,2);
+  const blob=new Blob([data],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='izukyu_signal_reports.json';a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),500);
+}
+function clearData(){
+  if(confirm('この端末の記録をすべて消しますか？')){
+    localStorage.removeItem('izukyu_signal_reports');renderHistory();
+  }
+}
+renderHistory();
+</script>
+</body>
+</html>
