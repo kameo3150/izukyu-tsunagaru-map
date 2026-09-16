@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f3ec" />
+  <meta name="description" content="愛犬と下田を楽しむための、地図から探せる犬連れ旅ガイド。" />
+  <title>犬と下田。β</title>
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://tile.openstreetmap.org" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar" aria-label="サイトヘッダー">
+      <div class="brand-wrap">
+        <div class="brand">犬と下田<span class="paw-dot">●</span></div>
+        <div class="subtitle">愛犬と、今日どこ行く？</div>
+      </div>
+      <button id="menuButton" class="round-button" aria-label="メニュー">☰</button>
+    </header>
+
+    <section class="filter-rail" aria-label="絞り込み">
+      <button class="filter-chip active" data-filter="all">すべて</button>
+      <button class="filter-chip" data-filter="stay">🏨 泊まる</button>
+      <button class="filter-chip" data-filter="eat">🍴 食べる</button>
+      <button class="filter-chip" data-filter="play">🐾 遊ぶ</button>
+      <button class="filter-chip" data-filter="rain">☔ 雨OK</button>
+      <button class="filter-chip" data-filter="large">🐕 大型犬</button>
+    </section>
+
+    <section id="map" aria-label="下田の犬連れスポット地図"></section>
+
+    <div class="map-status" id="mapStatus">β0.1 レイアウト試作</div>
+
+    <button id="locateButton" class="locate-button" aria-label="現在地を表示">
+      <span>◎</span><span>現在地</span>
+    </button>
+
+    <aside id="detailCard" class="detail-card" aria-live="polite" aria-hidden="true">
+      <button id="closeCard" class="close-card" aria-label="閉じる">×</button>
+      <div class="card-kicker" id="cardKicker">おすすめ</div>
+      <h2 id="cardTitle">施設名</h2>
+      <p id="cardArea" class="card-area"></p>
+      <div id="cardTags" class="tag-row"></div>
+      <p id="cardNote" class="card-note"></p>
+      <button class="primary-button" type="button">詳しく見る <span>→</span></button>
+    </aside>
+
+    <aside id="menuPanel" class="menu-panel" aria-hidden="true">
+      <div class="menu-head">
+        <strong>犬と下田。</strong>
+        <button id="closeMenu" class="round-button" aria-label="閉じる">×</button>
+      </div>
+      <p>まずは「地図を開けばすぐ探せる」を優先したβ版です。</p>
+      <div class="menu-list">
+        <button type="button">施設一覧 <span>準備中</span></button>
+        <button type="button">口コミ投稿 <span>準備中</span></button>
+        <button type="button">新しい場所を教える <span>準備中</span></button>
+        <button type="button">施設オーナーの方へ <span>準備中</span></button>
+      </div>
+      <small>掲載情報は今後、公式確認・現地確認・利用者投稿を分けて表示します。</small>
+    </aside>
+    <div id="scrim" class="scrim" hidden></div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="./app.js"></script>
+</body>
+</html>
