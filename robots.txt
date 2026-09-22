@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/sitemap.xml
+Sitemap: https://kameo3150.github.io/izukyu-tsunagaru-map/sitemap.xml
