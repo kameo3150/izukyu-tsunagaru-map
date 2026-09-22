@@ -13,7 +13,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap'
 }).addTo(map);
 
-// β0.1はレイアウト確認用。施設情報の本登録は次段階で公式確認して追加する。
 const places = [
   {
     name: 'AMMOS PET FRIENDLY HOTEL',
@@ -24,6 +23,7 @@ const places = [
     emoji: '🏨',
     rain: true,
     large: true,
+    verified: true,
     tags: ['愛犬と宿泊', '外浦海岸すぐ', '犬用料理'],
     note: '公式住所（静岡県下田市柿崎782-1）をもとに位置を確認済みです。詳細条件は施設ページで整理予定。',
     kicker: '公式情報確認済み'
@@ -37,6 +37,7 @@ const places = [
     emoji: '🏖️',
     rain: false,
     large: true,
+    verified: false,
     tags: ['海・散歩', '大型犬候補'],
     note: '外浦海水浴場の位置に合わせて配置。犬連れ条件を確認して正式データに更新します。',
     kicker: '調査中'
@@ -50,6 +51,7 @@ const places = [
     emoji: '🏨',
     rain: true,
     large: true,
+    verified: false,
     tags: ['宿泊候補', '海沿い'],
     note: '犬連れ宿・カフェを順次追加するためのエリア表示です。',
     kicker: '調査中'
@@ -63,6 +65,7 @@ const places = [
     emoji: '🍴',
     rain: true,
     large: false,
+    verified: false,
     tags: ['飲食店候補', '街歩き'],
     note: '店内同伴・テラス・犬サイズなどを確認してから正式掲載します。',
     kicker: '調査中'
@@ -76,6 +79,7 @@ const places = [
     emoji: '🐾',
     rain: false,
     large: true,
+    verified: false,
     tags: ['散歩', '景色'],
     note: '散歩スポットとしての使いやすさを調査予定です。',
     kicker: '調査中'
@@ -89,6 +93,7 @@ const places = [
     emoji: '🍴',
     rain: false,
     large: true,
+    verified: false,
     tags: ['カフェ候補', '海・散歩'],
     note: '犬連れで食事できる店と海遊び情報をまとめる予定です。',
     kicker: '調査中'
@@ -102,6 +107,7 @@ const places = [
     emoji: '🐾',
     rain: false,
     large: true,
+    verified: false,
     tags: ['散歩', '景勝地'],
     note: '現地ルールと季節ごとの使いやすさを整理して掲載予定です。',
     kicker: '調査中'
@@ -116,12 +122,17 @@ const cardTags = document.getElementById('cardTags');
 const cardNote = document.getElementById('cardNote');
 const closeCard = document.getElementById('closeCard');
 const mapStatus = document.getElementById('mapStatus');
+const searchInput = document.getElementById('searchInput');
+const placeList = document.getElementById('placeList');
+const resultCount = document.getElementById('resultCount');
 const markers = [];
+let activeFilter = 'all';
+let searchTerm = '';
 
 function markerIcon(place) {
   return L.divIcon({
     className: '',
-    html: `<div class="soft-marker ${place.type}"><span>${place.emoji}</span></div>`,
+    html: `<div class="soft-marker ${place.type} ${place.verified ? '' : 'research'}"><span>${place.emoji}</span></div>`,
     iconSize: [42, 42],
     iconAnchor: [21, 39]
   });
@@ -154,12 +165,49 @@ function closeDetail() {
 closeCard.addEventListener('click', closeDetail);
 map.on('click', closeDetail);
 
-function applyFilter(filter) {
+function matches(place) {
+  const filterMatch =
+    activeFilter === 'all' ||
+    place.type === activeFilter ||
+    (activeFilter === 'rain' && place.rain) ||
+    (activeFilter === 'large' && place.large);
+
+  const haystack = [place.name, place.area, ...place.tags].join(' ').toLowerCase();
+  const searchMatch = !searchTerm || haystack.includes(searchTerm);
+  return filterMatch && searchMatch;
+}
+
+function renderVisiblePlaces() {
+  const visible = [];
+
   markers.forEach(({ marker, place }) => {
-    const show = filter === 'all' || place.type === filter || (filter === 'rain' && place.rain) || (filter === 'large' && place.large);
+    const show = matches(place);
     if (show && !map.hasLayer(marker)) marker.addTo(map);
     if (!show && map.hasLayer(marker)) marker.removeFrom(map);
+    if (show) visible.push(place);
   });
+
+  resultCount.textContent = `${visible.length}件表示`;
+  placeList.innerHTML = visible.map(place => {
+    const markerIndex = places.indexOf(place);
+    return `
+      <button class="place-item" type="button" data-place-index="${markerIndex}">
+        <div class="row">
+          <div>
+            <strong>${place.emoji} ${place.name}</strong>
+            <small>${place.area}</small>
+          </div>
+          <span class="status ${place.verified ? '' : 'research'}">${place.verified ? '確認済み' : '調査中'}</span>
+        </div>
+        <div class="tags">${place.tags.join(' ・ ')}</div>
+      </button>
+    `;
+  }).join('');
+
+  if (!visible.length) {
+    placeList.innerHTML = '<div class="place-item">条件に合うスポットはまだありません。</div>';
+  }
+
   closeDetail();
 }
 
@@ -167,8 +215,24 @@ document.querySelectorAll('.filter-chip').forEach(button => {
   button.addEventListener('click', () => {
     document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
     button.classList.add('active');
-    applyFilter(button.dataset.filter);
+    activeFilter = button.dataset.filter;
+    renderVisiblePlaces();
   });
+});
+
+searchInput.addEventListener('input', () => {
+  searchTerm = searchInput.value.trim().toLowerCase();
+  renderVisiblePlaces();
+});
+
+placeList.addEventListener('click', event => {
+  const button = event.target.closest('[data-place-index]');
+  if (!button) return;
+  const index = Number(button.dataset.placeIndex);
+  const entry = markers[index];
+  if (!entry) return;
+  hideList();
+  openPlace(entry.place, entry.marker);
 });
 
 const locateButton = document.getElementById('locateButton');
@@ -203,22 +267,61 @@ const menuButton = document.getElementById('menuButton');
 const menuPanel = document.getElementById('menuPanel');
 const closeMenu = document.getElementById('closeMenu');
 const scrim = document.getElementById('scrim');
+const listButton = document.getElementById('listButton');
+const listPanel = document.getElementById('listPanel');
+const closeList = document.getElementById('closeList');
+const menuListButton = document.getElementById('menuListButton');
 
-function openMenu() {
+function showScrim() {
   scrim.hidden = false;
   requestAnimationFrame(() => scrim.classList.add('show'));
+}
+function hideScrimIfClosed() {
+  if (!menuPanel.classList.contains('open') && !listPanel.classList.contains('open')) {
+    scrim.classList.remove('show');
+    setTimeout(() => { scrim.hidden = true; }, 280);
+  }
+}
+function openMenu() {
+  listPanel.classList.remove('open');
+  listPanel.setAttribute('aria-hidden', 'true');
+  showScrim();
   menuPanel.classList.add('open');
   menuPanel.setAttribute('aria-hidden', 'false');
 }
 function hideMenu() {
-  scrim.classList.remove('show');
   menuPanel.classList.remove('open');
   menuPanel.setAttribute('aria-hidden', 'true');
-  setTimeout(() => { scrim.hidden = true; }, 280);
+  hideScrimIfClosed();
 }
+function openList() {
+  menuPanel.classList.remove('open');
+  menuPanel.setAttribute('aria-hidden', 'true');
+  renderVisiblePlaces();
+  showScrim();
+  listPanel.classList.add('open');
+  listPanel.setAttribute('aria-hidden', 'false');
+}
+function hideList() {
+  listPanel.classList.remove('open');
+  listPanel.setAttribute('aria-hidden', 'true');
+  hideScrimIfClosed();
+}
+function closePanels() {
+  menuPanel.classList.remove('open');
+  listPanel.classList.remove('open');
+  menuPanel.setAttribute('aria-hidden', 'true');
+  listPanel.setAttribute('aria-hidden', 'true');
+  hideScrimIfClosed();
+}
+
 menuButton.addEventListener('click', openMenu);
 closeMenu.addEventListener('click', hideMenu);
-scrim.addEventListener('click', hideMenu);
+listButton.addEventListener('click', openList);
+closeList.addEventListener('click', hideList);
+menuListButton.addEventListener('click', openList);
+scrim.addEventListener('click', closePanels);
 
+renderVisiblePlaces();
 window.addEventListener('resize', () => map.invalidateSize());
 setTimeout(() => map.invalidateSize(), 250);
