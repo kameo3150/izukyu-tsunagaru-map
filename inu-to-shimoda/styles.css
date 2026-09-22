@@ -21,7 +21,7 @@ button { cursor: pointer; }
 
 .topbar { position: absolute; z-index: 600; top: max(10px, env(safe-area-inset-top)); left: 10px; right: 10px; display: flex; align-items: center; justify-content: space-between; gap: 12px; pointer-events: none; }
 .brand-wrap { pointer-events: auto; padding: 11px 14px 10px; border-radius: 20px; background: rgba(255,253,249,.9); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 8px 24px rgba(42,60,65,.12); border: 1px solid rgba(255,255,255,.76); }
-.brand { font-family: Georgia, "Yu Mincho", serif; font-size: 20px; font-weight: 700; letter-spacing: .04em; line-height: 1; }
+.brand { margin: 0; font-family: Georgia, "Yu Mincho", serif; font-size: 20px; font-weight: 700; letter-spacing: .04em; line-height: 1; }
 .paw-dot { color: var(--sea); font-size: 10px; margin-left: 2px; vertical-align: .16em; }
 .subtitle { margin-top: 5px; font-size: 11px; color: var(--muted); letter-spacing: .03em; }
 
