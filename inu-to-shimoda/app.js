@@ -71,6 +71,34 @@ const places = [
     kicker: '公式情報確認済み'
   },
   {
+    name: 'south cafe',
+    area: '吉佐美',
+    lat: 34.66342608,
+    lng: 138.91634651,
+    type: 'eat',
+    emoji: '☕',
+    rain: true,
+    large: true,
+    verified: true,
+    tags: ['カフェ', '店内犬同伴OK', 'ペット可', '駐車場あり'],
+    note: '公式サイトで住所（静岡県下田市吉佐美918-2）と現行営業時間11:00〜18:00・木曜定休を確認。Honda Dogでは店内も犬同伴OKと案内されています。Yahoo!マップの施設ピン位置を座標に採用しています。',
+    kicker: '確認済み'
+  },
+  {
+    name: 'FermenCo.',
+    area: '吉佐美・入田浜',
+    lat: 34.65801496,
+    lng: 138.92516372,
+    type: 'eat',
+    emoji: '🍕',
+    rain: false,
+    large: false,
+    verified: true,
+    tags: ['ピッツェリア', 'ペット同伴可', 'テラス席あり', '駐車場あり'],
+    note: '住所は静岡県下田市吉佐美348-37。Yahoo!マップでペット同伴可、食べログでテラス席ありを確認。犬同伴の細かな条件は来店前に店舗へ確認するのがおすすめです。Yahoo!マップの施設ピン位置を座標に採用しています。',
+    kicker: '確認済み'
+  },
+  {
     name: '外浦海岸エリア',
     area: '外浦',
     lat: 34.6750792,
