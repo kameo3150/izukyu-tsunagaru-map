@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="preconnect" href="https://tile.openstreetmap.org" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-  <link rel="stylesheet" href="./styles.css?v=20260916-1736" />
+  <link rel="stylesheet" href="./styles.css?v=20260922-2308" />
 </head>
 <body>
   <main class="app-shell">
@@ -30,9 +30,22 @@
       <button class="filter-chip" data-filter="large">🐕 大型犬</button>
     </section>
 
+    <section class="search-wrap" aria-label="スポット検索">
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="店名・エリアで探す" autocomplete="off" />
+      </label>
+      <button id="listButton" class="list-button" type="button">一覧</button>
+    </section>
+
     <section id="map" aria-label="下田の犬連れスポット地図"></section>
 
-    <div class="map-status" id="mapStatus">β0.1 レイアウト試作</div>
+    <div class="map-status" id="mapStatus">β0.2 ・掲載情報を整理中</div>
+
+    <div class="legend" aria-label="掲載情報の状態">
+      <span><i class="verified-dot"></i>確認済み</span>
+      <span><i class="research-dot"></i>調査中</span>
+    </div>
 
     <button id="locateButton" class="locate-button" aria-label="現在地を表示">
       <span>◎</span><span>現在地</span>
@@ -48,24 +61,35 @@
       <button class="primary-button" type="button">詳しく見る <span>→</span></button>
     </aside>
 
+    <aside id="listPanel" class="list-panel" aria-hidden="true">
+      <div class="list-head">
+        <div>
+          <strong>スポット一覧</strong>
+          <small id="resultCount"></small>
+        </div>
+        <button id="closeList" class="round-button mini" aria-label="閉じる">×</button>
+      </div>
+      <div id="placeList" class="place-list"></div>
+    </aside>
+
     <aside id="menuPanel" class="menu-panel" aria-hidden="true">
       <div class="menu-head">
         <strong>犬と下田。</strong>
         <button id="closeMenu" class="round-button" aria-label="閉じる">×</button>
       </div>
-      <p>まずは「地図を開けばすぐ探せる」を優先したβ版です。</p>
+      <p>地図を開けば、犬連れで行ける場所がすぐ分かる。そんな下田のローカルガイドを育てています。</p>
       <div class="menu-list">
-        <button type="button">施設一覧 <span>準備中</span></button>
+        <button id="menuListButton" type="button">施設一覧 <span>見る</span></button>
         <button type="button">口コミ投稿 <span>準備中</span></button>
         <button type="button">新しい場所を教える <span>準備中</span></button>
         <button type="button">施設オーナーの方へ <span>準備中</span></button>
       </div>
-      <small>掲載情報は今後、公式確認・現地確認・利用者投稿を分けて表示します。</small>
+      <small>掲載情報は「公式確認済み」と「調査中」を分けて表示します。</small>
     </aside>
     <div id="scrim" class="scrim" hidden></div>
   </main>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="./app.js?v=20260916-1736"></script>
+  <script src="./app.js?v=20260922-2308"></script>
 </body>
 </html>
