@@ -211,6 +211,22 @@ const places = [
     kicker: '公式観光情報確認済み'
   },
   {
+    name: 'おおはし緑水苑',
+    area: '須崎',
+    lat: 34.6613283,
+    lng: 138.9629046,
+    type: 'stay',
+    emoji: '🏡',
+    rain: true,
+    large: false,
+    verified: true,
+    tags: ['トレーラーコテージ', 'ペット同伴宿泊', 'BBQデッキ', '須崎'],
+    note: '公式サイトと下田市観光協会で、ワンちゃんと一緒に宿泊できるトレーラーコテージを確認。住所は静岡県下田市須崎1576。犬種・頭数などの利用条件は予約前に公式案内を確認してください。',
+    kicker: '公式情報確認済み',
+    sourceUrl: 'https://www.shimoda-ryokusuien.com/',
+    sourceLabel: '公式サイトを見る'
+  },
+  {
     name: '外浦海岸エリア',
     area: '外浦',
     lat: 34.6750792,
@@ -302,6 +318,7 @@ const cardTitle = document.getElementById('cardTitle');
 const cardArea = document.getElementById('cardArea');
 const cardTags = document.getElementById('cardTags');
 const cardNote = document.getElementById('cardNote');
+const primaryButton = document.getElementById('primaryButton');
 const closeCard = document.getElementById('closeCard');
 const mapStatus = document.getElementById('mapStatus');
 const searchInput = document.getElementById('searchInput');
@@ -326,6 +343,14 @@ function openPlace(place, marker) {
   cardArea.textContent = place.area;
   cardTags.innerHTML = place.tags.map(tag => `<span>${tag}</span>`).join('');
   cardNote.textContent = place.note;
+  if (place.sourceUrl) {
+    primaryButton.hidden = false;
+    primaryButton.innerHTML = `${place.sourceLabel || '公式情報を見る'} <span>↗</span>`;
+    primaryButton.onclick = () => window.open(place.sourceUrl, '_blank', 'noopener,noreferrer');
+  } else {
+    primaryButton.hidden = true;
+    primaryButton.onclick = null;
+  }
   detailCard.classList.add('open');
   detailCard.setAttribute('aria-hidden', 'false');
   mapStatus.style.opacity = '0';
