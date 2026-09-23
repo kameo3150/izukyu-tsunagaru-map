@@ -24,9 +24,18 @@ const places = [
     rain: true,
     large: true,
     verified: true,
-    tags: ['愛犬と宿泊', '外浦海岸すぐ', '犬用料理'],
-    note: '公式住所（静岡県下田市柿崎782-1）をもとに位置を確認済みです。詳細条件は施設ページで整理予定。',
-    kicker: '公式情報確認済み'
+    tags: ['全6室', '全室露天風呂', '外浦海岸目の前', '愛犬専用プール', '犬用料理'],
+    note: '外浦海岸そばにある全6室のペットフレンドリーホテル。愛犬と同室で泊まれ、館内にも犬向け設備がそろっています。',
+    details: [
+      '客室：Type-A 36.1㎡／Type-B 42.3㎡／Type-C 67.8㎡。全室露天風呂付き、Type-Cはサウナ付き。',
+      '愛犬設備：客室ケージ、愛犬専用プール、トリミングコーナー、ペット用ドライヤー、ペット用温泉。',
+      '食事：夕食は地元食材を使った懐石料理。朝食は和食または洋食。ワンちゃん向け料理も用意。',
+      'ロケーション：〒415-0013 静岡県下田市柿崎782-1。外浦海岸が目の前。',
+      '宿泊条件：基本的なしつけができた室内飼育のワンちゃん。狂犬病・5種以上の混合ワクチン接種証明書（1年以内）の提示案内あり。'
+    ],
+    kicker: '公式情報確認済み',
+    sourceUrl: 'https://ammos.jp/',
+    sourceLabel: 'AMMOS公式サイトを見る'
   },
   {
     name: '下田プリンスホテル',
@@ -318,6 +327,7 @@ const cardTitle = document.getElementById('cardTitle');
 const cardArea = document.getElementById('cardArea');
 const cardTags = document.getElementById('cardTags');
 const cardNote = document.getElementById('cardNote');
+const cardDetails = document.getElementById('cardDetails');
 const primaryButton = document.getElementById('primaryButton');
 const closeCard = document.getElementById('closeCard');
 const mapStatus = document.getElementById('mapStatus');
@@ -343,6 +353,13 @@ function openPlace(place, marker) {
   cardArea.textContent = place.area;
   cardTags.innerHTML = place.tags.map(tag => `<span>${tag}</span>`).join('');
   cardNote.textContent = place.note;
+  if (place.details && place.details.length) {
+    cardDetails.hidden = false;
+    cardDetails.innerHTML = place.details.map(item => `<div class="card-detail-item">${item}</div>`).join('');
+  } else {
+    cardDetails.hidden = true;
+    cardDetails.innerHTML = '';
+  }
   if (place.sourceUrl) {
     primaryButton.hidden = false;
     primaryButton.innerHTML = `${place.sourceLabel || '公式情報を見る'} <span>↗</span>`;
