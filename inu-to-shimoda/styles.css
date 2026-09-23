@@ -83,7 +83,7 @@ button { cursor: pointer; }
 .list-head small { display: block; margin-top: 3px; color: var(--muted); }
 .menu-panel p { color: var(--muted); font-size: 13px; line-height: 1.7; }
 .menu-list { display: grid; gap: 8px; margin: 20px 0; }
-.menu-list button { border: 0; border-radius: 15px; padding: 14px; background: #f3efe7; display: flex; justify-content: space-between; color: var(--ink); text-align: left; }
+.menu-list button, .menu-list a { border: 0; border-radius: 15px; padding: 14px; background: #f3efe7; display: flex; justify-content: space-between; color: var(--ink); text-align: left; text-decoration: none; align-items: center; }
 .menu-list span { color: var(--muted); font-size: 11px; }
 .menu-panel small { color: #7b898a; line-height: 1.6; }
 
