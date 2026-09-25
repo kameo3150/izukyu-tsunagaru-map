@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,6 +21,12 @@
   <url>
     <loc>https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/</loc>
     <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
