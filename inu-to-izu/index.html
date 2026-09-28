@@ -28,6 +28,12 @@
     .affiliate a{display:inline-flex;padding:11px 14px;border-radius:14px;background:var(--deep);color:#fff;text-decoration:none;font-weight:700}
     footer{margin-top:34px;color:var(--muted);font-size:12px;line-height:1.7}
   </style>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    #izuMap{height:430px;border-radius:24px;margin:12px 0 26px;box-shadow:0 12px 32px rgba(42,60,65,.11)}
+    .map-note{font-size:12px;color:var(--muted);margin:-15px 4px 26px;line-height:1.6}
+  </style>
 </head>
 <body>
 <main>
@@ -58,6 +64,10 @@
     </div>
     <a class="stay-link" href="https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+64JTE" rel="nofollow">SUPの近くで犬と泊まれる宿を探す →</a>
   </section>
+
+  <h2 class="section-title">犬が楽しめる場所を地図から探す</h2>
+  <div id="izuMap" aria-label="伊豆の犬が楽しめるスポット地図"></div>
+  <p class="map-note">まずは確認済み情報から掲載。犬同伴条件や営業内容は変わる場合があるため、利用前に各施設の最新案内を確認してください。</p>
 
   <h2 class="section-title" id="areas">エリアからもっと探す</h2>
   <div class="grid">
@@ -108,5 +118,23 @@
 
   <footer>当サイトはアフィリエイト広告を利用しています。掲載情報は変更される場合があります。犬種・頭数・ワクチン証明など細かな利用条件は、各施設の公式案内もあわせて確認してください。</footer>
 </main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const izuMap=L.map('izuMap',{scrollWheelZoom:false}).setView([34.78,138.99],10);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(izuMap);
+const dogSpots=[
+  {n:'外浦海岸',a:'下田・外浦｜海遊び・SUPエリア',lat:34.67508,lng:138.97244,u:'../inu-to-shimoda/'},
+  {n:'AMMOS PET FRIENDLY HOTEL',a:'下田・外浦｜犬と泊まる',lat:34.6731041,lng:138.9745751,u:'../inu-to-shimoda/'},
+  {n:'晴レ屋',a:'下田・外浦｜犬と泊まる',lat:34.67288281,lng:138.97306806,u:'../inu-to-shimoda/'},
+  {n:'吉佐美エリア',a:'下田｜海遊び・犬とSUP',lat:34.6519,lng:138.9318,u:'../inu-to-shimoda/'},
+  {n:'弓ヶ浜',a:'南伊豆｜海遊び・犬とSUP',lat:34.6325,lng:138.8925,u:'../inu-to-minamiizu/'},
+  {n:'ログハウス愛犬かしま',a:'南伊豆・弓ヶ浜｜犬と泊まる',lat:34.6328,lng:138.8917,u:'../inu-to-minamiizu/'},
+  {n:'西伊豆・田子',a:'西伊豆｜犬とSUP',lat:34.807,lng:138.765,u:'../inu-to-nishiizu/'},
+  {n:'西伊豆・安良里',a:'西伊豆｜犬とSUP',lat:34.842,lng:138.760,u:'../inu-to-nishiizu/'},
+  {n:'愛犬の駅 伊豆高原',a:'伊東｜走る・遊ぶ・食べる',lat:34.883376,lng:139.1068387,u:'../inu-to-ito/'},
+  {n:'伊豆ぐらんぱる公園',a:'伊東｜ドッグラン・遊ぶ',lat:34.905473,lng:139.120825,u:'../inu-to-ito/'}
+];
+dogSpots.forEach(s=>L.marker([s.lat,s.lng]).addTo(izuMap).bindPopup('<strong>'+s.n+'</strong><br>'+s.a+'<br><a href="'+s.u+'">このエリアを見る →</a>'));
+</script>
 </body>
 </html>
