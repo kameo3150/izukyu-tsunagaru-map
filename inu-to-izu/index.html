@@ -159,7 +159,14 @@ const dogSpots=[
   {n:'小室山公園',a:'伊東｜自然・散策',lat:34.9505,lng:139.1296,u:'../inu-to-ito/',t:['walk']},
   {n:'城ヶ崎海岸',a:'伊東｜海岸の自然散策',lat:34.8896,lng:139.1387,u:'../inu-to-ito/',t:['walk']},
   {n:'伊豆ドッグランド',a:'伊豆市・修善寺｜ドッグラン',lat:34.9734,lng:138.9305,u:'../inu-to-izu/',t:['run']},
-  {n:'中伊豆ワイナリー シャトーT.S',a:'伊豆市｜ペット対応・観光',lat:34.9766,lng:138.9942,u:'../inu-to-izu/',t:['experience','walk']}
+  {n:'中伊豆ワイナリー シャトーT.S',a:'伊豆市｜ペット対応・観光',lat:34.9766,lng:138.9942,u:'../inu-to-izu/',t:['experience','walk']},
+  {n:'河津バガテル公園',a:'河津｜ドッグラン',lat:34.7569,lng:138.9754,u:'../inu-to-kawazu/',t:['run','walk']},
+  {n:'和みの犬宿 むつみ庵',a:'河津・今井浜｜約200坪のドッグラン・犬と泊まる',lat:34.7477,lng:139.0110,u:'../inu-to-kawazu/',t:['run','stay','eat']},
+  {n:'湯宿 桜ざか',a:'河津｜屋上ドッグラン・犬と泊まる',lat:34.7561,lng:138.9870,u:'../inu-to-kawazu/',t:['run','stay']},
+  {n:'ホテル四季の蔵',a:'河津｜ペットと泊まるリゾート',lat:34.7570,lng:138.9850,u:'../inu-to-kawazu/',t:['stay']},
+  {n:'稲取細野高原',a:'東伊豆・稲取｜リードを付けて草原散歩',lat:34.7956,lng:139.0200,u:'../inu-to-higashiizu/',t:['walk']},
+  {n:'きがるな・・宿・シーガル',a:'西伊豆・仁科｜ドッグラン・犬と泊まる',lat:34.7750,lng:138.7750,u:'../inu-to-nishiizu/',t:['run','stay']},
+  {n:'Dog salon & Hotel SANTA',a:'西伊豆・堂ヶ島｜犬の一時預かり・ホテル',lat:34.7820,lng:138.7670,u:'../inu-to-nishiizu/',t:['stay']}
 ];
 const markerRows=dogSpots.map(s=>({s,m:L.marker([s.lat,s.lng]).bindPopup('<strong>'+s.n+'</strong><br>'+s.a+'<br><a href="'+s.u+'">このエリアを見る →</a>')}));
 function showSpots(filter='all'){markerRows.forEach(({s,m})=>{const on=filter==='all'||s.t.includes(filter);if(on&&!izuMap.hasLayer(m))m.addTo(izuMap);if(!on&&izuMap.hasLayer(m))izuMap.removeLayer(m);});}
