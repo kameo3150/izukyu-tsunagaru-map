@@ -83,7 +83,7 @@
 
   <h2 class="section-title">犬が楽しめる場所を地図から探す</h2>
   <div class="map-filters" aria-label="地図を楽しみ方で絞り込む">
-    <button class="map-filter active" data-filter="all">全部</button><button class="map-filter" data-filter="run">🐕 走る</button><button class="map-filter" data-filter="water">🌊 水遊び</button><button class="map-filter" data-filter="experience">🎡 体験</button><button class="map-filter" data-filter="eat">🍴 食べる</button><button class="map-filter" data-filter="stay">🏨 泊まる</button>
+    <button class="map-filter active" data-filter="all">全部</button><button class="map-filter" data-filter="run">🐕 走る</button><button class="map-filter" data-filter="water">🌊 水遊び</button><button class="map-filter" data-filter="experience">🎡 体験</button><button class="map-filter" data-filter="walk">🌿 歩く</button><button class="map-filter" data-filter="eat">🍴 食べる</button><button class="map-filter" data-filter="stay">🏨 泊まる</button>
   </div>
   <div id="izuMap" aria-label="伊豆の犬が楽しめるスポット地図"></div>
   <p class="map-note">気になるピンをタップすると、そのエリアの詳しい犬連れ情報へ進めます。</p>
@@ -154,7 +154,12 @@ const dogSpots=[
   {n:'西伊豆・田子',a:'西伊豆｜犬とSUP',lat:34.807,lng:138.765,u:'../inu-to-nishiizu/',t:['water','experience']},
   {n:'西伊豆・安良里',a:'西伊豆｜犬とSUP',lat:34.842,lng:138.760,u:'../inu-to-nishiizu/',t:['water','experience']},
   {n:'愛犬の駅 伊豆高原',a:'伊東｜ドッグラン・食事・体験',lat:34.883376,lng:139.1068387,u:'../inu-to-ito/',t:['run','eat','experience']},
-  {n:'伊豆ぐらんぱる公園',a:'伊東｜ドッグラン・犬と遊ぶ',lat:34.905473,lng:139.120825,u:'../inu-to-ito/',t:['run','experience']}
+  {n:'伊豆ぐらんぱる公園',a:'伊東｜ドッグラン・犬とアトラクション',lat:34.905473,lng:139.120825,u:'../inu-to-ito/',t:['run','experience']},
+  {n:'大室山',a:'伊東｜小中型犬とリフト・山頂散歩',lat:34.9032,lng:139.0941,u:'../inu-to-ito/',t:['experience','walk']},
+  {n:'小室山公園',a:'伊東｜自然・散策',lat:34.9505,lng:139.1296,u:'../inu-to-ito/',t:['walk']},
+  {n:'城ヶ崎海岸',a:'伊東｜海岸の自然散策',lat:34.8896,lng:139.1387,u:'../inu-to-ito/',t:['walk']},
+  {n:'伊豆ドッグランド',a:'伊豆市・修善寺｜ドッグラン',lat:34.9734,lng:138.9305,u:'../inu-to-izu/',t:['run']},
+  {n:'中伊豆ワイナリー シャトーT.S',a:'伊豆市｜ペット対応・観光',lat:34.9766,lng:138.9942,u:'../inu-to-izu/',t:['experience','walk']}
 ];
 const markerRows=dogSpots.map(s=>({s,m:L.marker([s.lat,s.lng]).bindPopup('<strong>'+s.n+'</strong><br>'+s.a+'<br><a href="'+s.u+'">このエリアを見る →</a>')}));
 function showSpots(filter='all'){markerRows.forEach(({s,m})=>{const on=filter==='all'||s.t.includes(filter);if(on&&!izuMap.hasLayer(m))m.addTo(izuMap);if(!on&&izuMap.hasLayer(m))izuMap.removeLayer(m);});}
