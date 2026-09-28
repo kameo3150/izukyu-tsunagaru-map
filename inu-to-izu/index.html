@@ -30,7 +30,7 @@
     .affiliate{margin-top:24px;padding:18px 20px;border-radius:22px;background:#fffdf9;border:1px solid rgba(70,95,99,.08);box-shadow:0 10px 26px rgba(42,60,65,.08)}
     .affiliate-label{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin-bottom:7px}
     .affiliate strong{display:block;font-size:18px;margin-bottom:6px}.affiliate p{margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.65}
-    .affiliate a{display:inline-flex;padding:11px 14px;border-radius:14px;background:var(--deep);color:#fff;text-decoration:none;font-weight:700}
+    .affiliate a{display:inline-flex;padding:11px 14px;border-radius:14px;background:var(--deep);color:#fff;text-decoration:none;font-weight:700}.trip{margin:28px 0;padding:22px;border-radius:26px;background:#fffdf9;box-shadow:0 12px 32px rgba(42,60,65,.09)}.trip h2{margin:0 0 6px}.trip p{color:var(--muted);line-height:1.65}.trip-flow{display:grid;gap:10px}.trip-step{padding:14px;border-radius:16px;background:#f3f1ea}.trip-step b{display:block;margin-bottom:3px}.trip-book{display:inline-flex;margin-top:14px;padding:12px 15px;border-radius:14px;background:var(--deep);color:#fff;text-decoration:none;font-weight:700}
     footer{margin-top:34px;color:var(--muted);font-size:12px;line-height:1.7}
   </style>
   <link rel="preconnect" href="https://unpkg.com">
@@ -94,6 +94,18 @@
   </div>
   <div id="izuMap" aria-label="伊豆の犬が楽しめるスポット地図"></div>
   <p class="map-note">気になるピンをタップすると、そのエリアの詳しい犬連れ情報へ進めます。</p>
+
+  <section class="trip">
+    <div class="eyebrow">遊びから旅を組み立てる</div>
+    <h2>犬が喜ぶ1日を、そのまま旅行に。</h2>
+    <p>先に「犬が何をして遊ぶか」を決めて、近くの食事と宿を探す。伊豆の町名を知らなくても旅を組み立てられるようにしました。</p>
+    <div class="trip-flow">
+      <div class="trip-step"><b>① 🐕 遊ぶ</b>走る・海・SUP・カヤック・散歩・体験から選ぶ</div>
+      <div class="trip-step"><b>② 🍴 近くで食べる</b>犬同伴できる店をエリアページで探す</div>
+      <div class="trip-step"><b>③ 🏨 その近くに泊まる</b>犬向け設備や条件を見て宿を選ぶ</div>
+    </div>
+    <a class="trip-book affiliate-track" href="https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+64JTE" rel="nofollow" data-place="trip-flow">伊豆の犬と泊まれる宿を探す →</a>
+  </section>
 
   <h2 class="section-title" id="areas">エリアからもっと探す</h2>
   <div class="grid">
@@ -181,6 +193,7 @@ const markerRows=dogSpots.map(s=>({s,m:L.marker([s.lat,s.lng]).bindPopup('<stron
 function showSpots(filter='all'){markerRows.forEach(({s,m})=>{const on=filter==='all'||s.t.includes(filter);if(on&&!izuMap.hasLayer(m))m.addTo(izuMap);if(!on&&izuMap.hasLayer(m))izuMap.removeLayer(m);});}
 showSpots();
 document.querySelectorAll('.map-filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.map-filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');showSpots(b.dataset.filter);gtag('event','map_filter',{filter:b.dataset.filter});}));
+document.querySelectorAll('.affiliate-track,.affiliate a,.stay-link').forEach(a=>a.addEventListener('click',()=>gtag('event','affiliate_click',{placement:a.dataset.place||a.className,link_url:a.href})));
 </script>
 </body>
 </html>
