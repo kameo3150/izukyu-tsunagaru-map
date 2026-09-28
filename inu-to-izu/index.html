@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
     #izuMap{height:430px;border-radius:24px;margin:12px 0 26px;box-shadow:0 12px 32px rgba(42,60,65,.11)}
-    .map-note{font-size:12px;color:var(--muted);margin:-15px 4px 26px;line-height:1.6}
+    .map-note{font-size:12px;color:var(--muted);margin:-15px 4px 26px;line-height:1.6}.map-filters{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:none}.map-filters::-webkit-scrollbar{display:none}.map-filter{white-space:nowrap;border:1px solid rgba(56,119,124,.22);background:#fffdf9;color:var(--ink);border-radius:999px;padding:9px 12px;font-weight:700}.map-filter.active{background:var(--deep);color:#fff}
   </style>
 </head>
 <body>
@@ -82,6 +82,9 @@
   </div>
 
   <h2 class="section-title">犬が楽しめる場所を地図から探す</h2>
+  <div class="map-filters" aria-label="地図を楽しみ方で絞り込む">
+    <button class="map-filter active" data-filter="all">全部</button><button class="map-filter" data-filter="run">🐕 走る</button><button class="map-filter" data-filter="water">🌊 水遊び</button><button class="map-filter" data-filter="experience">🎡 体験</button><button class="map-filter" data-filter="eat">🍴 食べる</button><button class="map-filter" data-filter="stay">🏨 泊まる</button>
+  </div>
   <div id="izuMap" aria-label="伊豆の犬が楽しめるスポット地図"></div>
   <p class="map-note">気になるピンをタップすると、そのエリアの詳しい犬連れ情報へ進めます。</p>
 
@@ -139,18 +142,24 @@
 const izuMap=L.map('izuMap',{scrollWheelZoom:false}).setView([34.78,138.99],10);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(izuMap);
 const dogSpots=[
-  {n:'外浦海岸',a:'下田・外浦｜海遊び・SUPエリア',lat:34.67508,lng:138.97244,u:'../inu-to-shimoda/'},
-  {n:'AMMOS PET FRIENDLY HOTEL',a:'下田・外浦｜犬と泊まる',lat:34.6731041,lng:138.9745751,u:'../inu-to-shimoda/'},
-  {n:'晴レ屋',a:'下田・外浦｜犬と泊まる',lat:34.67288281,lng:138.97306806,u:'../inu-to-shimoda/'},
-  {n:'吉佐美エリア',a:'下田｜海遊び・犬とSUP',lat:34.6519,lng:138.9318,u:'../inu-to-shimoda/'},
-  {n:'弓ヶ浜',a:'南伊豆｜海遊び・犬とSUP',lat:34.6325,lng:138.8925,u:'../inu-to-minamiizu/'},
-  {n:'ログハウス愛犬かしま',a:'南伊豆・弓ヶ浜｜犬と泊まる',lat:34.6328,lng:138.8917,u:'../inu-to-minamiizu/'},
-  {n:'西伊豆・田子',a:'西伊豆｜犬とSUP',lat:34.807,lng:138.765,u:'../inu-to-nishiizu/'},
-  {n:'西伊豆・安良里',a:'西伊豆｜犬とSUP',lat:34.842,lng:138.760,u:'../inu-to-nishiizu/'},
-  {n:'愛犬の駅 伊豆高原',a:'伊東｜走る・遊ぶ・食べる',lat:34.883376,lng:139.1068387,u:'../inu-to-ito/'},
-  {n:'伊豆ぐらんぱる公園',a:'伊東｜ドッグラン・遊ぶ',lat:34.905473,lng:139.120825,u:'../inu-to-ito/'}
+  {n:'外浦海岸',a:'下田・外浦｜海遊び',lat:34.67508,lng:138.97244,u:'../inu-to-shimoda/',t:['water']},
+  {n:'AMMOS PET FRIENDLY HOTEL',a:'下田・外浦｜犬用プール・犬と泊まる',lat:34.6731041,lng:138.9745751,u:'../inu-to-shimoda/',t:['water','stay']},
+  {n:'晴レ屋',a:'下田・外浦｜犬と泊まる',lat:34.67288281,lng:138.97306806,u:'../inu-to-shimoda/',t:['stay']},
+  {n:'吉佐美エリア',a:'下田｜海遊び・犬とSUP',lat:34.6519,lng:138.9318,u:'../inu-to-shimoda/',t:['water','experience']},
+  {n:'ドッグガーデン びわの木',a:'下田｜ドッグラン',lat:34.6797,lng:138.9448,u:'../inu-to-shimoda/',t:['run']},
+  {n:'south cafe',a:'下田｜犬と食べる',lat:34.6515,lng:138.9305,u:'../inu-to-shimoda/',t:['eat']},
+  {n:'下田海中水族館',a:'下田｜犬と観光',lat:34.6672,lng:138.9446,u:'../inu-to-shimoda/',t:['experience']},
+  {n:'弓ヶ浜',a:'南伊豆｜海遊び・犬とSUP',lat:34.6325,lng:138.8925,u:'../inu-to-minamiizu/',t:['water','experience']},
+  {n:'ログハウス愛犬かしま',a:'南伊豆・弓ヶ浜｜犬と泊まる',lat:34.6328,lng:138.8917,u:'../inu-to-minamiizu/',t:['stay']},
+  {n:'西伊豆・田子',a:'西伊豆｜犬とSUP',lat:34.807,lng:138.765,u:'../inu-to-nishiizu/',t:['water','experience']},
+  {n:'西伊豆・安良里',a:'西伊豆｜犬とSUP',lat:34.842,lng:138.760,u:'../inu-to-nishiizu/',t:['water','experience']},
+  {n:'愛犬の駅 伊豆高原',a:'伊東｜ドッグラン・食事・体験',lat:34.883376,lng:139.1068387,u:'../inu-to-ito/',t:['run','eat','experience']},
+  {n:'伊豆ぐらんぱる公園',a:'伊東｜ドッグラン・犬と遊ぶ',lat:34.905473,lng:139.120825,u:'../inu-to-ito/',t:['run','experience']}
 ];
-dogSpots.forEach(s=>L.marker([s.lat,s.lng]).addTo(izuMap).bindPopup('<strong>'+s.n+'</strong><br>'+s.a+'<br><a href="'+s.u+'">このエリアを見る →</a>'));
+const markerRows=dogSpots.map(s=>({s,m:L.marker([s.lat,s.lng]).bindPopup('<strong>'+s.n+'</strong><br>'+s.a+'<br><a href="'+s.u+'">このエリアを見る →</a>')}));
+function showSpots(filter='all'){markerRows.forEach(({s,m})=>{const on=filter==='all'||s.t.includes(filter);if(on&&!izuMap.hasLayer(m))m.addTo(izuMap);if(!on&&izuMap.hasLayer(m))izuMap.removeLayer(m);});}
+showSpots();
+document.querySelectorAll('.map-filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.map-filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');showSpots(b.dataset.filter);gtag('event','map_filter',{filter:b.dataset.filter});}));
 </script>
 </body>
 </html>
