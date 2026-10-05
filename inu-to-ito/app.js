@@ -236,3 +236,16 @@ menuButton.addEventListener('click',openMenu);closeMenu.addEventListener('click'
 renderVisiblePlaces();
 window.addEventListener('resize',()=>map.invalidateSize());
 setTimeout(()=>map.invalidateSize(),250);
+
+/* Direct link from 犬と伊豆 category pages: ?spot=施設名 */
+const requestedSpot = new URLSearchParams(window.location.search).get('spot');
+if (requestedSpot) {
+  const requestedIndex = places.findIndex(place => place.name === requestedSpot);
+  if (requestedIndex >= 0) {
+    activeFilter = 'all';
+    searchTerm = '';
+    if (searchInput) searchInput.value = '';
+    renderVisiblePlaces();
+    setTimeout(() => openPlace(markers[requestedIndex].place, markers[requestedIndex].marker), 180);
+  }
+}
