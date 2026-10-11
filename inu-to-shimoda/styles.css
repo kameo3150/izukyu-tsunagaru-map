@@ -77,6 +77,8 @@ button { cursor: pointer; }
 
 .menu-panel, .list-panel { position: absolute; z-index: 1000; top: 0; right: 0; width: min(88vw, 390px); height: 100%; padding: max(18px, env(safe-area-inset-top)) 18px calc(18px + env(safe-area-inset-bottom)); background: rgba(255,253,249,.98); box-shadow: -18px 0 50px rgba(35,52,56,.16); transform: translateX(104%); transition: transform .42s var(--ease); }
 .menu-panel.open, .list-panel.open { transform: translateX(0); }
+/* Keep the full navigation usable on small screens where the map takes the viewport. */
+.menu-panel { overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
 .menu-head, .list-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .menu-head { font-family: Georgia, "Yu Mincho", serif; font-size: 22px; }
 .list-head strong { display: block; font-size: 20px; }
