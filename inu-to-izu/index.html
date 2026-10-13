@@ -36,6 +36,21 @@
     .affiliate strong{display:block;font-size:18px;margin-bottom:6px}.affiliate p{margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.65}
     .affiliate a{display:inline-flex;padding:11px 14px;border-radius:14px;background:var(--deep);color:#fff;text-decoration:none;font-weight:700}.trip{margin:28px 0;padding:22px;border-radius:26px;background:#fffdf9;box-shadow:0 12px 32px rgba(42,60,65,.09)}.trip h2{margin:0 0 6px}.trip p{color:var(--muted);line-height:1.65}.trip-flow{display:grid;gap:10px}.trip-step{padding:14px;border-radius:16px;background:#f3f1ea}.trip-step b{display:block;margin-bottom:3px}.trip-book{display:inline-flex;margin-top:14px;padding:12px 15px;border-radius:14px;background:var(--deep);color:#fff;text-decoration:none;font-weight:700}
     footer{margin-top:34px;color:var(--muted);font-size:12px;line-height:1.7}
+    /* Homepage visual hierarchy and better map discovery */
+    .hero{padding:0;overflow:hidden;background:#fff}
+    .hero-photo{position:relative;height:240px;background:#e7eff1}
+    .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 56%}
+    .photo-credit{position:absolute;bottom:9px;right:9px;font-size:10px;color:#fff;background:rgba(18,36,41,.67);padding:5px 8px;border-radius:6px}
+    .photo-credit a{color:#fff}
+    .hero-body{padding:23px}
+    .hero-body h2{font-size:clamp(23px,5vw,31px);line-height:1.3}
+    .hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+    .hero-actions a{display:inline-flex;justify-content:center;align-items:center;border-radius:13px;padding:12px 16px;text-decoration:none;font-weight:800}
+    .hero-primary{background:var(--deep);color:#fff}
+    .hero-secondary{color:var(--deep);background:#eef4f1}
+    .map-intro{margin:0 0 11px;color:var(--muted);line-height:1.6}
+    #izu-map-guide{scroll-margin-top:85px}
+    @media(max-width:480px){.hero-photo{height:205px}.hero-body{padding:19px}.hero-actions a{flex:1 1 100%}}
   </style>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -59,9 +74,19 @@
   <p class="lead">犬連れで伊豆へ行く人のための現地ガイド。観光地の名前より先に、「犬が何をして楽しめるか」から行き先を探せます。</p>
 
   <section class="hero">
-    <div class="eyebrow">今週末の犬旅を探す</div>
-    <h2>犬と伊豆で、何して遊ぶ？</h2>
-    <p>海で遊ぶ、思いきり走る、自然を歩く、一緒に体験する。その日の犬に合う遊びを決めたら、近くの食事と犬宿まで続けて探せます。</p>
+    <div class="hero-photo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Heliport_beside_Shimoda_Shirohama_beach.jpg/1280px-Heliport_beside_Shimoda_Shirohama_beach.jpg" alt="静岡県下田市・白浜海岸の風景" width="1280" height="960" fetchpriority="high">
+      <div class="photo-credit">下田・白浜海岸｜<a href="https://commons.wikimedia.org/wiki/File:Heliport_beside_Shimoda_Shirohama_beach.jpg" target="_blank" rel="noopener">写真：Syced（CC0）</a></div>
+    </div>
+    <div class="hero-body">
+      <div class="eyebrow">犬との伊豆旅、ここから。</div>
+      <h2>愛犬と、伊豆のどこへ行こう？</h2>
+      <p>海で遊ぶ。自然を歩く。思いきり走る。犬と一緒に楽しめるスポットを地図から探して、近くの食事と宿まで。</p>
+      <div class="hero-actions">
+        <a href="#izu-map-guide" class="hero-primary">🗺️ 地図から探す →</a>
+        <a href="#areas" class="hero-secondary">エリアから探す →</a>
+      </div>
+    </div>
   </section>
   <nav class="fun" aria-label="犬の楽しみ方から探す">
     <a href="./water/">🌊 泳ぐ・水遊び</a>
@@ -72,6 +97,15 @@
     <a href="./stay/">🏨 一緒に泊まる</a>
     <a href="./reviews/">⭐ 口コミランキング</a>
   </nav>
+
+  <h2 class="section-title" id="izu-map-guide">🗺️ 地図から探す、犬と伊豆</h2>
+  <p class="map-intro">「走る」「水遊び」「泊まる」などを選んで、行きたい場所を見つけよう。</p>
+  <div class="map-filters" aria-label="地図を楽しみ方で絞り込む">
+    <button class="map-filter active" data-filter="all">全部</button><button class="map-filter" data-filter="run">🐕 走る</button><button class="map-filter" data-filter="water">🌊 水遊び</button><button class="map-filter" data-filter="experience">🎡 体験</button><button class="map-filter" data-filter="walk">🌿 歩く</button><button class="map-filter" data-filter="eat">🍴 食べる</button><button class="map-filter" data-filter="stay">🏨 泊まる</button>
+  </div>
+  <div id="izuMap" aria-label="伊豆の犬が楽しめるスポット地図"></div>
+  <p class="map-note">気になるピンをタップすると、そのエリアの詳しい犬連れ情報へ進めます。</p>
+
 
   <section class="season" id="autumn-feature">
     <div class="eyebrow">犬と伊豆。今季の推し</div>
@@ -115,47 +149,6 @@
       <div class="meta"><span>ぐらんぱる公園</span><span>虹の郷</span><span>アニマルキングダム</span><span>シャボテン動物公園</span></div>
     </a>
   </div>
-
-  <h2 class="section-title">旅行のついでに読む、犬の話</h2>
-  <div class="grid">
-    <a class="card ito" href="./feature/popular-dog-breeds/">
-      <div class="eyebrow">NEW｜2026年10月4日更新</div>
-      <strong>🏆 2026年、いま人気の犬は？</strong>
-      <p>MIXが2年連続1位。トイプードル、チワワ、ダックスは？ 最新ランキングを2つの公表データで比べました。</p>
-      <div class="meta"><span>人気犬種TOP10</span><span>アニコム</span><span>JKC比較</span></div>
-    </a>
-    <a class="card kawazu" href="./reviews/">
-      <div class="eyebrow">2026年10月2日更新</div>
-      <strong>⭐ 伊豆の犬宿 口コミランキング</strong>
-      <p>Google・じゃらん・楽天トラベルを別々に比較。評価点だけでなく口コミ件数も一緒に見られます。</p>
-      <div class="meta"><span>Google</span><span>じゃらん</span><span>楽天トラベル</span></div>
-    </a>
-    <a class="card higashiizu" href="./feature/dog-price/">
-      <div class="eyebrow">NEW｜2026年10月2日更新</div>
-      <strong>💰 いま犬はいくら？人気10犬種の子犬価格</strong>
-      <p>トイプードル、チワワ、柴犬、フレンチブルドッグなど。直近3か月の実際の成約価格を一覧にしました。</p>
-      <div class="meta"><span>平均価格</span><span>最低〜最高</span><span>2026年10月版</span></div>
-    </a>
-    <a class="card minamiizu" href="./feature/dog-starter-goods/">
-      <div class="eyebrow">NEW｜犬を迎える前に</div>
-      <strong>🛍️ 最初に揃える犬グッズ</strong>
-      <p>フード、食器、トイレ、リード、クレートなど。最初に必要な物と、後からでいい物を分けました。</p>
-      <div class="meta"><span>初心者向け</span><span>買いすぎ防止</span><span>犬用品</span></div>
-    </a>
-    <a class="card shimoda" href="./feature/petshop-vs-breeder/">
-      <div class="eyebrow">NEW｜犬を飼っていなくても読める3分特集</div>
-      <strong>🐶 ペットショップ？ブリーダー？</strong>
-      <p>犬を迎えるなら何が違う？ 値段、親犬、育った環境、相談のしやすさまで比べてみました。</p>
-      <div class="meta"><span>2026年9月版</span><span>3分で読む</span><span>犬の今。</span></div>
-    </a>
-  </div>
-
-  <h2 class="section-title">犬が楽しめる場所を地図から探す</h2>
-  <div class="map-filters" aria-label="地図を楽しみ方で絞り込む">
-    <button class="map-filter active" data-filter="all">全部</button><button class="map-filter" data-filter="run">🐕 走る</button><button class="map-filter" data-filter="water">🌊 水遊び</button><button class="map-filter" data-filter="experience">🎡 体験</button><button class="map-filter" data-filter="walk">🌿 歩く</button><button class="map-filter" data-filter="eat">🍴 食べる</button><button class="map-filter" data-filter="stay">🏨 泊まる</button>
-  </div>
-  <div id="izuMap" aria-label="伊豆の犬が楽しめるスポット地図"></div>
-  <p class="map-note">気になるピンをタップすると、そのエリアの詳しい犬連れ情報へ進めます。</p>
 
   <section class="trip">
     <div class="eyebrow">遊びから旅を組み立てる</div>
@@ -215,6 +208,40 @@
       <strong>犬と伊東。</strong>
       <p>まずは伊豆高原10件から。観光・カフェ・愛犬宿を地図で検索。</p>
       <div class="meta"><span>確認済み10件</span><span>地図</span><span>検索・絞り込み</span></div>
+    </a>
+  </div>
+
+  <h2 class="section-title">旅行のついでに読む、犬の話</h2>
+  <div class="grid">
+    <a class="card ito" href="./feature/popular-dog-breeds/">
+      <div class="eyebrow">NEW｜2026年10月4日更新</div>
+      <strong>🏆 2026年、いま人気の犬は？</strong>
+      <p>MIXが2年連続1位。トイプードル、チワワ、ダックスは？ 最新ランキングを2つの公表データで比べました。</p>
+      <div class="meta"><span>人気犬種TOP10</span><span>アニコム</span><span>JKC比較</span></div>
+    </a>
+    <a class="card kawazu" href="./reviews/">
+      <div class="eyebrow">2026年10月2日更新</div>
+      <strong>⭐ 伊豆の犬宿 口コミランキング</strong>
+      <p>Google・じゃらん・楽天トラベルを別々に比較。評価点だけでなく口コミ件数も一緒に見られます。</p>
+      <div class="meta"><span>Google</span><span>じゃらん</span><span>楽天トラベル</span></div>
+    </a>
+    <a class="card higashiizu" href="./feature/dog-price/">
+      <div class="eyebrow">NEW｜2026年10月2日更新</div>
+      <strong>💰 いま犬はいくら？人気10犬種の子犬価格</strong>
+      <p>トイプードル、チワワ、柴犬、フレンチブルドッグなど。直近3か月の実際の成約価格を一覧にしました。</p>
+      <div class="meta"><span>平均価格</span><span>最低〜最高</span><span>2026年10月版</span></div>
+    </a>
+    <a class="card minamiizu" href="./feature/dog-starter-goods/">
+      <div class="eyebrow">NEW｜犬を迎える前に</div>
+      <strong>🛍️ 最初に揃える犬グッズ</strong>
+      <p>フード、食器、トイレ、リード、クレートなど。最初に必要な物と、後からでいい物を分けました。</p>
+      <div class="meta"><span>初心者向け</span><span>買いすぎ防止</span><span>犬用品</span></div>
+    </a>
+    <a class="card shimoda" href="./feature/petshop-vs-breeder/">
+      <div class="eyebrow">NEW｜犬を飼っていなくても読める3分特集</div>
+      <strong>🐶 ペットショップ？ブリーダー？</strong>
+      <p>犬を迎えるなら何が違う？ 値段、親犬、育った環境、相談のしやすさまで比べてみました。</p>
+      <div class="meta"><span>2026年9月版</span><span>3分で読む</span><span>犬の今。</span></div>
     </a>
   </div>
 
