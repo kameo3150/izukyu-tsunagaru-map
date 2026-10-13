@@ -20,7 +20,7 @@
     "@type":"Article",
     "headline":"犬と行ける伊豆の遊園地・テーマパーク4選｜一緒に乗れる？ドッグランは？",
     "datePublished":"2026-10-09",
-    "dateModified":"2026-10-09",
+    "dateModified":"2026-10-14",
     "author":{"@type":"Organization","name":"犬と伊豆。"},
     "publisher":{"@type":"Organization","name":"犬と伊豆。"},
     "mainEntityOfPage":"https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/"
@@ -39,6 +39,11 @@
     .table-wrap{overflow-x:auto;border-radius:20px;border:1px solid var(--line);background:#fffdf9}table{border-collapse:collapse;width:100%;min-width:720px}th,td{padding:13px 11px;border-bottom:1px solid var(--line);text-align:center;font-size:13px;line-height:1.55}th{background:#eef3f1;font-size:12px}th:first-child,td:first-child{text-align:left;font-weight:800;position:sticky;left:0;background:#fffdf9}tr:last-child td{border-bottom:0}.good{color:#246b56;font-weight:800}.warn{color:#9a6b1f;font-weight:800}.dash{color:#8a9495}
     .cards{display:grid;gap:14px}.card{padding:20px;border-radius:22px;background:#fffdf9;border:1px solid var(--line);box-shadow:0 8px 24px rgba(42,60,65,.06)}.rank{font-size:11px;font-weight:800;color:var(--deep);letter-spacing:.06em}.card h3{font-size:21px;margin:6px 0 7px}.area{color:var(--muted);font-size:13px;margin-bottom:10px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:11px}.tags span{font-size:11px;padding:6px 8px;border-radius:999px;background:#f1eee7}.card p{line-height:1.75;margin:0 0 12px}.card ul{margin:0 0 14px;padding-left:19px;color:#596668;font-size:13px;line-height:1.75}
     .source{display:inline-flex;text-decoration:none;background:var(--deep);color:white;font-weight:800;font-size:13px;padding:10px 13px;border-radius:13px}.note{padding:18px;border-radius:20px;background:#f3eee5;line-height:1.75}.links{display:grid;gap:10px;margin-top:28px}.links a{display:block;text-decoration:none;padding:15px 17px;border-radius:17px;font-weight:800}.primary{background:var(--deep);color:white}.secondary{background:#fffdf9;color:var(--deep);border:1px solid var(--line)}
+    .journey{margin:22px 0;padding:19px;border-radius:20px;background:#fffdf9;border:1px solid var(--line)}
+    .journey h2{margin:4px 0 9px;font-size:22px}.journey p{line-height:1.75;color:#596668;margin:0 0 13px;font-size:14px}
+    .journey-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.journey-grid a{display:block;padding:13px;border-radius:13px;background:#e9f4f4;border:1px solid #d4e5e4;color:#24656b;text-decoration:none;line-height:1.55;font-weight:800}
+    .journey-grid a span{display:block;font-size:12px;color:#596668;font-weight:400}
+    @media(max-width:540px){.journey-grid{grid-template-columns:1fr}}
     footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.8}
     @media(max-width:540px){h1{font-size:28px}.hero{padding:21px}}
   </style>
@@ -61,6 +66,18 @@
   </section>
 
   <div class="summary"><b>先に結論。</b><br>乗り物まで一緒に楽しみたいなら「伊豆ぐらんぱる公園」。自然散歩＋鉄道なら「修善寺 虹の郷」。大型犬と動物園を歩くなら「伊豆アニマルキングダム」。動物・サボテンを見ながらのんびり園内散策なら「伊豆シャボテン動物公園」が分かりやすい選び方です。</div>
+
+  <section class="journey" aria-labelledby="parks-journey-title">
+    <div class="eyebrow">場所を決めたら、次は犬との食事と宿</div>
+    <h2 id="parks-journey-title">遊園地から、犬連れ旅行の行程を組む</h2>
+    <p>園内で遊んだ後も犬と一緒に過ごせるように、行き先に合わせてエリアを選ぼう。飲食・宿泊の同伴条件は出発前に確認してください。</p>
+    <nav class="journey-grid" aria-label="遊園地と組み合わせるエリア別犬旅">
+      <a href="../../../inu-to-ito/" data-trip-event="trip_area_click" data-trip-target="ito">🎡 ぐらんぱる・シャボテンなら伊東<span>伊豆高原の食事・犬宿・散歩を探す</span></a>
+      <a href="../../../inu-to-nakaizu/" data-trip-event="trip_area_click" data-trip-target="nakaizu">🍁 虹の郷なら修善寺・中伊豆<span>紅葉と組み合わせたい犬宿・カフェ</span></a>
+      <a href="../../../inu-to-higashiizu/" data-trip-event="trip_area_click" data-trip-target="higashiizu">🦒 アニマルキングダムなら東伊豆<span>稲取・熱川の犬連れスポットへ</span></a>
+      <a href="../../stay/" data-trip-event="trip_stay_click" data-trip-target="izu-stay-list">🏨 犬と泊まれる宿を探す<span>伊豆全域33件のエリア別一覧</span></a>
+    </nav>
+  </section>
 
   <h2>4施設を犬連れ目線で比較</h2>
   <div class="table-wrap">
@@ -134,5 +151,17 @@
   </footer>
 </article>
 </main>
+<script>
+  document.querySelectorAll('a[data-trip-event]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', link.dataset.tripEvent, {
+          trip_article: 'dog-amusement-parks',
+          trip_target: link.dataset.tripTarget
+        });
+      }
+    });
+  });
+</script>
 </body>
 </html>
