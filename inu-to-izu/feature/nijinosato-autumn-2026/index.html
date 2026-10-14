@@ -50,6 +50,15 @@
     @media(max-width:520px){h1{font-size:28px}.fireworks{grid-template-columns:1fr}}
   </style>
   <link rel="stylesheet" href="/izukyu-tsunagaru-map/inu-to-izu/site-nav.css">
+  <style>
+    .dog-share{margin:18px 0 24px;padding:15px 17px;border:1px solid rgba(56,119,124,.16);background:#fffdf9;border-radius:18px;box-shadow:0 5px 15px rgba(42,60,65,.045)}
+    .dog-share p{margin:0 0 12px;font-size:14px;line-height:1.6;font-weight:700;color:#263238}
+    .dog-share-actions{display:flex;flex-wrap:wrap;gap:9px}
+    .dog-share-actions a{display:inline-flex;min-height:42px;align-items:center;justify-content:center;padding:10px 15px;border-radius:12px;color:#fff;font-weight:700;text-decoration:none;font-size:14px}
+    .dog-share-actions .dog-share-x{background:#20252b}
+    .dog-share-actions .dog-share-line{background:#168c46}
+    .dog-share-actions a:focus-visible{outline:3px solid #f0b75c;outline-offset:3px}
+  </style>
 </head>
 <body>
 <nav class="dog-global-nav" aria-label="犬と伊豆 共通ナビ">
@@ -68,6 +77,14 @@
       <h1>犬と秋の伊豆なら、虹の郷へ。</h1>
       <p class="lead">「犬も入れますよ」くらいの話じゃない。今年の秋、犬と伊豆へ来るなら、修善寺・虹の郷まで足を伸ばしてみてほしい。紅葉、夜のライトアップ、日によっては花火。しかも愛犬も一緒に入れます。</p>
     </div>
+
+  <aside class="dog-share" aria-label="このページをシェア">
+    <p>🐾 秋の犬連れ旅を計画中の友だちに送る</p>
+    <div class="dog-share-actions">
+      <a class="dog-share-x" href="https://twitter.com/intent/tweet?text=%E6%84%9B%E7%8A%AC%E3%81%A8%E5%A4%9C%E3%81%AE%E7%B4%85%E8%91%89%E3%81%B8%F0%9F%8D%81%F0%9F%90%95%20%E4%BF%AE%E5%96%84%E5%AF%BA%E3%83%BB%E8%99%B9%E3%81%AE%E9%83%B7%E3%81%AE2026%E5%B9%B4%E3%82%82%E3%81%BF%E3%81%98%E3%83%A9%E3%82%A4%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E6%83%85%E5%A0%B1%E3%80%82%20%23%E7%8A%AC%E9%80%A3%E3%82%8C%E6%97%85%E8%A1%8C%20%23%E4%BC%8A%E8%B1%86%E6%97%85%E8%A1%8C&url=https%3A%2F%2Fkameo3150.github.io%2Fizukyu-tsunagaru-map%2Finu-to-izu%2Ffeature%2Fnijinosato-autumn-2026%2F" target="_blank" rel="noopener noreferrer" data-share-channel="x">Xでシェア</a>
+      <a class="dog-share-line" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fkameo3150.github.io%2Fizukyu-tsunagaru-map%2Finu-to-izu%2Ffeature%2Fnijinosato-autumn-2026%2F" target="_blank" rel="noopener noreferrer" data-share-channel="line">LINEで送る</a>
+    </div>
+  </aside>
 
     <section class="journey" aria-labelledby="autumn-trip-title">
       <div class="eyebrow">犬と行く秋の修善寺・旅の組み立て方</div>
@@ -142,6 +159,15 @@
           trip_target: link.dataset.tripTarget
         });
       }
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('[data-share-channel]').forEach(function(link){
+    link.addEventListener('click',function(){
+      if(typeof window.gtag==='function') window.gtag('event','share_click',{
+        share_channel:link.dataset.shareChannel,share_page:window.location.pathname
+      });
     });
   });
 </script>
