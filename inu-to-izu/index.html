@@ -70,10 +70,13 @@
     .dog-share-actions .dog-share-line{background:#168c46}
     .dog-share-actions a:focus-visible{outline:3px solid #f0b75c;outline-offset:3px}
   </style>
+<link rel="stylesheet" href="/izukyu-tsunagaru-map/inu-to-izu/booking.css?v=20261024">
+<script defer src="/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261024"></script>
 </head>
 <body>
 <nav class="dog-global-nav" aria-label="犬と伊豆 共通ナビ">
   <a href="/izukyu-tsunagaru-map/inu-to-izu/">🐾 犬と伊豆。</a>
+  <a class="dog-booking-nav" href="https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+64JTE" rel="sponsored nofollow" data-booking-placement="global-nav">じゃらんで宿予約<small>広告</small></a>
   <a href="/izukyu-tsunagaru-map/inu-to-izu/site-map/#play">遊ぶ</a>
   <a href="/izukyu-tsunagaru-map/inu-to-izu/site-map/#areas">エリア</a>
   <a href="/izukyu-tsunagaru-map/inu-to-izu/site-map/#features">特集</a>
@@ -253,13 +256,14 @@
     </a>
   </div>
 
-  <section class="affiliate" aria-label="宿泊予約広告">
-    <span class="affiliate-label">広告</span>
-    <strong>遊ぶ場所が決まったら、近くの犬宿を探す</strong>
-    <p>日程と料金を見比べる入口です。犬同伴条件や頭数・犬種の条件は、予約前に各宿の案内も確認してください。</p>
-    <a href="https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+64JTE" rel="nofollow">伊豆の犬と泊まれる宿を探す →</a>
-    <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=2TN3WM+E0A98Y+14CS+64JTE" alt="">
-  </section>
+  <aside class="dog-booking" aria-label="じゃらんの宿泊予約広告">
+  <span class="dog-booking-label">広告｜じゃらんnet</span>
+  <h2>遊びの次は、泊まる場所を。</h2>
+  <p>じゃらんでエリア・日程を指定して宿を探せます。犬種・大きさ・頭数、同伴できる場所は各宿のプランで確認してください。</p>
+  <a class="dog-booking-button" href="https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+64JTE" rel="sponsored nofollow" data-booking-placement="page-end">じゃらんで料金・空室を調べる →</a>
+  <a class="dog-booking-guide" href="/izukyu-tsunagaru-map/inu-to-izu/stay/">先に伊豆の犬と泊まれる宿を見比べる →</a>
+  <img class="dog-booking-pixel" border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=2TN3WM+E0A98Y+14CS+64JTE" alt="">
+</aside>
 
   <aside class="dog-share" aria-label="このページをシェア">
     <p>🐾 犬と伊豆へ行く友だちにも、この地図を送る</p>
@@ -306,7 +310,6 @@ const markerRows=dogSpots.map(s=>({s,m:L.marker([s.lat,s.lng]).bindPopup('<stron
 function showSpots(filter='all'){markerRows.forEach(({s,m})=>{const on=filter==='all'||s.t.includes(filter);if(on&&!izuMap.hasLayer(m))m.addTo(izuMap);if(!on&&izuMap.hasLayer(m))izuMap.removeLayer(m);});}
 showSpots();
 document.querySelectorAll('.map-filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.map-filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');showSpots(b.dataset.filter);gtag('event','map_filter',{filter:b.dataset.filter});}));
-document.querySelectorAll('.affiliate-track,.affiliate a,.stay-link').forEach(a=>a.addEventListener('click',()=>gtag('event','affiliate_click',{placement:a.dataset.place||a.className,link_url:a.href})));
 </script>
 <script>
   document.querySelectorAll('[data-share-channel]').forEach(function(link){
