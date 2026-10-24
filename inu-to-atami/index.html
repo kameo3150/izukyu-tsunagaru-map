@@ -32,6 +32,11 @@
     .kicker{font-size:11px;font-weight:800;color:var(--deep);margin-bottom:7px}.card h2{font-size:21px;margin:0 0 5px}.area{font-size:13px;color:var(--muted);margin-bottom:10px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:11px}.tags span{font-size:11px;padding:6px 8px;border-radius:999px;background:#f1eee7}
     .note{font-size:14px;line-height:1.75;margin:0 0 11px}.details{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 14px;padding-left:18px}.source{display:inline-flex;text-decoration:none;font-size:13px;font-weight:800;color:#fff;background:var(--deep);padding:10px 13px;border-radius:13px}
     .area-nav{margin-top:24px;padding:16px 18px;border-radius:18px;background:#ece7dc;font-size:12px;line-height:1.8}.area-nav a{color:var(--deep);font-weight:700}
+    html{scroll-behavior:smooth} [id]{scroll-margin-top:80px}
+    .map-link{display:inline-flex;align-items:center;min-height:44px;margin:8px 0 0;padding:10px 13px;border:1px solid var(--deep);border-radius:13px;text-decoration:none;font-size:13px;font-weight:800;color:var(--deep)}
+    .next-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}.next-links a{min-height:44px;display:inline-flex;align-items:center;padding:8px 10px;border-radius:10px;background:#eef4f5;color:var(--deep);font-size:13px;font-weight:700;text-decoration:none}
+    .stay-guide{margin-top:24px;padding:20px;border-radius:23px;background:#eef4f5;border:1px solid var(--line)}.stay-guide h2{font-size:22px;margin:8px 0 10px}.stay-guide p{font-size:14px;line-height:1.8}.stay-guide .stay-note{font-size:12px;color:#52676a}
+    a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
     footer{margin-top:30px;color:var(--muted);font-size:12px;line-height:1.7}
   </style>
   <link rel="stylesheet" href="/izukyu-tsunagaru-map/inu-to-izu/site-nav.css">
@@ -53,7 +58,7 @@
   <span class="status">2026年10月8日確認｜5件掲載</span>
 </section>
 <div class="rail"><strong>🚃 車なしの犬旅にも。</strong><p>熱海は電車で入りやすいのが強み。来宮駅から歩ける熱海梅園、熱海駅からバスで行けるACAO FORESTなど、電車＋徒歩・バスで組み立てやすい場所から掲載しています。</p></div>
-<nav class="jump" aria-label="カテゴリ"><a href="#walk">🌿 歩く</a><a href="#eat">🍴 食べる</a><a href="#play">🎡 景色・体験</a></nav>
+<nav class="jump" aria-label="カテゴリ"><a href="#walk">🌿 歩く</a><a href="#eat">🍴 食べる</a><a href="#play">🎡 景色・体験</a><a href="#stay">🏨 泊まる</a></nav>
 <section class="grid">
   <article class="card walk" id="atami-baien">
     <div class="kicker" id="walk">🌿 歩く｜熱海市観光協会確認済み</div>
@@ -61,7 +66,9 @@
     <div class="tags"><span>ペット同伴可</span><span>リード必須</span><span>来宮駅</span><span>自然散歩</span></div>
     <p class="note">梅・新緑・紅葉を犬と一緒に歩ける熱海の定番散歩スポット。観光協会がペット同伴可と案内しています。</p>
     <ul class="details"><li>リードを外さず、排泄物は持ち帰るなどマナー厳守。</li><li>JR熱海駅から来宮駅まで伊東線で約3分、来宮駅から徒歩約10分。</li><li>住所：静岡県熱海市梅園町8-11。</li></ul>
-    <a class="source" href="https://www.ataminews.gr.jp/courses/22" target="_blank" rel="noopener noreferrer">熱海市観光協会の案内を見る ↗</a>
+    <a class="source" href="https://www.city.atami.lg.jp/shisetsu/bunka/1002057/1002058.html" target="_blank" rel="noopener noreferrer">熱海市公式の施設案内を見る ↗</a>
+    <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%86%B1%E6%B5%B7%E6%A2%85%E5%9C%92%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%86%B1%E6%B5%B7%E5%B8%82%E6%A2%85%E5%9C%92%E7%94%BA8-11" target="_blank" rel="noopener noreferrer">📍 地図・経路を見る ↗</a>
+    <div class="next-links"><a href="#eat">🍴 熱海の食事先</a><a href="#stay">🏨 泊まる場所を探す</a></div>
   </article>
   <article class="card eat" id="blue-nine">
     <div class="kicker" id="eat">🍴 一緒に食べる｜熱海市観光協会確認済み</div>
@@ -69,7 +76,9 @@
     <div class="tags"><span>小型犬〜超大型犬OK</span><span>犬メニュー</span><span>犬グッズ</span><span>カフェ</span></div>
     <p class="note">犬のサイズを問わず一緒に入りやすいカフェ。観光協会では小型犬から超大型犬までOKと案内されています。</p>
     <ul class="details"><li>ワンちゃんメニュー・グッズの案内あり。</li><li>不定休のため来店前に営業状況を確認。</li><li>住所：静岡県熱海市東海岸町4-11 2F。</li></ul>
-    <a class="source" href="https://www.ataminews.gr.jp/courses/22" target="_blank" rel="noopener noreferrer">熱海市観光協会の案内を見る ↗</a>
+    <a class="source" href="https://www.instagram.com/blueninecafe/" target="_blank" rel="noopener noreferrer">店舗公式Instagramを見る ↗</a>
+    <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=blue%20nine%20cafe%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%86%B1%E6%B5%B7%E5%B8%82%E6%9D%B1%E6%B5%B7%E5%B2%B8%E7%94%BA4-11" target="_blank" rel="noopener noreferrer">📍 地図・経路を見る ↗</a>
+    <div class="next-links"><a href="#eat">🍴 熱海の食事先</a><a href="#stay">🏨 泊まる場所を探す</a></div>
   </article>
   <article class="card eat" id="nagisa">
     <div class="kicker">🍴 一緒に食べる｜熱海市観光協会確認済み</div>
@@ -77,7 +86,10 @@
     <div class="tags"><span>テラス席ペットOK</span><span>海を一望</span><span>レストラン</span></div>
     <p class="note">2階レストランの海を望むテラス席でペット同伴OK。犬と海辺を歩く日の食事先に組み込みやすい一軒です。</p>
     <ul class="details"><li>ペット同伴は2階レストランのテラス席。</li><li>火曜定休の案内あり。</li><li>住所：静岡県熱海市渚町10-5 2F。</li></ul>
-    <a class="source" href="https://www.ataminews.gr.jp/courses/22" target="_blank" rel="noopener noreferrer">熱海市観光協会の案内を見る ↗</a>
+    <a class="source" href="https://cafeandrestaurantnagisa.gorp.jp/" target="_blank" rel="noopener noreferrer">Nagisa公式サイトを見る ↗</a>
+    <a class="map-link" href="tel:0557818001">☎ 営業・同伴条件を電話で確認</a>
+    <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Restaurant%20Nagisa%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%86%B1%E6%B5%B7%E5%B8%82%E6%B8%9A%E7%94%BA10-5" target="_blank" rel="noopener noreferrer">📍 地図・経路を見る ↗</a>
+    <div class="next-links"><a href="#eat">🍴 熱海の食事先</a><a href="#stay">🏨 泊まる場所を探す</a></div>
   </article>
   <article class="card walk" id="acao">
     <div class="kicker">🌿 歩く・花・景色｜公式・熱海市観光協会確認済み</div>
@@ -86,6 +98,8 @@
     <p class="note">海を望む広大なガーデンを犬と散策。大型犬も、園内シャトルバスを使わず徒歩で散策する場合は入園可能と案内されています。</p>
     <ul class="details"><li>園内散策時はリード必須。</li><li>建物内へのペット同伴は不可。</li><li>ペット同伴料金は頭数に関わらず別途1,000円の案内。</li><li>JR熱海駅から路線バスで「アカオフォレスト」下車。</li></ul>
     <a class="source" href="https://acao.jp/forest" target="_blank" rel="noopener noreferrer">ACAO FOREST公式を見る ↗</a>
+    <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=ACAO%20FOREST%20%E7%86%B1%E6%B5%B7" target="_blank" rel="noopener noreferrer">📍 地図・経路を見る ↗</a>
+    <div class="next-links"><a href="#eat">🍴 熱海の食事先</a><a href="#stay">🏨 泊まる場所を探す</a></div>
   </article>
   <article class="card play" id="atami-castle-terrace">
     <div class="kicker" id="play">🌊 景色・食べる｜公式確認済み</div>
@@ -94,7 +108,16 @@
     <p class="note">熱海城の「ヒルトップテラス」は、ワンちゃんと一緒に利用できるテラス席を公式案内しています。</p>
     <ul class="details"><li>犬同伴可として確認できるのはレストランのテラス席。</li><li>雨の日はテラス利用不可。</li><li>熱海駅から路線バス＋ロープウェイ等でアクセス可能。犬連れ時は各交通機関の同伴条件も要確認。</li></ul>
     <a class="source" href="https://atamijyo.com/around" target="_blank" rel="noopener noreferrer">熱海城公式の案内を見る ↗</a>
+    <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%86%B1%E6%B5%B7%E5%9F%8E%20%E3%83%92%E3%83%AB%E3%83%88%E3%83%83%E3%83%97%E3%83%86%E3%83%A9%E3%82%B9" target="_blank" rel="noopener noreferrer">📍 地図・経路を見る ↗</a>
+    <div class="next-links"><a href="#eat">🍴 熱海の食事先</a><a href="#stay">🏨 泊まる場所を探す</a></div>
   </article>
+</section>
+<section class="stay-guide" id="stay" aria-labelledby="stay-heading">
+  <div class="eyebrow">熱海観光のあと、どこに泊まる？</div>
+  <h2 id="stay-heading">犬と泊まる場所を探す</h2>
+  <p>この熱海ページでは宿を掲載していません。伊東・伊豆高原など、伊豆の犬と泊まれる宿をエリア別の一覧から探せます。</p>
+  <a class="source" href="../inu-to-izu/stay/">伊豆の犬と泊まれる宿を見る →</a>
+  <p class="stay-note">宿泊できる犬種・大きさ・頭数、食事会場への同伴条件は、各宿の案内で確認してください。</p>
 </section>
 <div class="area-nav">ほかのエリア：<a href="../inu-to-ito/">犬と伊東。</a> ・ <a href="../inu-to-nakaizu/">犬と中伊豆。</a> ・ <a href="../inu-to-higashiizu/">犬と東伊豆。</a> ・ <a href="../inu-to-kawazu/">犬と河津。</a> ・ <a href="../inu-to-shimoda/">犬と下田。</a> ・ <a href="../inu-to-minamiizu/">犬と南伊豆。</a> ・ <a href="../inu-to-nishiizu/">犬と西伊豆。</a> ・ <a href="../inu-to-matsuzaki/">犬と松崎。</a></div>
 <footer>掲載情報は2026年10月8日に各施設公式サイト・熱海市観光協会「あたみニュース」等で確認した内容です。犬種・頭数・利用可能エリア・料金・営業内容は変更される場合があるため、訪問前に各施設の最新案内をご確認ください。</footer>
