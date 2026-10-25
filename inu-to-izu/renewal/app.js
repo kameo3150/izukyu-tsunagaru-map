@@ -48,7 +48,7 @@
   }
   function render() {
     const query = state.query.toLocaleLowerCase('ja-JP').trim();
-    shown = spots.filter(spot => spot.reviewStatus !== 'pending' && (state.category === 'all' || spot.categories.includes(state.category)) && (state.area === 'all' || spot.region === state.area) && (!query || [spot.name,spot.area,spot.regionLabel,spot.note,...spot.tags].join(' ').toLocaleLowerCase('ja-JP').includes(query)) && (!state.large || spot.largeEvidence) && (!state.indoor || spot.indoorEvidence) && (!state.fresh || spot.reviewStatus === 'reviewed') && (!state.saved || saved.has(spot.id)));
+    shown = spots.filter(spot => spot.reviewStatus !== 'pending' && Boolean(safeUrl(spot.sourceUrl)) && (state.category === 'all' || spot.categories.includes(state.category)) && (state.area === 'all' || spot.region === state.area) && (!query || [spot.name,spot.area,spot.regionLabel,spot.note,...spot.tags].join(' ').toLocaleLowerCase('ja-JP').includes(query)) && (!state.large || spot.largeEvidence) && (!state.indoor || spot.indoorEvidence) && (!state.fresh || spot.reviewStatus === 'reviewed') && (!state.saved || saved.has(spot.id)));
     shown.sort((a,b) => Number(b.reviewStatus==='reviewed') - Number(a.reviewStatus==='reviewed'));
     $('results').innerHTML = shown.slice(0,state.limit).map(card).join('');
     $('result-count').textContent = `${state.saved?'保存した場所：':''}${shown.length}件 ${shown.length > state.limit ? `／ ${state.limit}件を表示` : ''}`;
@@ -127,9 +127,20 @@
   $('detail-close').addEventListener('click',()=>$('detail').close());
   document.querySelectorAll('[data-close]').forEach(button=>button.addEventListener('click',()=>$(button.dataset.close).close()));
   $('privacy-open').addEventListener('click',()=>$('privacy').showModal());$('credits-open').addEventListener('click',()=>$('credits').showModal());
-  $('consent-no').addEventListener('click',()=>{metrics.setConsent(false);$('consent-result').textContent='計測しない設定にしました。';});
-  $('consent-yes').addEventListener('click',()=>{metrics.setConsent(true);$('consent-result').textContent=config.mode==='preview'?'この確認版では、許可しても外部送信しません。':'アクセス計測を許可しました。';});
+  function consentChoice(yes) {
+    metrics.setConsent(yes);
+    $('consent-banner').hidden = true;
+    $('consent-result').textContent = config.mode === 'preview' ? 'この確認版では外部送信しません。' : yes ? 'アクセス計測を許可しました。' : '計測しない設定にしました。';
+  }
+  $('consent-no').addEventListener('click',()=>consentChoice(false));
+  $('consent-yes').addEventListener('click',()=>consentChoice(true));
+  $('banner-consent-no').addEventListener('click',()=>consentChoice(false));
+  $('banner-consent-yes').addEventListener('click',()=>consentChoice(true));
+  if (config.mode === 'live') {
+    $('privacy-copy').textContent = '許可した場合に限り、Googleアナリティクスで閲覧と広告クリックを集計します。拒否しても検索や保存はそのまま利用できます。';
+    try { $('consent-banner').hidden = localStorage.getItem(config.ownerOptOutKey) === '1' || localStorage.getItem(config.consentKey) !== null; } catch (_) { $('consent-banner').hidden = false; }
+  }
   window.addEventListener('popstate',()=>{applyUrl();render();});
   applyUrl();syncSaved();
-  fetch('data/spots.json').then(response=>{if(!response.ok)throw Error('data');return response.json();}).then(data=>{spots=data;render();}).catch(()=>{$('error').hidden=false;$('result-count').textContent='情報を取得できませんでした';});
+  fetch(new URL('data/spots.json', document.currentScript.src)).then(response=>{if(!response.ok)throw Error('data');return response.json();}).then(data=>{spots=data;render();}).catch(()=>{$('error').hidden=false;$('result-count').textContent='情報を取得できませんでした';});
 })();
