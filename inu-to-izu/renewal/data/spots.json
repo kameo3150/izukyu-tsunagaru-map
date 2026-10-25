@@ -1,0 +1,2242 @@
+[
+  {
+    "id": "atami-atami-baien",
+    "name": "熱海梅園",
+    "area": "梅園町・JR来宮駅から徒歩約10分",
+    "type": "walk",
+    "tags": [
+      "ペット同伴可",
+      "リード必須",
+      "来宮駅",
+      "自然散歩"
+    ],
+    "note": "梅・新緑・紅葉を犬と一緒に歩ける熱海の定番散歩スポット。観光協会がペット同伴可と案内しています。",
+    "details": [
+      "リードを外さず、排泄物は持ち帰るなどマナー厳守。",
+      "JR熱海駅から来宮駅まで伊東線で約3分、来宮駅から徒歩約10分。",
+      "住所：静岡県熱海市梅園町8-11。"
+    ],
+    "sourceUrl": "https://www.city.atami.lg.jp/shisetsu/bunka/1002057/1002058.html",
+    "sourceLabel": "熱海市公式の施設案内を見る ↗",
+    "region": "atami",
+    "regionLabel": "熱海",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-atami/#atami-baien",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "walk"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "atami-blue-nine",
+    "name": "Blue nine cafe",
+    "area": "東海岸町・サンビーチから徒歩数分",
+    "type": "eat",
+    "tags": [
+      "小型犬〜超大型犬OK",
+      "犬メニュー",
+      "犬グッズ",
+      "カフェ"
+    ],
+    "note": "犬のサイズを問わず一緒に入りやすいカフェ。観光協会では小型犬から超大型犬までOKと案内されています。",
+    "details": [
+      "ワンちゃんメニュー・グッズの案内あり。",
+      "不定休のため来店前に営業状況を確認。",
+      "住所：静岡県熱海市東海岸町4-11 2F。"
+    ],
+    "sourceUrl": "https://www.instagram.com/blueninecafe/",
+    "sourceLabel": "店舗公式Instagramを見る ↗",
+    "region": "atami",
+    "regionLabel": "熱海",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-atami/#blue-nine",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false
+  },
+  {
+    "id": "atami-nagisa",
+    "name": "Café & Restaurant Nagisa",
+    "area": "渚町・海沿い",
+    "type": "eat",
+    "tags": [
+      "テラス席ペットOK",
+      "海を一望",
+      "レストラン"
+    ],
+    "note": "2階レストランの海を望むテラス席でペット同伴OK。犬と海辺を歩く日の食事先に組み込みやすい一軒です。",
+    "details": [
+      "ペット同伴は2階レストランのテラス席。",
+      "火曜定休の案内あり。",
+      "住所：静岡県熱海市渚町10-5 2F。"
+    ],
+    "sourceUrl": "https://cafeandrestaurantnagisa.gorp.jp/",
+    "sourceLabel": "Nagisa公式サイトを見る ↗",
+    "region": "atami",
+    "regionLabel": "熱海",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-atami/#nagisa",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "atami-acao",
+    "name": "ACAO FOREST",
+    "area": "上多賀・熱海駅からバスでアクセス",
+    "type": "walk",
+    "tags": [
+      "ペット同伴可",
+      "大型犬可",
+      "花のガーデン",
+      "バス旅"
+    ],
+    "note": "海を望む広大なガーデンを犬と散策。大型犬も、園内シャトルバスを使わず徒歩で散策する場合は入園可能と案内されています。",
+    "details": [
+      "園内散策時はリード必須。",
+      "建物内へのペット同伴は不可。",
+      "ペット同伴料金は頭数に関わらず別途1,000円の案内。",
+      "JR熱海駅から路線バスで「アカオフォレスト」下車。"
+    ],
+    "sourceUrl": "https://acao.jp/forest",
+    "sourceLabel": "ACAO FOREST公式を見る ↗",
+    "region": "atami",
+    "regionLabel": "熱海",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-atami/#acao",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "walk"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false
+  },
+  {
+    "id": "atami-atami-castle-terrace",
+    "name": "熱海城 ヒルトップテラス",
+    "area": "曽我山・熱海城の喫茶＆レストラン",
+    "type": "play",
+    "tags": [
+      "テラス席ワンちゃんOK",
+      "海の景色",
+      "雨天利用不可"
+    ],
+    "note": "熱海城の「ヒルトップテラス」は、ワンちゃんと一緒に利用できるテラス席を公式案内しています。",
+    "details": [
+      "犬同伴可として確認できるのはレストランのテラス席。",
+      "雨の日はテラス利用不可。",
+      "熱海駅から路線バス＋ロープウェイ等でアクセス可能。犬連れ時は各交通機関の同伴条件も要確認。"
+    ],
+    "sourceUrl": "https://atamijyo.com/around",
+    "sourceLabel": "熱海城公式の案内を見る ↗",
+    "region": "atami",
+    "regionLabel": "熱海",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-atami/#atami-castle-terrace",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play",
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "愛犬の駅 伊豆高原",
+    "area": "八幡野・伊豆高原駅周辺",
+    "lat": 34.883376,
+    "lng": 139.1068387,
+    "type": "eat",
+    "emoji": "🍴",
+    "filters": [
+      "eat",
+      "play",
+      "rain",
+      "large"
+    ],
+    "tags": [
+      "店内犬同伴OK",
+      "屋内・屋外ドッグラン",
+      "大型犬OK",
+      "陶芸体験"
+    ],
+    "note": "カフェ、屋内外ドッグラン、ショップ、陶芸体験がまとまった犬連れ向け複合施設。雨の日にも使いやすいスポットです。",
+    "details": [
+      "店内席・テラス席とも犬同伴OK。",
+      "公式・伊東観光ガイドで大型犬OKを確認。",
+      "屋内ドッグランがあり雨天時にも利用可能。",
+      "住所：静岡県伊東市八幡野1135-1。"
+    ],
+    "sourceUrl": "https://www.welovedogs.jp/station/",
+    "sourceLabel": "愛犬の駅 公式サイト",
+    "id": "ito-1",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "eat",
+      "play",
+      "run"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": true
+  },
+  {
+    "name": "伊豆ぐらんぱる公園",
+    "area": "富戸",
+    "lat": 34.905473,
+    "lng": 139.120825,
+    "type": "play",
+    "emoji": "🎡",
+    "filters": [
+      "play"
+    ],
+    "tags": [
+      "犬同伴入園OK",
+      "昼は1m以内リード",
+      "夜はキャリー・カート"
+    ],
+    "note": "昼と夜で犬の入園条件が異なるので注意。デイタイムは1m以内のリード、ナイトタイムは専用キャリーまたはペットカートが必要です。",
+    "details": [
+      "昼：1m以内のリードで入園可。",
+      "夜：専用キャリーまたはペットカートを使用。",
+      "夜はリードのみ・抱っこでの入園不可。",
+      "住所：静岡県伊東市富戸1090。"
+    ],
+    "sourceUrl": "https://www.granpal.com/information/faq/",
+    "sourceLabel": "公式FAQを見る",
+    "id": "ito-2",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "伊豆シャボテン動物公園",
+    "area": "富戸・大室山麓",
+    "lat": 34.906976,
+    "lng": 139.1008846,
+    "type": "play",
+    "emoji": "🌵",
+    "filters": [
+      "play"
+    ],
+    "tags": [
+      "犬同伴入園OK",
+      "1m以内リード",
+      "テラス席利用可"
+    ],
+    "note": "園内は犬同伴で見学できますが、動物の放し飼いエリアなど一部は同伴不可。食堂街はテラス席を利用できます。",
+    "details": [
+      "園内では1m以内のリードが必要。",
+      "バードパラダイス、カンガルーの丘など一部エリアは同伴不可。",
+      "飲食店内は同伴不可、食堂街テラス席は利用可。",
+      "予防接種を受けていないペットは利用不可。"
+    ],
+    "sourceUrl": "https://izushaboten.com/information/pet/",
+    "sourceLabel": "公式ペット案内を見る",
+    "id": "ito-3",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "大室山登山リフト",
+    "area": "池・大室山",
+    "lat": 34.9076345,
+    "lng": 139.0969309,
+    "type": "play",
+    "emoji": "⛰️",
+    "filters": [
+      "play"
+    ],
+    "tags": [
+      "体高45cm以下",
+      "抱っこでリフト",
+      "1m以内リード",
+      "山頂散歩"
+    ],
+    "note": "体高45cm以下の犬は抱っこでリフトに同乗できます。山頂のお鉢めぐりは約1kmで、犬との散歩にも案内されています。",
+    "details": [
+      "同伴できる犬は体高45cm以下。",
+      "リフト乗車中は犬をしっかり抱っこ。",
+      "施設内では1m以内のリード。",
+      "犬のリフト運賃は無料。"
+    ],
+    "sourceUrl": "https://omuroyama.com/guidelines/",
+    "sourceLabel": "公式ガイドラインを見る",
+    "id": "ito-4",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "play",
+      "walk"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "ウブドの森 伊豆高原",
+    "area": "富戸",
+    "lat": 34.8975022,
+    "lng": 139.1251794,
+    "type": "stay",
+    "emoji": "🏨",
+    "filters": [
+      "stay",
+      "rain",
+      "large"
+    ],
+    "tags": [
+      "愛犬温泉リゾート",
+      "屋内・屋外ドッグラン",
+      "大型犬対応客室",
+      "犬用食事"
+    ],
+    "note": "和とバリを組み合わせた愛犬同伴の温泉リゾート。屋外と屋内のノーリードスペースがあり、雨の日も遊べます。",
+    "details": [
+      "全18室のうち大型犬対応客室4室。",
+      "屋外ドッグラン・屋内ドッグランを用意。",
+      "狂犬病・混合ワクチンの証明が必要。",
+      "住所：静岡県伊東市富戸1007-21。"
+    ],
+    "sourceUrl": "https://www.ubudnomori.jp/stay/",
+    "sourceLabel": "ウブドの森 公式案内",
+    "id": "ito-5",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": true
+  },
+  {
+    "name": "愛犬お宿 伊豆高原",
+    "area": "富戸",
+    "lat": 34.902429,
+    "lng": 139.123629,
+    "type": "stay",
+    "emoji": "🏨",
+    "filters": [
+      "stay",
+      "rain"
+    ],
+    "tags": [
+      "愛犬同伴宿",
+      "屋内・屋外ドッグラン",
+      "レストラン同伴",
+      "温泉"
+    ],
+    "note": "愛犬と館内で過ごしやすい温泉リゾート。屋内・屋外ドッグラン、愛犬同伴可能なレストランやカラオケなどを備えています。",
+    "details": [
+      "屋内・屋外それぞれにドッグラン。",
+      "レストランはリード着用で愛犬同伴可能。",
+      "公式料金案内では愛犬の頭数制限なし。",
+      "住所：静岡県伊東市富戸1038-91。"
+    ],
+    "sourceUrl": "https://www.welovedogs.jp/hotel/",
+    "sourceLabel": "愛犬お宿 公式サイト",
+    "id": "ito-6",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": true
+  },
+  {
+    "name": "レジーナリゾート伊豆無鄰",
+    "area": "八幡野",
+    "lat": 34.8811521,
+    "lng": 139.1196152,
+    "type": "stay",
+    "emoji": "♨️",
+    "filters": [
+      "stay",
+      "large"
+    ],
+    "tags": [
+      "全犬種サイズ制限なし",
+      "約200㎡ドッグラン",
+      "全室露天温泉",
+      "愛犬と食事"
+    ],
+    "note": "愛犬と泊まることを前提に設計された和の湯宿。犬種・大きさの制限はなく、宿泊者専用ドッグランもあります。",
+    "details": [
+      "犬種・大きさによる宿泊制限なし。",
+      "宿泊者専用の約200㎡人工芝ドッグラン。",
+      "全室に露天温泉と内湯。",
+      "住所：静岡県伊東市八幡野1086-88。"
+    ],
+    "sourceUrl": "https://www.regina-resorts.com/murin/faq/",
+    "sourceLabel": "伊豆無鄰 公式FAQ",
+    "id": "ito-7",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false
+  },
+  {
+    "name": "わんわんパラダイス プレミア 伊豆高原",
+    "area": "八幡野・城ヶ崎",
+    "lat": 34.88505625,
+    "lng": 139.12173652,
+    "type": "stay",
+    "emoji": "🏨",
+    "filters": [
+      "stay",
+      "rain"
+    ],
+    "tags": [
+      "愛犬リゾート",
+      "dog park",
+      "愛犬同伴レストラン",
+      "2026年リニューアル"
+    ],
+    "note": "旧Wan’s Resort 城ヶ崎海岸。2026年に「わんわんパラダイス プレミア 伊豆高原」としてリニューアルし、愛犬同伴の滞在を提供しています。",
+    "details": [
+      "2026年2月リニューアルオープン。",
+      "相模湾を望むレストランで愛犬同伴の食事。",
+      "dog parkなど犬向け設備あり。",
+      "住所：静岡県伊東市八幡野1092-2。"
+    ],
+    "sourceUrl": "https://iconia.co.jp/hotel-wan-wan-paradise-premier-izukogen-shizuoka",
+    "sourceLabel": "グループ公式サイト",
+    "id": "ito-8",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "わんわんパラダイス 伊豆高原",
+    "area": "大室高原",
+    "lat": 34.90693094,
+    "lng": 139.1091714,
+    "type": "stay",
+    "emoji": "🐕",
+    "filters": [
+      "stay",
+      "rain"
+    ],
+    "tags": [
+      "ホテル・コテージ",
+      "屋内プレイスペース",
+      "複数ドッグラン",
+      "愛犬と食事"
+    ],
+    "note": "ホテル客室と一棟貸しコテージを備えた愛犬リゾート。2026年のリニューアルで全天候型の屋内プレイスペースも新設されています。",
+    "details": [
+      "2026年4月リニューアルオープン。",
+      "複数のドッグランと全天候型屋内プレイスペース。",
+      "館内は一部を除きリード着用で愛犬と一緒に過ごせる案内。",
+      "住所：静岡県伊東市大室高原3-490。"
+    ],
+    "sourceUrl": "https://iconia.co.jp/hotel-wan-wan-paradise-izukogen-shizuoka",
+    "sourceLabel": "グループ公式サイト",
+    "id": "ito-9",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "ほったらかしの宿 ゆうふり伊豆高原",
+    "area": "富戸・大室高原",
+    "lat": 34.9032487,
+    "lng": 139.1125278,
+    "type": "stay",
+    "emoji": "🏡",
+    "filters": [
+      "stay",
+      "rain",
+      "large"
+    ],
+    "tags": [
+      "ドッグフレンドリールーム",
+      "大型犬OK",
+      "3つのドッグラン",
+      "犬用温水プール"
+    ],
+    "note": "セルフサービス型の宿。犬と泊まれる専用客室があり、屋内外3か所のドッグランと犬専用温水プールを備えています。",
+    "details": [
+      "大型犬や多頭飼い向けの広い客室あり。",
+      "屋外・屋上・屋内の3つのドッグラン。",
+      "公式FAQでは犬種・サイズ・頭数に制限なし。",
+      "住所：静岡県伊東市富戸1317-2132。"
+    ],
+    "sourceUrl": "https://yufuri-izukogen.com/dogfriendly/",
+    "sourceLabel": "ゆうふり公式 愛犬案内",
+    "id": "ito-10",
+    "region": "ito",
+    "regionLabel": "伊東・伊豆高原",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-ito/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false
+  },
+  {
+    "id": "higashiizu-spot-1",
+    "name": "熱川オーシャンリゾート",
+    "area": "熱川温泉・奈良本",
+    "type": "stay",
+    "tags": [
+      "ドッグフレンドリールーム",
+      "ドッグラン",
+      "大型犬可",
+      "温泉"
+    ],
+    "note": "ワンちゃんと泊まれる専用客室があり、宿泊者用の天然芝ドッグランも利用できます。",
+    "details": [
+      "1室につき小型犬3頭・中型犬2頭・大型犬1頭までが基本。",
+      "ワンちゃん同伴エリアはドッグフレンドリールームとドッグラン。",
+      "各種ワクチン・予防接種などの利用条件あり。",
+      "住所：静岡県賀茂郡東伊豆町奈良本字熱川989-1。"
+    ],
+    "sourceUrl": "https://atagawa-ocean-resort.com/petroom/",
+    "sourceLabel": "公式の愛犬宿泊案内を見る ↗",
+    "region": "higashiizu",
+    "regionLabel": "東伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-higashiizu/#spot-1",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false
+  },
+  {
+    "id": "higashiizu-spot-2",
+    "name": "伊豆アニマルキングダム",
+    "area": "稲取",
+    "type": "play",
+    "tags": [
+      "犬同伴入園OK",
+      "大型犬OK",
+      "ドッグラン",
+      "一部飲食同伴可"
+    ],
+    "note": "犬種・大きさを問わず、ワンちゃんと一緒に入園できます。園内にはドッグランもあります。",
+    "details": [
+      "伸縮リードは2m以内に固定。園内動物との接触は不可。",
+      "狂犬病予防注射済票と混合ワクチン接種証明書の提示が必要。",
+      "展望レストランと軽食コーナーはペット同伴で利用可能と案内されています。",
+      "住所：静岡県賀茂郡東伊豆町稲取3344。"
+    ],
+    "sourceUrl": "https://izu-animal-kingdom.com/calendar-tickets/",
+    "sourceLabel": "公式のペット利用案内を見る ↗",
+    "region": "higashiizu",
+    "regionLabel": "東伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-higashiizu/#spot-2",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play",
+      "run"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false
+  },
+  {
+    "id": "higashiizu-spot-3",
+    "name": "稲取細野高原",
+    "area": "稲取",
+    "type": "walk",
+    "tags": [
+      "高原散歩",
+      "リード必須",
+      "自然",
+      "絶景"
+    ],
+    "note": "広い草原と海の景色を楽しめる高原。公式の利用ルールでは、犬の散歩はリード着用が必要とされています。",
+    "details": [
+      "ノーリードでの犬の散歩は禁止。",
+      "私有地のため、立入禁止区域や採取禁止など現地ルールを守って利用。",
+      "カーナビ目安：静岡県賀茂郡東伊豆町稲取3150-3。"
+    ],
+    "sourceUrl": "https://www.e-izu.org/inatorihosonokougen/",
+    "sourceLabel": "公式の利用ルールを見る ↗",
+    "region": "higashiizu",
+    "regionLabel": "東伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-higashiizu/#spot-3",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "walk"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "lat": 34.7956,
+    "lng": 139.02
+  },
+  {
+    "name": "和みの犬宿 むつみ庵",
+    "area": "見高・今井浜",
+    "lat": 34.76396,
+    "lng": 139.0056923,
+    "type": "stay",
+    "emoji": "🏨",
+    "rain": true,
+    "large": true,
+    "verified": true,
+    "tags": [
+      "犬宿",
+      "約200坪ドッグラン",
+      "大型犬OK",
+      "客室専用展望温泉"
+    ],
+    "note": "相模湾と伊豆七島を望む高台の犬宿。愛犬と一緒に食事を楽しめ、広い芝生のドッグランがあります。",
+    "details": [
+      "客室：全5室。客室には専用展望温泉を備えています。",
+      "ドッグラン：約200坪の「わんこ広場」。大型犬も利用できます。",
+      "食事：金目鯛や地魚など伊豆の食材を使った料理を、わんちゃんと一緒に食堂で楽しめます。",
+      "住所：静岡県賀茂郡河津町見高777-7。"
+    ],
+    "kicker": "公式・観光協会確認済み",
+    "sourceUrl": "https://mutsumian.com/",
+    "sourceLabel": "むつみ庵公式サイトを見る",
+    "id": "kawazu-1",
+    "region": "kawazu",
+    "regionLabel": "河津",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-kawazu/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false
+  },
+  {
+    "name": "湯宿 桜ざか",
+    "area": "峰温泉",
+    "lat": 34.747349449061,
+    "lng": 138.9856894255,
+    "type": "stay",
+    "emoji": "♨️",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "全3室",
+      "天然温泉",
+      "屋上ドッグラン",
+      "犬用設備"
+    ],
+    "note": "客室3室だけの、わんこと泊まれる天然温泉宿。竹林の露天風呂と屋上のわんこ広場が特徴です。",
+    "details": [
+      "客室：和室3室。河津桜並木まで車で約5分。",
+      "犬用設備：屋上ドッグラン、シャンプー用ドッグバス、トリミングテーブル、入口足洗い場。",
+      "食事：わんちゃんと一緒にダイニングで食事できます。",
+      "住所：静岡県賀茂郡河津町峰1325-486。"
+    ],
+    "kicker": "公式・観光協会確認済み",
+    "sourceUrl": "https://www.kawazu-sakurazaka.com/",
+    "sourceLabel": "桜ざか公式サイトを見る",
+    "id": "kawazu-2",
+    "region": "kawazu",
+    "regionLabel": "河津",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-kawazu/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "ホテル四季の蔵",
+    "area": "峰",
+    "lat": 34.74933343,
+    "lng": 138.98209537,
+    "type": "stay",
+    "emoji": "🏨",
+    "rain": true,
+    "large": true,
+    "verified": true,
+    "tags": [
+      "ペットリゾート",
+      "温泉",
+      "ペットスパ",
+      "食事あり"
+    ],
+    "note": "河津の高台にあるペットと泊まれるリゾートホテル。温泉と伊豆の食材を使った食事を愛犬と楽しめます。",
+    "details": [
+      "客室：観光協会掲載では全18室。",
+      "設備：貸切温泉やペットスパを備えたペットリゾート。",
+      "食事：地元食材を取り入れた和食・洋食を提供。",
+      "住所：静岡県賀茂郡河津町峰1169-13。河津駅から送迎案内あり。"
+    ],
+    "kicker": "公式観光情報確認済み",
+    "sourceUrl": "https://www.shikinokura.com/",
+    "sourceLabel": "四季の蔵公式サイトを見る",
+    "id": "kawazu-3",
+    "region": "kawazu",
+    "regionLabel": "河津",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-kawazu/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "わんこと家族の宿 浬世人（リセット）",
+    "area": "沢田",
+    "lat": 34.7708309,
+    "lng": 138.9873461,
+    "type": "stay",
+    "emoji": "🏡",
+    "rain": true,
+    "large": true,
+    "verified": true,
+    "tags": [
+      "一日一組・一グループ",
+      "犬宿",
+      "温泉",
+      "森林浴"
+    ],
+    "note": "自然の中でわんこと家族がのんびり過ごせる宿。一日一組または一グループのみの受け入れです。",
+    "details": [
+      "観光協会掲載では全5室。",
+      "一日一組または一グループのみ。わんことの旅行に慣れていない方にも配慮した宿です。",
+      "住所：静岡県賀茂郡河津町沢田196-4。",
+      "送迎は要相談。"
+    ],
+    "kicker": "公式観光情報確認済み",
+    "sourceUrl": "https://kawazu-reset.com/",
+    "sourceLabel": "浬世人公式サイトを見る",
+    "id": "kawazu-4",
+    "region": "kawazu",
+    "regionLabel": "河津",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-kawazu/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "Sea Shell KAWAZU House",
+    "area": "峰・河津川沿い",
+    "lat": 34.75317824,
+    "lng": 138.98677135,
+    "type": "stay",
+    "emoji": "🏠",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "一棟貸し",
+      "愛犬同伴OK",
+      "河津川沿い",
+      "専用デッキ"
+    ],
+    "note": "河津川沿いにある愛犬同伴OKの一棟貸し。周囲を気にせず自分たちのペースで滞在できます。",
+    "details": [
+      "一棟貸し：2階建て1LDK。専用デッキはBBQ利用可。",
+      "愛犬の受け入れは1匹までと公式案内に記載されています。",
+      "河津桜を楽しみやすい河津川沿いの立地。",
+      "住所：静岡県賀茂郡河津町峰653-23。"
+    ],
+    "kicker": "公式情報確認済み",
+    "sourceUrl": "https://www.sea-shell.jp/dogxvacation/",
+    "sourceLabel": "公式の愛犬宿泊案内を見る",
+    "id": "kawazu-5",
+    "region": "kawazu",
+    "regionLabel": "河津",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-kawazu/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "AMMOS PET FRIENDLY HOTEL",
+    "area": "外浦・柿崎",
+    "lat": 34.6731041,
+    "lng": 138.9745751,
+    "type": "stay",
+    "emoji": "🏨",
+    "rain": true,
+    "large": true,
+    "verified": true,
+    "tags": [
+      "全6室",
+      "全室露天風呂",
+      "外浦海岸目の前",
+      "愛犬専用プール",
+      "犬用料理"
+    ],
+    "note": "外浦海岸そばにある全6室のペットフレンドリーホテル。愛犬と同室で泊まれ、館内にも犬向け設備がそろっています。",
+    "details": [
+      "客室：Type-A 36.1㎡／Type-B 42.3㎡／Type-C 67.8㎡。全室露天風呂付き、Type-Cはサウナ付き。",
+      "愛犬設備：客室ケージ、愛犬専用プール、トリミングコーナー、ペット用ドライヤー、ペット用温泉。",
+      "食事：夕食は地元食材を使った懐石料理。朝食は和食または洋食。ワンちゃん向け料理も用意。",
+      "ロケーション：〒415-0013 静岡県下田市柿崎782-1。外浦海岸が目の前。",
+      "宿泊条件：基本的なしつけができた室内飼育のワンちゃん。狂犬病・5種以上の混合ワクチン接種証明書（1年以内）の提示案内あり。"
+    ],
+    "kicker": "公式情報確認済み",
+    "sourceUrl": "https://ammos.jp/",
+    "sourceLabel": "AMMOS公式サイトを見る",
+    "id": "shimoda-1",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "下田プリンスホテル",
+    "area": "白浜",
+    "lat": 34.6966015,
+    "lng": 138.9734914,
+    "type": "stay",
+    "emoji": "🏨",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "愛犬と宿泊",
+      "ドッグラン",
+      "ビーチアクセス",
+      "犬同伴カフェあり"
+    ],
+    "note": "公式サイトでワンちゃん同伴宿泊、ドッグラン、ビーチアクセス、犬と一緒に利用できる「Two Tails cafe」を確認。犬種・宿泊条件は予約前に公式案内を確認してください。",
+    "kicker": "公式情報確認済み",
+    "id": "shimoda-2",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "下田海中水族館",
+    "area": "下田市街",
+    "lat": 34.66608,
+    "lng": 138.94598,
+    "type": "play",
+    "emoji": "🐬",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "中小型犬",
+      "カート・ケージ",
+      "抱っこ可",
+      "館内同伴条件あり"
+    ],
+    "note": "犬は条件付きで入館可能。歩かせる施設ではないため、カートやケージなどを準備してお出かけください。",
+    "kicker": "公式情報確認済み",
+    "id": "shimoda-3",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "reviewed",
+    "checked": "2026/10/25",
+    "sourceUrl": "https://shimoda-aquarium.com/information/information-2/",
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "details": [
+      "中小型犬（10kg程度。10kgを超えない大型犬の幼犬も可）。カート・ケージ・バッグを利用。抱っこは小型犬のみ。通路などに降ろさないこと。",
+      "カート・ケージ・バッグ。小型犬のみ抱っこ可",
+      "館内の飲食店舗はペット同伴不可。屋外移動があり、雨の日でも完全屋内ではありません。"
+    ],
+    "sources": [
+      [
+        "犬同伴条件・駐車場",
+        "https://shimoda-aquarium.com/information/information-2/"
+      ],
+      [
+        "料金・営業時間",
+        "https://shimoda-aquarium.com/information/fee-business-hours/"
+      ]
+    ],
+    "price": "中学生以上2,500円／4歳〜小学生1,250円。犬の料金は要確認",
+    "hours": "9:30〜16:30（公式掲載：2026/12/31まで）",
+    "closed": "最新の営業予定は公式で確認",
+    "parking": "無料・乗用車200台",
+    "rule": "中小型犬（10kg程度。10kgを超えない大型犬の幼犬も可）。カート・ケージ・バッグを利用。抱っこは小型犬のみ。通路などに降ろさないこと。",
+    "phone": "0558223567"
+  },
+  {
+    "name": "ドッグガーデン びわの木",
+    "area": "本郷",
+    "lat": 34.69465965,
+    "lng": 138.93984851,
+    "type": "eat",
+    "emoji": "☕",
+    "rain": true,
+    "large": true,
+    "verified": true,
+    "tags": [
+      "ドッグカフェ",
+      "芝生のドッグガーデン",
+      "店内同伴OK",
+      "大型犬OK",
+      "犬用品"
+    ],
+    "note": "公式サイトで、犬グッズ専門店とワンコが遊べる喫茶店、芝生のドッグガーデン併設を確認。住所は静岡県下田市本郷1-1、営業時間は10:00〜18:00、火・水曜定休（正月・祝祭日は営業）。全犬種対応の案内も確認できます。",
+    "kicker": "公式情報確認済み",
+    "id": "shimoda-4",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": true
+  },
+  {
+    "name": "south cafe",
+    "area": "吉佐美",
+    "lat": 34.66342608,
+    "lng": 138.91634651,
+    "type": "eat",
+    "emoji": "☕",
+    "rain": true,
+    "large": true,
+    "verified": true,
+    "tags": [
+      "カフェ",
+      "店内犬同伴OK",
+      "ペット可",
+      "駐車場あり"
+    ],
+    "note": "吉佐美のカフェ。Honda Dogには店内同伴可の紹介がありますが、情報は2018年時点です。",
+    "kicker": "確認済み",
+    "id": "shimoda-5",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "pending",
+    "checked": "2026/10/25",
+    "sourceUrl": "https://www.southcafe.net/",
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "details": [
+      "現在の犬同伴可否・利用できる席・犬のサイズを、来店前に必ず電話で確認してください。",
+      "同伴可否から電話確認が必要",
+      "下田市吉佐美918-2。店舗公式の営業案内は11:00〜18:00・木曜休。臨時変更は公式で確認。"
+    ],
+    "sources": [
+      [
+        "店舗公式（営業時間）",
+        "https://www.southcafe.net/"
+      ]
+    ],
+    "price": "飲食代",
+    "hours": "11:00〜18:00",
+    "closed": "木曜",
+    "parking": "現在の条件は未確認",
+    "rule": "現在の犬同伴可否・利用できる席・犬のサイズを、来店前に必ず電話で確認してください。",
+    "phone": "0558255015"
+  },
+  {
+    "name": "FermenCo.",
+    "area": "吉佐美・入田浜",
+    "lat": 34.65801496,
+    "lng": 138.92516372,
+    "type": "eat",
+    "emoji": "🍕",
+    "rain": false,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "ピッツェリア",
+      "ペット同伴可",
+      "テラス席あり",
+      "駐車場あり"
+    ],
+    "note": "住所は静岡県下田市吉佐美348-37。Yahoo!マップでペット同伴可、食べログでテラス席ありを確認。犬同伴の細かな条件は来店前に店舗へ確認するのがおすすめです。Yahoo!マップの施設ピン位置を座標に採用しています。",
+    "kicker": "確認済み",
+    "id": "shimoda-6",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "ハナカフェ",
+    "area": "白浜",
+    "lat": 34.686760739095,
+    "lng": 138.9730264049,
+    "type": "eat",
+    "emoji": "☕",
+    "rain": false,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "カフェ",
+      "テラス席ペット可",
+      "リード着用",
+      "白浜ビーチ前"
+    ],
+    "note": "白浜の海を望むカフェ。犬と一緒に利用できるのはテラス席です。",
+    "kicker": "公式観光情報確認済み",
+    "id": "shimoda-7",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "reviewed",
+    "checked": "2026/10/25",
+    "sourceUrl": "https://www.shimoda-city.info/eat/3006",
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "details": [
+      "テラス席のみ・リード着用。雨や強風の日は、テラスの利用可否を電話で確認してください。",
+      "リード・排泄物袋",
+      "下田市白浜2752-16／無料駐車場10台。犬のサイズ・頭数の制限は掲載元で確認できていません。"
+    ],
+    "sources": [
+      [
+        "同伴条件・営業案内（下田市観光協会）",
+        "https://www.shimoda-city.info/eat/3006"
+      ]
+    ],
+    "price": "飲食代。掲載例：パンケーキ990円",
+    "hours": "7:00〜19:00",
+    "closed": "年中無休（観光協会掲載）",
+    "parking": "無料・10台",
+    "rule": "テラス席のみ・リード着用。雨や強風の日は、テラスの利用可否を電話で確認してください。",
+    "phone": "0558226002"
+  },
+  {
+    "name": "下田時計台フロント",
+    "area": "東本郷・下田駅前",
+    "lat": 34.6792563,
+    "lng": 138.94491944,
+    "type": "eat",
+    "emoji": "🍴",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "駅前",
+      "ペット可",
+      "ケース必須",
+      "食事・お土産"
+    ],
+    "note": "下田市観光協会の掲載情報でペット可を確認。ケース等に入れることが条件で、他のお客様への配慮が必要です。住所は静岡県下田市東本郷1-5-2。",
+    "kicker": "公式観光情報確認済み",
+    "id": "shimoda-8",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "Beach Front Seretis",
+    "area": "吉佐美・入田浜",
+    "lat": 34.656896,
+    "lng": 138.92443,
+    "type": "eat",
+    "emoji": "🍔",
+    "rain": false,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "レストラン",
+      "ウッドデッキ",
+      "ペット可",
+      "入田浜"
+    ],
+    "note": "入田浜そばでランチ。犬同伴の案内はウッドデッキ内です。",
+    "kicker": "公式観光情報確認済み",
+    "id": "shimoda-9",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "reviewed",
+    "checked": "2026/10/25",
+    "sourceUrl": "https://www.shimoda-city.info/eat/3100",
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "details": [
+      "ウッドデッキ内ペット可。犬種・サイズ・頭数、席の利用可否は来店前に電話で確認。",
+      "リード・排泄物袋",
+      "雨の日の店内同伴は確認できていません。ディナーは事前連絡が必要。"
+    ],
+    "sources": [
+      [
+        "同伴条件・営業案内（下田市観光協会）",
+        "https://www.shimoda-city.info/eat/3100"
+      ],
+      [
+        "店舗公式",
+        "https://seretis.jp/"
+      ]
+    ],
+    "price": "飲食代。現行メニュー価格は公式へ",
+    "hours": "ランチ11:30〜15:00（L.O.14:00）",
+    "closed": "火・水曜",
+    "parking": "無料・7台",
+    "rule": "ウッドデッキ内ペット可。犬種・サイズ・頭数、席の利用可否は来店前に電話で確認。",
+    "phone": "0558221173"
+  },
+  {
+    "name": "晴レ屋",
+    "area": "外浦・柿崎",
+    "lat": 34.67288281,
+    "lng": 138.97306806,
+    "type": "stay",
+    "emoji": "🏨",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "愛犬と宿泊",
+      "温泉宿",
+      "外浦海岸",
+      "ペット歓迎"
+    ],
+    "note": "下田市観光協会で「ペット愛犬と泊まる」宿として掲載。外浦海岸すぐの天然温泉宿です。住所は静岡県下田市柿崎804。犬種や頭数など詳細条件は予約前に宿へ確認してください。",
+    "kicker": "公式観光情報確認済み",
+    "id": "shimoda-10",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "貸別荘 ビラ小沢",
+    "area": "須崎",
+    "lat": 34.66569151,
+    "lng": 138.97144882,
+    "type": "stay",
+    "emoji": "🏡",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "貸別荘",
+      "ペット可",
+      "一戸建て",
+      "BBQ可"
+    ],
+    "note": "下田市観光協会でペット可の一戸建て貸別荘として掲載。住所は静岡県下田市須崎156-7。棟ごとのペット条件は予約時に確認してください。",
+    "kicker": "公式観光情報確認済み",
+    "id": "shimoda-11",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "活魚料理 新田",
+    "area": "三丁目・ペリーロード近く",
+    "lat": 34.67249538,
+    "lng": 138.94276645,
+    "type": "eat",
+    "emoji": "🐟",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "和食",
+      "ペット同伴室あり",
+      "個室",
+      "ペリーロード"
+    ],
+    "note": "下田市観光協会の掲載情報で、ペットと同伴できる部屋が1室あることを確認。住所は静岡県下田市三丁目2-12。利用時は事前確認がおすすめです。",
+    "kicker": "公式観光情報確認済み",
+    "id": "shimoda-12",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "伊豆海鮮 瀧",
+    "area": "一丁目・下田駅近く",
+    "lat": 34.677674509092,
+    "lng": 138.94513766482,
+    "type": "eat",
+    "emoji": "🐟",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "海鮮",
+      "ペット条件付き",
+      "ケージ等",
+      "駅近"
+    ],
+    "note": "下田市観光協会の掲載情報で、ペットはケージ等に入れる条件で利用可能と確認。住所は静岡県下田市一丁目4-27。",
+    "kicker": "公式観光情報確認済み",
+    "id": "shimoda-13",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "むさし",
+    "area": "一丁目・下田駅近く",
+    "lat": 34.67785283,
+    "lng": 138.94379068,
+    "type": "eat",
+    "emoji": "🥢",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "そば・うどん",
+      "ペット条件付き",
+      "ケージ等",
+      "駅近"
+    ],
+    "note": "下田市観光協会の掲載情報で、ペット同伴はケージ等を使用する条件付きで可と確認。住所は静岡県下田市一丁目13-1。",
+    "kicker": "公式観光情報確認済み",
+    "id": "shimoda-14",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "sourceUrl": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "name": "おおはし緑水苑",
+    "area": "須崎",
+    "lat": 34.6613283,
+    "lng": 138.9629046,
+    "type": "stay",
+    "emoji": "🏡",
+    "rain": true,
+    "large": false,
+    "verified": true,
+    "tags": [
+      "トレーラーコテージ",
+      "ペット同伴宿泊",
+      "BBQデッキ",
+      "須崎"
+    ],
+    "note": "公式サイトと下田市観光協会で、ワンちゃんと一緒に宿泊できるトレーラーコテージを確認。住所は静岡県下田市須崎1576。犬種・頭数などの利用条件は予約前に公式案内を確認してください。",
+    "kicker": "公式情報確認済み",
+    "sourceUrl": "https://www.shimoda-ryokusuien.com/",
+    "sourceLabel": "公式サイトを見る",
+    "id": "shimoda-15",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "minamiizu-spot-1",
+    "name": "ペットと泊まれる温泉宿 バロン",
+    "area": "下賀茂",
+    "type": "play",
+    "tags": [
+      "ペット同伴",
+      "源泉かけ流し",
+      "客室テラス",
+      "ドッグラン利用"
+    ],
+    "note": "ペットと一緒にくつろげる温泉宿。露天風呂・テラス付き客室では、テラスをプライベートなドッグランとして使えます。",
+    "details": [
+      "露天風呂・テラス付き客室とペンション棟洋室を用意。",
+      "犬のほか、猫や小動物の受け入れ案内もあります。",
+      "犬の宿泊料金は公式案内で別途設定あり。",
+      "住所：静岡県賀茂郡南伊豆町下賀茂3-1。"
+    ],
+    "sourceUrl": "https://baron-minamiizu.com/",
+    "sourceLabel": "バロン公式サイトを見る ↗",
+    "region": "minamiizu",
+    "regionLabel": "南伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-minamiizu/#spot-1",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "minamiizu-spot-2",
+    "name": "愛犬と癒しのアジアンリゾート 海宿 太陽人",
+    "area": "下流",
+    "type": "play",
+    "tags": [
+      "全犬種同一料金",
+      "室内飼い犬",
+      "猫・小動物も可",
+      "愛犬宿"
+    ],
+    "note": "南伊豆の海沿いにある愛犬宿。公式料金案内でワンちゃん・猫・小動物の同伴料金と頭数条件を明記しています。",
+    "details": [
+      "ワンちゃんは全犬種同一料金。",
+      "原則、お一人様あたり2頭まで。相談可。",
+      "室内飼い犬のみとの条件があります。",
+      "住所：静岡県賀茂郡南伊豆町下流1391-1。"
+    ],
+    "sourceUrl": "https://taiyoubito.net/",
+    "sourceLabel": "太陽人公式サイトを見る ↗",
+    "region": "minamiizu",
+    "regionLabel": "南伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-minamiizu/#spot-2",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "minamiizu-spot-3",
+    "name": "ログハウス愛犬かしま",
+    "area": "弓ヶ浜・湊",
+    "type": "play",
+    "tags": [
+      "弓ヶ浜徒歩約30秒",
+      "専用ドッグラン",
+      "愛犬同室",
+      "ログハウス"
+    ],
+    "note": "弓ヶ浜のすぐ近くにある、愛犬と泊まれるカナディアンログハウス。専用ドッグランとペット洗い場も案内されています。",
+    "details": [
+      "素泊まり型でキッチン付き。長めの滞在にも対応。",
+      "隣接の食事処では宿泊者以外の犬同伴にも条件付きで対応。",
+      "犬の宿泊条件は予約前に公式の最新案内を確認。",
+      "住所：静岡県賀茂郡南伊豆町湊898-1。"
+    ],
+    "sourceUrl": "https://izu-kashima.com/rog-house/",
+    "sourceLabel": "愛犬かしま公式サイトを見る ↗",
+    "region": "minamiizu",
+    "regionLabel": "南伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-minamiizu/#spot-3",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "lat": 34.6328,
+    "lng": 138.8917
+  },
+  {
+    "id": "minamiizu-spot-4",
+    "name": "ペンション弓ヶ浜",
+    "area": "弓ヶ浜・湊",
+    "type": "play",
+    "tags": [
+      "一部客室ペット同伴OK",
+      "弓ヶ浜徒歩約2分",
+      "温泉",
+      "貸切風呂"
+    ],
+    "note": "弓ヶ浜海岸まで徒歩約2分。公式サイトで、一部客室がペット同伴OKと案内されています。",
+    "details": [
+      "源泉かけ流し岩風呂を案内。",
+      "ペット同伴できるのは一部客室のため、予約時の確認が必要。",
+      "2026年8月から館内全域禁煙との案内あり。",
+      "住所：静岡県賀茂郡南伊豆町湊896-13。"
+    ],
+    "sourceUrl": "https://www.yumigahama.jp/",
+    "sourceLabel": "ペンション弓ヶ浜公式サイトを見る ↗",
+    "region": "minamiizu",
+    "regionLabel": "南伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-minamiizu/#spot-4",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nishiizu-spot-1",
+    "name": "きがるな・・宿・シーガル",
+    "area": "仁科",
+    "type": "play",
+    "tags": [
+      "ペットと泊まれる宿",
+      "ドッグラン",
+      "犬用洗い場",
+      "海まで徒歩約4分"
+    ],
+    "note": "愛犬と西伊豆を楽しむことをコンセプトにしたペット宿。ドッグランとワンちゃん専用の洗い場を備えています。",
+    "details": [
+      "西伊豆町観光協会が「ペットと泊まれる宿」として掲載。",
+      "ペット可の素泊まり・食事付き宿泊プランあり。",
+      "客室数16室。",
+      "住所：静岡県賀茂郡西伊豆町仁科521。"
+    ],
+    "sourceUrl": "https://www.nishiizu-kankou.com/stay/seagull",
+    "sourceLabel": "西伊豆町観光協会の案内を見る ↗",
+    "region": "nishiizu",
+    "regionLabel": "西伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nishiizu/#spot-1",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "lat": 34.775,
+    "lng": 138.775
+  },
+  {
+    "id": "nishiizu-spot-2",
+    "name": "IZU GLAMPING RESORT Ishiki 385",
+    "area": "一色",
+    "type": "play",
+    "tags": [
+      "ペット同伴可",
+      "テントサイト限定",
+      "グランピング",
+      "BBQ"
+    ],
+    "note": "西伊豆の自然の中にあるグランピング施設。ペット同伴できる部屋はテントサイトのみと案内されています。",
+    "details": [
+      "ロッジ3棟・テント3棟。",
+      "ペット同伴可能なのはテントサイトのみ。",
+      "BBQや焚き火、サウナなどの設備あり。",
+      "住所：静岡県賀茂郡西伊豆町一色385。"
+    ],
+    "sourceUrl": "https://izuglam385.jp/",
+    "sourceLabel": "Ishiki 385公式サイトを見る ↗",
+    "region": "nishiizu",
+    "regionLabel": "西伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nishiizu/#spot-2",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nishiizu-spot-3",
+    "name": "堂ヶ島ランドホピア",
+    "area": "浮島・堂ヶ島",
+    "type": "play",
+    "tags": [
+      "犬同伴可",
+      "一戸建てコテージ",
+      "屋根付きBBQ",
+      "海が近い"
+    ],
+    "note": "堂ヶ島の海辺にある一戸建てコテージ。公式サイトで犬の宿泊料金を設定し、ペット同伴可能施設として案内しています。",
+    "details": [
+      "犬は1匹につき1泊2,200円と公式案内に記載。",
+      "鳥・ウサギもケージ等の条件付きで受け入れ。",
+      "猫は2025年9月から受け入れ中止。",
+      "海開き中の落居海岸の海水浴エリアはペット禁止。"
+    ],
+    "sourceUrl": "https://hopia.jp/dougashima/",
+    "sourceLabel": "堂ヶ島ランドホピア公式を見る ↗",
+    "region": "nishiizu",
+    "regionLabel": "西伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nishiizu/#spot-3",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nishiizu-spot-4",
+    "name": "Dog salon & Hotel SANTA",
+    "area": "仁科・乗浜海岸近く",
+    "type": "play",
+    "tags": [
+      "ドッグホテル",
+      "一時預かり",
+      "トリミング",
+      "大型犬対応料金あり"
+    ],
+    "note": "乗浜海岸から徒歩約1分。旅行中の一時預かりやドッグホテル、トリミングに対応する古民家ドッグサロンです。",
+    "details": [
+      "ドッグホテルは小型・中型・大型犬それぞれ料金設定あり。",
+      "時間単位の一時預かりにも対応。",
+      "シャンプー・カットコースあり。",
+      "住所：静岡県賀茂郡西伊豆町仁科1888-1。"
+    ],
+    "sourceUrl": "https://www.nishiizu-kankou.com/stay/dog-salon-hotel-santa",
+    "sourceLabel": "西伊豆町観光協会の案内を見る ↗",
+    "region": "nishiizu",
+    "regionLabel": "西伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nishiizu/#spot-4",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false,
+    "lat": 34.782,
+    "lng": 138.767
+  },
+  {
+    "id": "matsuzaki-spot-1",
+    "name": "へんな村キャンプ場",
+    "area": "小杉原",
+    "type": "play",
+    "tags": [
+      "ペットOK",
+      "キャンプ場",
+      "星空",
+      "ドラム缶風呂"
+    ],
+    "note": "松崎の山あいにあるキャンプ場。松崎町観光協会の「ペットOK」施設として掲載されています。",
+    "details": [
+      "区画が広く、星空を楽しめるキャンプ場。",
+      "ドラム缶風呂あり。",
+      "観光協会掲載料金：小学生以上1人1,500円～。",
+      "住所：静岡県賀茂郡松崎町小杉原543-2。"
+    ],
+    "sourceUrl": "https://izumatsuzakinet.com/stay/hennamurakyanpuzyou",
+    "sourceLabel": "松崎町観光協会の案内を見る ↗",
+    "region": "matsuzaki",
+    "regionLabel": "松崎",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-matsuzaki/#spot-1",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "matsuzaki-spot-2",
+    "name": "山芳園",
+    "area": "桜田",
+    "type": "play",
+    "tags": [
+      "ペットOK",
+      "温泉",
+      "源泉掛け流し",
+      "露天風呂"
+    ],
+    "note": "桜田温泉の旅館。松崎町観光協会でペットOK、温泉・源泉掛け流しの宿として掲載されています。",
+    "details": [
+      "内風呂・貸切風呂・露天風呂。",
+      "素泊まりOK。",
+      "総部屋数10室。",
+      "住所：静岡県賀茂郡松崎町桜田569-1。"
+    ],
+    "sourceUrl": "https://izumatsuzakinet.com/stay/sanpouen",
+    "sourceLabel": "松崎町観光協会の案内を見る ↗",
+    "region": "matsuzaki",
+    "regionLabel": "松崎",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-matsuzaki/#spot-2",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "matsuzaki-spot-3",
+    "name": "なか川",
+    "area": "大澤",
+    "type": "play",
+    "tags": [
+      "ペットOK",
+      "民宿",
+      "素泊まりOK",
+      "川遊び"
+    ],
+    "note": "目の前を川が流れる自然の中の民宿。松崎町観光協会のペットOK施設として掲載されています。",
+    "details": [
+      "川遊びや渓流釣りを楽しめる環境。",
+      "1泊2食・朝食付き・素泊まりプランを掲載。",
+      "内風呂あり。",
+      "住所：静岡県賀茂郡松崎町大澤42-1。"
+    ],
+    "sourceUrl": "https://izumatsuzakinet.com/stay/nakagawa",
+    "sourceLabel": "松崎町観光協会の案内を見る ↗",
+    "region": "matsuzaki",
+    "regionLabel": "松崎",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-matsuzaki/#spot-3",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "matsuzaki-spot-4",
+    "name": "浜道楽",
+    "area": "雲見",
+    "type": "play",
+    "tags": [
+      "ペット同伴可・条件あり",
+      "海まで徒歩5分以内",
+      "露天風呂",
+      "素泊まりOK"
+    ],
+    "note": "雲見の海近くの民宿。観光協会ページでは「ペット同伴可能：条件あり」と明記されています。",
+    "details": [
+      "ペット不可の階・客室もあるため予約時に確認が必要。",
+      "内風呂・露天風呂あり。",
+      "1泊2食・朝食付き・素泊まりプランを掲載。",
+      "住所：静岡県賀茂郡松崎町雲見385-1。"
+    ],
+    "sourceUrl": "https://izumatsuzakinet.com/stay/hamadouraku",
+    "sourceLabel": "松崎町観光協会の案内を見る ↗",
+    "region": "matsuzaki",
+    "regionLabel": "松崎",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-matsuzaki/#spot-4",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "matsuzaki-spot-5",
+    "name": "御宿あさか",
+    "area": "松崎",
+    "type": "play",
+    "tags": [
+      "ペットOK",
+      "一棟貸切",
+      "源泉掛け流し",
+      "海水浴場徒歩約1分"
+    ],
+    "note": "松崎海水浴場の近くにある一棟貸切旅館。松崎町観光協会でペットOK施設として掲載されています。",
+    "details": [
+      "源泉掛け流しの露天風呂・内湯。",
+      "最大収容人数29名。",
+      "プレイルーム・宴会場・キッチンあり。",
+      "住所：静岡県賀茂郡松崎町松崎361。"
+    ],
+    "sourceUrl": "https://izumatsuzakinet.com/stay/asaka",
+    "sourceLabel": "松崎町観光協会の案内を見る ↗",
+    "region": "matsuzaki",
+    "regionLabel": "松崎",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-matsuzaki/#spot-5",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nakaizu-izu-dog-land",
+    "name": "伊豆ドッグランド",
+    "area": "伊豆市年川・修善寺エリア",
+    "type": "run",
+    "tags": [
+      "2万1000坪",
+      "大型犬エリア",
+      "小型犬エリア",
+      "キャンプ"
+    ],
+    "note": "超大型犬も走れる広大なドッグラン。フリー・大型犬・小型犬・初心者エリアがあり、林間コースやセルフドッグシャンプーも備えています。",
+    "details": [
+      "ドッグランは1日フリー料金で入退場自由。",
+      "犬連れ限定のキャンプ利用も可能（要予約）。",
+      "住所：静岡県伊豆市年川964。"
+    ],
+    "sourceUrl": "https://www.izudogland.com/",
+    "sourceLabel": "公式サイトを見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#izu-dog-land",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "lat": 34.9734,
+    "lng": 138.9305
+  },
+  {
+    "id": "nakaizu-nijinosato",
+    "name": "修善寺 虹の郷",
+    "area": "修善寺",
+    "type": "walk",
+    "tags": [
+      "犬同伴入園OK",
+      "ドッグラン",
+      "ロムニー鉄道",
+      "犬専用休憩所"
+    ],
+    "note": "一年を通じて犬と入園でき、園内散策に加えてドッグランや犬と乗れるロムニー鉄道も楽しめます。",
+    "details": [
+      "ワンちゃんの入園料金は無料。",
+      "入園時に承諾書の提出が必要。",
+      "冷暖房管理の犬連れ専用休憩所もあります。"
+    ],
+    "sourceUrl": "https://www.nijinosato.com/information/post-1210/",
+    "sourceLabel": "公式の犬連れ案内を見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#nijinosato",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "walk",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nakaizu-kizuna",
+    "name": "修善寺 絆＋",
+    "area": "修善寺温泉",
+    "type": "stay",
+    "tags": [
+      "ペット温泉宿",
+      "屋内外ドッグラン",
+      "部屋食",
+      "犬用浴槽"
+    ],
+    "note": "全17室の温泉宿。愛犬と部屋で過ごせ、屋内外には80坪を超える大型ドッグランを備えています。",
+    "details": [
+      "温泉は源泉掛け流し。",
+      "離れ特別室にはワンちゃん用浴槽の案内あり。",
+      "住所：静岡県伊豆市修善寺3372-1。"
+    ],
+    "sourceUrl": "https://kanko.city.izu.shizuoka.jp/sightseeing/shuzenji-kizunaprus/",
+    "sourceLabel": "伊豆市観光情報を見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#kizuna",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": true
+  },
+  {
+    "id": "nakaizu-laforet",
+    "name": "ホテルラフォーレ修善寺 ドッグコテージ",
+    "area": "大平・修善寺",
+    "type": "stay",
+    "tags": [
+      "ドッグコテージ",
+      "ドッグラン",
+      "大型犬1頭まで",
+      "犬用備品"
+    ],
+    "note": "愛犬同伴専用のコテージ。小・中型犬2頭または大型犬1頭までの案内があり、近くにドッグランと遊歩道があります。",
+    "details": [
+      "53㎡・全16室。",
+      "ケージ、ペットシーツ、食器など犬用備品あり。",
+      "ワクチン・狂犬病予防注射の証明書提出が必要。"
+    ],
+    "sourceUrl": "https://www.laforet.co.jp/shuzenji/room/cottage_dog.html",
+    "sourceLabel": "公式ドッグコテージ案内を見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#laforet",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": true,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nakaizu-east-winds",
+    "name": "中伊豆 EAST WINDS VILLAGE",
+    "area": "下白岩・中伊豆ワイナリー敷地内",
+    "type": "stay",
+    "tags": [
+      "グランピング",
+      "ペット同伴可",
+      "天然芝ドッグラン",
+      "BBQ"
+    ],
+    "note": "ぶどう畑と富士山を望むグランピングリゾート。ペット同伴可能で、天然芝のドッグランがあります。",
+    "details": [
+      "全8室。",
+      "朝食・夕食あり。",
+      "住所：静岡県伊豆市下白岩1433-21。"
+    ],
+    "sourceUrl": "https://kanko.city.izu.shizuoka.jp/sightseeing/nakaizu-eastwinds_village/",
+    "sourceLabel": "伊豆市観光情報を見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#east-winds",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "lat": 34.9766,
+    "lng": 138.9942
+  },
+  {
+    "id": "nakaizu-lscamp",
+    "name": "LScamp中伊豆",
+    "area": "地蔵堂・萬城の滝そば",
+    "type": "stay",
+    "tags": [
+      "ペット同伴可",
+      "キャンプ",
+      "川遊び",
+      "萬城の滝徒歩1分"
+    ],
+    "note": "森と渓流に囲まれたキャンプ場。ペット同伴可で、川遊びや自然散策と組み合わせやすい立地です。",
+    "details": [
+      "オートサイト・森林サイト・バンガローあり。",
+      "管理棟営業時間8:30〜18:00。",
+      "住所：静岡県伊豆市地蔵堂776-1。"
+    ],
+    "sourceUrl": "https://kanko.city.izu.shizuoka.jp/sightseeing/lscampnakaizu/",
+    "sourceLabel": "伊豆市観光情報を見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#lscamp",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "stay"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nakaizu-green-pocket",
+    "name": "グリーンポケット",
+    "area": "戸倉野・中伊豆",
+    "type": "eat",
+    "tags": [
+      "犬OK",
+      "デッキ席",
+      "カフェ",
+      "ランチ"
+    ],
+    "note": "中伊豆の里山にあるカフェ＆ガーデン。伊豆市観光情報で「わんちゃんもOK・デッキスペースあり」と案内されています。",
+    "details": [
+      "石窯焙煎コーヒーとランチ。",
+      "営業時間・定休日は季節変更があるため最新案内を確認。",
+      "住所：静岡県伊豆市戸倉野343-1。"
+    ],
+    "sourceUrl": "https://kanko.city.izu.shizuoka.jp/sightseeing/greenpocket/",
+    "sourceLabel": "伊豆市観光情報を見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#green-pocket",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "eat"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nakaizu-fish-farm",
+    "name": "中伊豆フィッシュファーム",
+    "area": "宮上・中伊豆",
+    "type": "play",
+    "tags": [
+      "ペット同伴可",
+      "マス釣り",
+      "手ぶらOK",
+      "釣った魚を焼ける"
+    ],
+    "note": "道具レンタル付きで楽しめるマス釣り場。ペット同伴可能と公式観光情報に明記されています。",
+    "details": [
+      "エサ釣り専用。",
+      "釣った魚はその場で焼いて食べられます。",
+      "住所：静岡県伊豆市宮上160-3。"
+    ],
+    "sourceUrl": "https://kanko.city.izu.shizuoka.jp/sightseeing/nakaizu-fishing/",
+    "sourceLabel": "伊豆市観光情報を見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#fish-farm",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "play"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "nakaizu-jouren",
+    "name": "浄蓮の滝",
+    "area": "湯ケ島・天城",
+    "type": "walk",
+    "tags": [
+      "滝散歩",
+      "無料ドッグラン",
+      "駐車場無料",
+      "自然"
+    ],
+    "note": "伊豆を代表する滝。入口向かい側の駐車場にドッグランが整備されており、犬旅の休憩にも使えます。",
+    "details": [
+      "ドッグラン利用無料。",
+      "滝見学の所要時間目安は約30分。",
+      "住所：静岡県伊豆市湯ケ島892-14。"
+    ],
+    "sourceUrl": "https://kanko.city.izu.shizuoka.jp/sightseeing/jourenfalls/",
+    "sourceLabel": "伊豆市観光情報を見る ↗",
+    "region": "nakaizu",
+    "regionLabel": "中伊豆",
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-nakaizu/#jouren",
+    "reviewStatus": "inherited",
+    "checked": null,
+    "filters": [],
+    "categories": [
+      "walk",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "shimoda-beach",
+    "name": "外浦海岸",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "type": "walk",
+    "categories": [
+      "walk"
+    ],
+    "tags": [],
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "filters": [],
+    "area": "外浦",
+    "note": "移動の少ないひとときに。外浦の海を眺めながら、愛犬のペースで砂浜を歩く過ごし方です。",
+    "details": [
+      "散歩中はリードを着用。海岸をドッグランとして放さず、排泄物は持ち帰ってください。",
+      "リード・排泄物袋・水・足拭きタオル",
+      "海況や足元を確認し、波が高い日は海に近づかないでください。"
+    ],
+    "sourceUrl": "https://ammos.jp/",
+    "sources": [
+      [
+        "ホテル公式・海岸紹介",
+        "https://ammos.jp/"
+      ]
+    ],
+    "reviewStatus": "reviewed",
+    "checked": "2026/10/25",
+    "price": "—（海岸の散歩。駐車場は別途確認）",
+    "hours": "屋外の海岸。海況と明るさを見て利用",
+    "closed": "営業時間のある施設ではありません",
+    "parking": "ホテルから徒歩で。外来駐車場の料金・開放状況は未確認",
+    "rule": "散歩中はリードを着用。海岸をドッグランとして放さず、排泄物は持ち帰ってください。",
+    "phone": "",
+    "largeEvidence": false,
+    "indoorEvidence": false,
+    "lat": 34.67508,
+    "lng": 138.97244
+  },
+  {
+    "id": "shimoda-ropeway",
+    "name": "下田ロープウェイ",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "type": "play",
+    "categories": [
+      "play"
+    ],
+    "tags": [],
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "filters": [],
+    "area": "下田駅前",
+    "note": "山頂公園の遊歩道ではリードで散歩ができ、ドッグラン「わんView広場」も案内されています。",
+    "details": [
+      "小型犬のみ。室内とロープウェイ乗車時は専用ケージ・キャリーバッグ等を利用。",
+      "専用キャリー・リード。抱っこだけでの乗車は不可",
+      "階段・坂あり。車椅子・ベビーカー使用不可の案内があります。ペット預かりなし。03/16〜10/15は17:00まで、上り最終16:30。犬連れ10%割引は購入前に公式条件を確認。"
+    ],
+    "sourceUrl": "https://ropeway.co.jp/qa/",
+    "sources": [
+      [
+        "犬同伴条件・所要時間",
+        "https://ropeway.co.jp/qa/"
+      ],
+      [
+        "料金・運行時間",
+        "https://ropeway.co.jp/price/"
+      ],
+      [
+        "ドッグラン・犬連れ割引案内",
+        "https://ropeway.co.jp/dockrun/"
+      ]
+    ],
+    "reviewStatus": "reviewed",
+    "checked": "2026/10/25",
+    "price": "往復：中学生以上1,500円／小学生750円。犬の料金は要確認",
+    "hours": "10/16〜03/15：8:45〜16:45／上り最終16:15",
+    "closed": "悪天候時は運休あり",
+    "parking": "無料・35台（乗車中のみ）",
+    "rule": "小型犬のみ。室内とロープウェイ乗車時は専用ケージ・キャリーバッグ等を利用。",
+    "phone": "0558221211",
+    "largeEvidence": false,
+    "indoorEvidence": false
+  },
+  {
+    "id": "shimoda-kayak",
+    "name": "KAI’TO シーカヤック",
+    "region": "shimoda",
+    "regionLabel": "下田",
+    "type": "play",
+    "categories": [
+      "play"
+    ],
+    "tags": [],
+    "legacyPage": "/izukyu-tsunagaru-map/inu-to-shimoda/",
+    "filters": [],
+    "area": "外浦",
+    "note": "犬と参加できるシーカヤック体験。講習を含め約１時間半。天候と海況、予約状況により開催できない場合があります。",
+    "details": [
+      "犬用ライフベストは持参。リード着用、混合ワクチンと狂犬病予防接種が必要。お盆期間は対象外。",
+      "犬用ライフベスト持参・リード・混合ワクチンと狂犬病予防接種",
+      "人用ライフベスト等は料金に含む。犬用は持参。一般予約が多い日は受入不可の場合あり。"
+    ],
+    "sourceUrl": "https://www.seakayaking.jp/?page_id=2145",
+    "sources": [
+      [
+        "料金・予約・犬の参加条件",
+        "https://www.seakayaking.jp/?page_id=2145"
+      ]
+    ],
+    "reviewStatus": "reviewed",
+    "checked": "2026/10/25",
+    "price": "大人12,000円／小学生7,000円／犬3,000円（税込）",
+    "hours": "4〜10月／10:00または13:00開始、約1時間半（講習含む）",
+    "closed": "お盆不可。海況・予約状況により開催不可",
+    "parking": "集合場所・駐車場は予約時に主催者へ確認",
+    "rule": "犬用ライフベストは持参。リード着用、混合ワクチンと狂犬病予防接種が必要。お盆期間は対象外。",
+    "phone": "0558226779",
+    "largeEvidence": true,
+    "indoorEvidence": false
+  }
+]
