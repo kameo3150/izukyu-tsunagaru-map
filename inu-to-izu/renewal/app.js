@@ -84,8 +84,14 @@
       const popup=document.createElement('div'),title=document.createElement('b'),button=document.createElement('button');
       title.textContent=spot.name;button.textContent='犬の条件を見る';button.type='button';button.addEventListener('click',()=>openSpot(spot.id));popup.append(title,document.createElement('br'),button);marker.bindPopup(popup).addTo(markers);bounds.push([spot.lat,spot.lng]);
     }
-    map.invalidateSize();if(bounds.length)map.fitBounds(bounds,{padding:[28,28],maxZoom:13});
-    $('map-status').textContent=`検索結果${shown.length}件のうち、位置データがある${bounds.length}件を表示。`;
+    map.invalidateSize();
+    if(bounds.length)map.fitBounds(bounds,{padding:[28,28],maxZoom:13});
+    else map.setView([34.85,138.98],10);
+    const missing = shown.length - bounds.length;
+    $('map-status').textContent = bounds.length
+      ? `検索結果${shown.length}件のうち、${bounds.length}件を地図に表示。${missing ? `位置未登録の${missing}件は一覧から経路を確認できます。` : ''}`
+      : shown.length ? `この条件の${shown.length}件は位置を確認中です。一覧の「経路を見る」をご利用ください。` : '条件に合う施設はありません。';
+    $('map-fallback').textContent = missing ? `位置未登録を含む${shown.length}件を一覧で見る` : '一覧で見る';
   }
   async function ensureMap() {
     if (map) { renderMap(); return; }

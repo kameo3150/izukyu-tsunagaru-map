@@ -28,7 +28,12 @@
       "walk"
     ],
     "largeEvidence": false,
-    "indoorEvidence": false
+    "indoorEvidence": false,
+    "lat": 35.0976490119569,
+    "lng": 139.059448953442,
+    "locationSource": "https://www.city.atami.lg.jp/shisetsu/bunka/1002057/1002058.html",
+    "locationMapUrl": "https://maps.google.com/maps?q=35.0976490119569,139.059448953442",
+    "locationChecked": "2026/10/26"
   },
   {
     "id": "atami-blue-nine",
@@ -331,7 +336,7 @@
       "狂犬病・混合ワクチンの証明が必要。",
       "住所：静岡県伊東市富戸1007-21。"
     ],
-    "sourceUrl": "https://www.ubudnomori.jp/stay/",
+    "sourceUrl": "https://www.ubudnomori.jp/",
     "sourceLabel": "ウブドの森 公式案内",
     "id": "ito-5",
     "region": "ito",
@@ -1409,7 +1414,7 @@
     "id": "minamiizu-spot-1",
     "name": "ペットと泊まれる温泉宿 バロン",
     "area": "下賀茂",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "ペット同伴",
       "源泉かけ流し",
@@ -1432,7 +1437,7 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play",
+      "stay",
       "run"
     ],
     "largeEvidence": false,
@@ -1442,7 +1447,7 @@
     "id": "minamiizu-spot-2",
     "name": "愛犬と癒しのアジアンリゾート 海宿 太陽人",
     "area": "下流",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "全犬種同一料金",
       "室内飼い犬",
@@ -1465,7 +1470,7 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
     "indoorEvidence": false
@@ -1474,7 +1479,7 @@
     "id": "minamiizu-spot-3",
     "name": "ログハウス愛犬かしま",
     "area": "弓ヶ浜・湊",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "弓ヶ浜徒歩約30秒",
       "専用ドッグラン",
@@ -1497,7 +1502,7 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play",
+      "stay",
       "run"
     ],
     "largeEvidence": false,
@@ -1509,7 +1514,7 @@
     "id": "minamiizu-spot-4",
     "name": "ペンション弓ヶ浜",
     "area": "弓ヶ浜・湊",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "一部客室ペット同伴OK",
       "弓ヶ浜徒歩約2分",
@@ -1532,7 +1537,7 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
     "indoorEvidence": false
@@ -1541,7 +1546,7 @@
     "id": "nishiizu-spot-1",
     "name": "きがるな・・宿・シーガル",
     "area": "仁科",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "ペットと泊まれる宿",
       "ドッグラン",
@@ -1564,7 +1569,7 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play",
+      "stay",
       "run"
     ],
     "largeEvidence": false,
@@ -1576,7 +1581,7 @@
     "id": "nishiizu-spot-2",
     "name": "IZU GLAMPING RESORT Ishiki 385",
     "area": "一色",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "ペット同伴可",
       "テントサイト限定",
@@ -1599,7 +1604,7 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
     "indoorEvidence": false
@@ -1608,7 +1613,7 @@
     "id": "nishiizu-spot-3",
     "name": "堂ヶ島ランドホピア",
     "area": "浮島・堂ヶ島",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "犬同伴可",
       "一戸建てコテージ",
@@ -1631,10 +1636,15 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
-    "indoorEvidence": false
+    "indoorEvidence": false,
+    "lat": 34.7947704,
+    "lng": 138.7589726,
+    "locationSource": "https://hopia.jp/dougashima/",
+    "locationMapUrl": "https://maps.app.goo.gl/wgmvRAv6avLr442SA",
+    "locationChecked": "2026/10/26"
   },
   {
     "id": "nishiizu-spot-4",
@@ -1674,7 +1684,7 @@
     "id": "matsuzaki-spot-1",
     "name": "へんな村キャンプ場",
     "area": "小杉原",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "ペットOK",
       "キャンプ場",
@@ -1697,16 +1707,21 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
-    "indoorEvidence": false
+    "indoorEvidence": false,
+    "lat": 34.7337395,
+    "lng": 138.8446818,
+    "locationSource": "https://izumatsuzakinet.com/stay/hennamurakyanpuzyou",
+    "locationMapUrl": "https://maps.app.goo.gl/WQtPfB294hwxRzCw8",
+    "locationChecked": "2026/10/26"
   },
   {
     "id": "matsuzaki-spot-2",
     "name": "山芳園",
     "area": "桜田",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "ペットOK",
       "温泉",
@@ -1729,16 +1744,21 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
-    "indoorEvidence": false
+    "indoorEvidence": false,
+    "lat": 34.755977,
+    "lng": 138.796094,
+    "locationSource": "https://izumatsuzakinet.com/stay/sanpouen",
+    "locationMapUrl": "https://maps.app.goo.gl/cCWCTZ5NFN5skwENA",
+    "locationChecked": "2026/10/26"
   },
   {
     "id": "matsuzaki-spot-3",
     "name": "なか川",
     "area": "大澤",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "ペットOK",
       "民宿",
@@ -1761,16 +1781,21 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
-    "indoorEvidence": false
+    "indoorEvidence": false,
+    "lat": 34.7583836,
+    "lng": 138.8256656,
+    "locationSource": "https://izumatsuzakinet.com/stay/nakagawa",
+    "locationMapUrl": "https://maps.app.goo.gl/VLy1DLZ7sECUjxey8",
+    "locationChecked": "2026/10/26"
   },
   {
     "id": "matsuzaki-spot-4",
     "name": "浜道楽",
     "area": "雲見",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "ペット同伴可・条件あり",
       "海まで徒歩5分以内",
@@ -1793,16 +1818,21 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
-    "indoorEvidence": false
+    "indoorEvidence": false,
+    "lat": 34.725728,
+    "lng": 138.744045,
+    "locationSource": "https://izumatsuzakinet.com/stay/hamadouraku",
+    "locationMapUrl": "https://maps.app.goo.gl/CFQEHPGkqZr47iNS6",
+    "locationChecked": "2026/10/26"
   },
   {
     "id": "matsuzaki-spot-5",
     "name": "御宿あさか",
     "area": "松崎",
-    "type": "play",
+    "type": "stay",
     "tags": [
       "ペットOK",
       "一棟貸切",
@@ -1825,10 +1855,15 @@
     "checked": null,
     "filters": [],
     "categories": [
-      "play"
+      "stay"
     ],
     "largeEvidence": false,
-    "indoorEvidence": false
+    "indoorEvidence": false,
+    "lat": 34.753946,
+    "lng": 138.77743,
+    "locationSource": "https://izumatsuzakinet.com/stay/asaka",
+    "locationMapUrl": "https://maps.app.goo.gl/Cxubti1NfnSZFqDf6",
+    "locationChecked": "2026/10/26"
   },
   {
     "id": "nakaizu-izu-dog-land",
@@ -2237,6 +2272,11 @@
     "rule": "犬用ライフベストは持参。リード着用、混合ワクチンと狂犬病予防接種が必要。お盆期間は対象外。",
     "phone": "0558226779",
     "largeEvidence": true,
-    "indoorEvidence": false
+    "indoorEvidence": false,
+    "lat": 34.6752805994326,
+    "lng": 138.97214546068074,
+    "locationSource": "https://www.seakayaking.jp/?page_id=2145",
+    "locationMapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1849791432987!2d138.97214546068074!3d34.6752805994326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60175f2443a090b3%3A0x76af31394a2cc4b8!2zS0FJJ1RP44K344O844Kr44Ok44OD44Kv44K544Kv44O844Or!5e0!3m2!1sja!2sjp!4v1721092694841!5m2!1sja!2sjp",
+    "locationChecked": "2026/10/26"
   }
 ]
