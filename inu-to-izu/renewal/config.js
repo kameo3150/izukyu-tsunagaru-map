@@ -1,6 +1,6 @@
 /* One configuration for the rebuild. Preview never sends analytics. */
 window.DOG_IZU_CONFIG = Object.freeze({
-  mode: location.hostname === 'kameo3150.github.io' && location.pathname === '/izukyu-tsunagaru-map/inu-to-izu/' ? 'live' : 'preview',
+  mode: location.hostname === 'kameo3150.github.io' && /^\/izukyu-tsunagaru-map\/inu-to-izu\/(?:index\.html)?$/.test(location.pathname) ? 'live' : 'preview',
   version: '2026-10-25',
   measurementId: 'G-KT9SG4RDYR',
   propertyId: '555642566',
