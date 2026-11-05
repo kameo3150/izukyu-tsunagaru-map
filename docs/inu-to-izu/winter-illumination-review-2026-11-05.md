@@ -22,3 +22,8 @@ Reused the already generated Jalan general booking A8 ad2TN3WM+E0A98Y+14CS+64JTE
 ## Hotel links completed
 A8 sign-in succeeded. Four actual links generated using the official goods-link form with 犬と伊豆 selected, then captured without modifying their URL parameters. Added corresponding hotel booking blocks to all four venue cards, including disclosure, sources and limitations. JSON stores the generated href and pixel URLs. Partnership screen confirms Jalan lodging program active, nominal1% of reservation amount excluding tax; earnings remain contingent on its approval conditions, not clicks.
 Gotemba dinner plan04292351 explicitly lists dogs,2 dogs,4000yen each,18:30 delivered meal, size/area restrictions. Hamanako plans include dog-welcome meals/room-only/breakfast; venue transfer not timed. PICA official confirms pet lodging but the fetched Jalan plan list does not independently identify a current dog room, so users are explicitly told to confirm/select an eligible cabin before booking; no blanket room promise. Smith official verifies2 pets,7 guests,vaccines,bath/bedding exclusion; Jalan lists petOK plan. No room availability promise.
+
+
+## 宿泊比較の追加
+- ページ上部の総合予約広告を、4宿の比較カードに変更。宿泊形式・犬の条件・食事・会場との関係と、宿別のA8予約リンクを一緒に表示。スマホは1列。
+- A8発行済みのURL・ピクセルをそのまま再利用し、比較部分のクリック位置だけ個別に識別。未確認のサイズ・料金は断定せずプラン確認と表記。予約成果・GA4実受信は未検証。
