@@ -1,0 +1,46 @@
+{
+  "created": "2026-11-05",
+  "source": "A8 official goods-link text form, program s00000005230001, selected publishing site 犬と伊豆",
+  "links": [
+    {
+      "id": "gotemba",
+      "hotel": "山羊の丘コテージ｜御殿場高原 時之栖",
+      "url": "https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad300381%2Fplan%2Fplan04292351%2F",
+      "text": "山羊の丘コテージの犬同伴・夕食付きプランを見る",
+      "pixel": "https://www14.a8.net/0.gif?a8mat=2TN3WM+E0A98Y+14CS+BW8O2",
+      "copy": "光の散歩を、そのまま泊まりの休日に。犬と泊まれる山羊の丘コテージの夕食付きプランへ進めます。夕食は18:30にお部屋へ届くため、鑑賞の時間と合わせて選んでください。",
+      "conditions": "犬は2頭まで、1頭4,000円。大型犬（公式基準25kg以上・体高60cm以上）は不可。接種証明が必要で、浴室・トイレ・洗面所・2階へ犬は入れません。希望日の販売と最新条件は予約画面で確認してください。",
+      "source": "https://www.jalan.net/yad300381/plan/plan04292351/"
+    },
+    {
+      "id": "hamamatsu",
+      "hotel": "わんわんパラダイス 浜名湖",
+      "url": "https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad323701%2Fplan%2F",
+      "text": "わんわんパラダイス浜名湖の犬同伴プランを見る",
+      "pixel": "https://www16.a8.net/0.gif?a8mat=2TN3WM+E0A98Y+14CS+BW8O2",
+      "copy": "夜の鑑賞と組み合わせる、浜名湖エリアの犬同伴宿。素泊まり・朝食付きなどから、夜の予定に合う滞在を選べます。会場と宿の間は車移動を想定してください。",
+      "conditions": "会場の近接・徒歩圏を保証する紹介ではありません。移動時間、食事・チェックインの締切、犬のサイズ・頭数・料金・接種証明を予約前に確認してください。部屋に犬だけを残す留守番は原則不可です。",
+      "source": "https://www.jalan.net/yad323701/pet/"
+    },
+    {
+      "id": "sagamiko",
+      "hotel": "PICAさがみ湖",
+      "url": "https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad309655%2Fplan%2F",
+      "text": "PICAさがみ湖の犬同伴可能な宿泊棟・プランを探す",
+      "pixel": "https://www16.a8.net/0.gif?a8mat=2TN3WM+E0A98Y+14CS+BW8O2",
+      "copy": "さがみ湖MORI MORIと同じリゾート内で、夜まで楽しむ宿泊へ。じゃらんの宿泊プラン一覧から、犬同伴可能な棟と希望日を選ぶ候補です。",
+      "conditions": "すべての宿泊棟が犬同伴可とは限りません。犬同伴を申告し、対応棟を予約前に確認。室内では底のあるケージ等が必要です。犬の宿泊料金、遊園地・イルミの利用、食事の条件は宿泊プランごとに確認してください。",
+      "source": "https://www.pica-resort.jp/sagamiko/about/guidance.html"
+    },
+    {
+      "id": "motherfarm",
+      "hotel": "スミスのいえ富津RIKYU",
+      "url": "https://px.a8.net/svt/ejp?a8mat=2TN3WM+E0A98Y+14CS+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad327856%2Fplan%2F",
+      "text": "スミスのいえ富津RIKYUのペットOKプランを見る",
+      "pixel": "https://www11.a8.net/0.gif?a8mat=2TN3WM+E0A98Y+14CS+BW8O2",
+      "copy": "マザー牧場の近くで、家族だけの一棟貸し。7名定員・ペットOKの素泊まりプランが掲載されており、夜の鑑賞と食事の予定を自由に組み合わせられます。",
+      "conditions": "犬は2頭まで。接種・ノミダニ予防・トイレのしつけが条件。浴室・寝具の利用は不可で、犬用品は持参。周辺道路は冬季凍結する場合があるため、車の冬装備も確認してください。",
+      "source": "https://www.sumisunoie.com/futtsurikyu"
+    }
+  ]
+}
