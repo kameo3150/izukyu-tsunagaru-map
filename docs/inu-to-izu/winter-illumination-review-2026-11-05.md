@@ -15,3 +15,6 @@ Official sources checked Nov5:
 - https://www.motherfarm.co.jp/service/pet/ — signed rules; no retractable lead; excluded buildings/animal areas. No blanket statement all activities accept dogs.
 
 All facts from public official web pages, no calls or visits. No blanket dog-friendly accommodation claim or booking earnings claim. Outside-Izu venues are kept out of the Izu regional facility search.
+
+## Booking route added after user instruction
+Reused the already generated Jalan general booking A8 ad2TN3WM+E0A98Y+14CS+64JTE unchanged (top and bottom). Added ad disclosure and existing booking.js for affiliate_click. Explicitly labels destination as the general booking page without region/dog filters or a specific hotel. No new A8 code fabricated. Existing official event links remain plain links. Hotel-specific ads require creation in A8; current browser presents login form. Candidate hotels still being verified: Gotemba300381, Hamanako323701, Sagamiko309655, Futtsu327856. Do not claim new hotel ads are installed yet.
