@@ -107,7 +107,7 @@
       <div class="tags"><span>犬同伴入園</span><span>大型犬ドッグラン</span><span>犬と乗れるアトラクション</span><span>テラス食事</span></div>
       <p>4施設の中で、いちばん「犬と一緒に遊園地へ来た」感が強い。公式の犬連れ案内では、リバーアイランド、おもしろ自転車、ディノエイジカートなど犬と楽しめるアトラクションを案内しています。</p>
       <ul><li>昼は1m以内のリードで入園。</li><li>「わんわんPark」は小・中型犬エリアと大型犬エリアに分かれています。</li><li>乗り物は運行状況などで変更あり。中・大型犬は利用できない場合があります。</li><li>夜のグランイルミはリード・抱っこ不可。ペットカートまたはキャリーバッグが必要です。</li></ul>
-      <a class="source" href="https://www.granpal.com/dog/" target="_blank" rel="noopener noreferrer">公式の犬連れ案内を見る ↗</a>
+      <a class="source" href="https://www.granpal.com/dog/" data-official="granpal" data-region="ito" target="_blank" rel="noopener noreferrer">公式の犬連れ案内を見る ↗</a>
     </div>
 
     <div class="card">
@@ -116,7 +116,7 @@
       <div class="tags"><span>犬入園無料</span><span>ドッグラン</span><span>ロムニー鉄道</span><span>犬専用休憩所</span></div>
       <p>広い園内を犬と歩きながら、ロムニー鉄道の「ワンちゃん専用客車」にも一緒に乗れる。乗り物メインというより、自然・季節の花・鉄道を犬とゆっくり楽しみたい日に向いています。</p>
       <ul><li>犬は一年を通じて入園可能、入園料無料。</li><li>入園時に承諾書の提出が必要。</li><li>ドッグランあり。</li><li>冷暖房管理の犬連れ専用休憩所があり、園内購入の飲食物を持ち込めます。</li><li>ロムニーバスは犬は乗車できません。</li></ul>
-      <a class="source" href="https://www.nijinosato.com/information/post-1210/" target="_blank" rel="noopener noreferrer">公式のワンちゃん案内を見る ↗</a>
+      <a class="source" href="https://www.nijinosato.com/information/post-1210/" data-official="nijinosato" data-region="nakaizu" target="_blank" rel="noopener noreferrer">公式のワンちゃん案内を見る ↗</a>
     </div>
 
     <div class="card">
@@ -125,7 +125,7 @@
       <div class="tags"><span>大型犬入園OK</span><span>観覧車</span><span>小型犬ドッグラン</span><span>犬同伴レストラン</span></div>
       <p>2025年4月から入園できる犬のサイズ制限が撤廃され、大型犬も入園可能に。動物園を一緒に歩けるのが大きな特徴です。遊園地ゾーンでは、犬と一緒に乗れる遊具は観覧車のみ。</p>
       <ul><li>伸縮リードは2m以内に固定。</li><li>狂犬病予防注射済票・混合ワクチン接種証明書の提示が必要。</li><li>観覧車への犬の同乗は小型犬のみ。</li><li>無料ドッグランも小型犬用。</li><li>展望レストランは犬と一緒に入店可能。軽食コーナーも犬同伴利用可と公式FAQに案内があります。</li></ul>
-      <a class="source" href="https://izu-animal-kingdom.com/calendar-tickets/" target="_blank" rel="noopener noreferrer">公式のペット案内を見る ↗</a>
+      <a class="source" href="https://izu-animal-kingdom.com/calendar-tickets/" data-official="animal-kingdom" data-region="higashiizu" target="_blank" rel="noopener noreferrer">公式のペット案内を見る ↗</a>
     </div>
 
     <div class="card">
@@ -134,7 +134,7 @@
       <div class="tags"><span>犬同伴入園</span><span>1m以内リード</span><span>テラス席</span><span>一部エリア不可</span></div>
       <p>犬と一緒に園内を歩きながら、動物やサボテンを楽しめる施設。ただし動物が放し飼いになっている場所もあるため、犬が入れないエリアは他の3施設よりはっきりしています。</p>
       <ul><li>園内では1m以内のリード。</li><li>バードパラダイス、カンガルーの丘、なかよし牧場、カピバラ虹の広場、アニマルボートツアーズなどは犬同伴不可。</li><li>飲食店内は同伴不可ですが、食堂街のテラス席は利用可能。</li><li>法律で定められた予防接種を受けていないペットは入園不可。</li></ul>
-      <a class="source" href="https://izushaboten.com/information/pet/" target="_blank" rel="noopener noreferrer">公式のペット案内を見る ↗</a>
+      <a class="source" href="https://izushaboten.com/information/pet/" data-official="shaboten" data-region="ito" target="_blank" rel="noopener noreferrer">公式のペット案内を見る ↗</a>
     </div>
   </section>
 
@@ -168,6 +168,15 @@
 </article>
 </main>
 <script>
+  document.querySelectorAll('a[data-official]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (window.DogMetrics) window.DogMetrics.track('official_click', {
+        spot_id: link.dataset.official,
+        region: link.dataset.region,
+        placement: 'dog-amusement-parks'
+      });
+    });
+  });
   document.querySelectorAll('a[data-trip-event]').forEach(function(link) {
     link.addEventListener('click', function() {
       if (typeof window.gtag === 'function') {
