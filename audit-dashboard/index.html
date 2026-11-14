@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>犬と伊豆｜週次点検ダッシュボード</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:#f4f6fa;color:#233044}*{box-sizing:border-box}body{margin:0}header{background:#16293f;color:#fff;padding:26px max(18px,calc((100% - 1150px)/2))}header h1{font-size:25px;margin:4px 0}header p{color:#c6d7eb}main{max-width:1150px;padding:20px 16px 60px;margin:auto}section{background:white;padding:19px;margin:16px 0;border-radius:12px;border:1px solid #e2e7ef}h2{font-size:19px;margin:0 0 12px}a{color:#175b9d}header a{color:#d4e5ff}small,.muted{color:#65758b}header .muted{color:#c6d7eb}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}button,select{padding:10px 12px;border:1px solid #bdccdc;border-radius:7px;background:#fff;color:#182c46;cursor:pointer;font-size:14px}button.primary{background:#255f98;color:white;border-color:#255f98}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:11px}.card{border:1px solid #e2e7ef;border-radius:10px;padding:15px}.num{font-size:29px;font-weight:750}.label{font-size:12px;color:#65758b}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid #e9edf2;vertical-align:top}th{background:#f6f8fc;white-space:nowrap}td{min-width:75px}.tag{border:1px solid #ced8e6;padding:3px 7px;white-space:nowrap;border-radius:20px;font-size:12px;display:inline-block}.yes{background:#e8f4ec;color:#22633a}.unknown{background:#f4f5f7;color:#5f6c7b}.warn{background:#fff4df;color:#8a5d14}.changed{background:#eaf1ff;color:#285a9c}.note{border-left:4px solid #acb9ca;background:#f5f8fc;padding:12px;margin:12px 0}.status{font-size:13px;color:#46617e}#message{min-height:20px}#date{font-variant-numeric:tabular-nums} @media(max-width:600px){header h1{font-size:22px}section{padding:13px}td,th{padding:8px 6px}}
+</style></head><body>
+<header><h1>犬と伊豆｜運営点検ダッシュボード</h1><p>公開サイト・GitHubを照合する、読み取り専用の週次点検台帳</p>
+<div class="muted">対象：<a href="https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/" target="_blank" rel="noopener">公開トップ</a> ／ <a href="https://github.com/kameo3150/izukyu-tsunagaru-map" target="_blank" rel="noopener">GitHub main</a></div>
+<div class="actions"><button class="primary" id="refresh">GitHubの現状を確認</button><button id="save">今回の点検を履歴保存</button><button id="export">履歴JSONを書き出す</button><button id="importBtn">履歴JSONを読み込む</button><input hidden type="file" accept=".json,application/json" id="importFile"></div><p id="message" class="status" role="status"></p></header>
+<main><div class="note">「ファイルあり」は「公開URLが正常」「リンク切れなし」を意味しません。GitHubから見えないGA4受信・A8提携・成果報酬は未確認のまま記録します。履歴はこの端末・このブラウザに保存されます。別端末との共有はJSONを使用してください。</div>
+<div class="cards"><div class="card"><div class="label">前回からのファイル差分</div><div class="num" id="changes">—</div></div><div class="card"><div class="label">GitHubで検出した管理ページ</div><div class="num" id="pages">—</div></div><div class="card"><div class="label">地域別ページ</div><div class="num" id="regions">—</div></div><div class="card"><div class="label">未確認・未完了項目</div><div class="num" id="outstanding">—</div></div></div>
+<section><h2>前回との差分（優先）</h2><p class="muted" id="compareInfo">前回の履歴がないため比較対象なし。</p><div class="tablewrap"><table><thead><tr><th>変化</th><th>ファイル</th><th>確認元</th></tr></thead><tbody id="diffRows"></tbody></table></div></section>
+<section><h2>点検項目・未完了事項</h2><p class="muted">GitHubで確認できる実装と、GA4・A8など外部管理画面でしか確認できない実績を区別しています。</p><div class="tablewrap"><table><thead><tr><th>確認区分</th><th>点検項目</th><th>ステータス</th><th>確認日</th><th>根拠・未確認理由</th><th>確認元</th></tr></thead><tbody id="checkRows"></tbody></table></div></section>
+<section><h2>地域別の整備状況</h2><div class="tablewrap"><table><thead><tr><th>地域</th><th>GitHub掲載</th><th>公開動作</th><th>内容の最新性</th><th>確認元</th></tr></thead><tbody id="regionRows"></tbody></table></div></section>
+<section><h2>公開ページ一覧と特集ページ</h2><p class="muted">GitHub mainのindex.htmlを列挙。リンク切れ・HTTP応答は、実際に確認していなければ「未確認」のままです。</p><label>種別 <select id="category"><option value="all">すべて</option><option value="トップ">トップ</option><option value="地域">地域</option><option value="特集">特集</option><option value="カテゴリ">カテゴリ</option></select></label><div class="tablewrap"><table><thead><tr><th>区分</th><th>ページ</th><th>GitHub上</th><th>公開・リンク</th><th>最終確認日</th><th>確認元URL</th></tr></thead><tbody id="pageRows"></tbody></table></div></section>
+<section><h2>トップページと特集ページの差分</h2><p class="muted">現時点では、各HTMLのファイルSHAの比較による更新検知のみ。文言・導線・画像の実際の差分解析は未実施です。</p><div id="special"></div></section>
+<section><h2>週次点検履歴</h2><div class="tablewrap"><table><thead><tr><th>確認日（端末時刻）</th><th>GitHubツリーSHA</th><th>ページ数</th><th>対前回ファイル変更</th></tr></thead><tbody id="historyRows"></tbody></table></div></section>
+<footer><small>運用方針：公開サイト・GitHubのファイルは変更しません。データの取得エラーは正常と判定しません。最新のブラウザ取得と履歴保存は別操作です。</small></footer></main>
+<script>
+'use strict';
+const base='https://kameo3150.github.io/izukyu-tsunagaru-map/';
+const gh='https://github.com/kameo3150/izukyu-tsunagaru-map/blob/main/';
+const api='https://api.github.com/repos/kameo3150/izukyu-tsunagaru-map/git/trees/main?recursive=1';
+const key='inu-izu-audit-dashboard-history-v1';
+const regions=[['下田','shimoda'],['南伊豆','minamiizu'],['河津','kawazu'],['東伊豆','higashiizu'],['伊東','ito'],['熱海','atami'],['西伊豆','nishiizu'],['松崎','matsuzaki'],['中伊豆','nakaizu']];
+const issues=[
+['GitHub','公開トップのファイル','GitHubの配置を確認','inu-to-izu/index.html','トップのHTMLがmainに存在するか'],
+['GitHub','GA4測定コード','実装を確認','inu-to-izu/renewal/analytics.js','測定ID・同意制御・運営者除外の実装。ただし実受信は別'],
+['GitHub','計測設定画面','実装を確認','inu-to-izu/analytics-settings.js','同意と所有者除外の設定画面'],
+['GitHub','施設情報の全面再確認','未完了','inu-to-izu/renewal/README.md','READMEに既存情報の再確認が未完了と記録'],
+['GitHub','計測QAの過去検証','記録あり','inu-to-izu/renewal/QA.md','2026年10月25日の検証記録。現時点のブラウザ動作とは区別'],
+['公開ページ','リンク切れ・404の全件検査','未確認','inu-to-izu/','全リンクの現時点のHTTP検査は未実施'],
+['公開ページ','トップと特集の文面・導線差分','未確認','inu-to-izu/','SHA更新検知と文面比較は別。現時点の完全照合は未実施'],
+['公開ページ','地域ページ・地図・スマホ操作','未確認','inu-to-izu/','各公開ページの実ブラウザ操作検査は未実施'],
+['外部GA4','GA4イベント実受信','未確認','https://analytics.google.com/','Google Analyticsの受信確認が必要。未受信・0件と断定しない'],
+['外部A8','提携状態・リンク掲載条件','未確認','https://www.a8.net/','A8管理画面での照合が必要'],
+['外部A8','予約・成果報酬','未確認','https://www.a8.net/','クリックと予約と確定報酬は別指標。成果金額未確認'],
+['外部サービス','Windsor試用後のデータ継続取得','未確認','inu-to-izu/renewal/README.md','試用終了後の取得可否を確認していない']
+];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+const urlFor=path=>path.startsWith('https://')?path:gh+path;
+const anchor=(u,name)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(name)+'</a>';
+const tag=(s)=>'<span class="tag '+(s==='確認済'?'yes':s==='未完了'?'warn':s==='変更'?'changed':'unknown')+'">'+esc(s)+'</span>';
+let history=[];try{const a=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(a))history=a}catch(_){}
+let current=null;let currentDate='';
+function status(m){$('message').textContent=m}
+function categories(path){if(path==='inu-to-izu/index.html')return 'トップ';if(/^inu-to-(atami|ito|shimoda|kawazu|higashiizu|minamiizu|nishiizu|matsuzaki|nakaizu)\/index\.html$/.test(path))return '地域';if(path.startsWith('inu-to-izu/feature/'))return '特集';return 'カテゴリ'}
+function label(path){if(path==='inu-to-izu/index.html')return '犬と伊豆トップ';const r=regions.find(r=>path==='inu-to-'+r[1]+'/index.html');if(r)return r[0];return path.replace(/^inu-to-izu\//,'').replace(/\/index\.html$/,'').replace('feature/','特集：')}
+function changesBetween(a,b){if(!a||!b)return [];const left=new Map(b.pages.map(p=>[p.path,p]));let result=[];for(const p of a.pages){const old=left.get(p.path);if(!old)result.push({kind:'追加',path:p.path});else if(old.sha!==p.sha)result.push({kind:'変更',path:p.path});left.delete(p.path)}for(const p of left.values())result.push({kind:'削除',path:p.path});return result}
+function draw(){const d=current;if(!d)return;const prev=history.length?(history[history.length-1].treeSha===d.treeSha&&history[history.length-1].date===d.date?history[history.length-2]:history[history.length-1]):null;
+const diffs=changesBetween(d,prev);$('changes').textContent=prev?diffs.length:'—';$('pages').textContent=d.pages.length;$('regions').textContent=d.pages.filter(p=>p.group==='地域').length+'/9';$('outstanding').textContent=issues.filter(i=>i[2]==='未確認'||i[2]==='未完了').length;
+$('compareInfo').textContent=prev?'比較元：'+prev.date+'（ファイル内容SHAのみ。実サイトの正常性は未判定）':'履歴が1件以下のため、比較対象がありません。';
+$('diffRows').innerHTML=diffs.length?diffs.map(x=>'<tr><td>'+tag(x.kind==='変更'?'変更':'未確認')+' '+esc(x.kind)+'</td><td>'+esc(x.path)+'</td><td>'+anchor(gh+x.path,'GitHub')+'</td></tr>').join(''):'<tr><td colspan="3">'+(prev?'ファイルの追加・変更・削除は検出されませんでした':'比較対象なし')+'</td></tr>';
+$('checkRows').innerHTML=issues.map(i=>{let exists= i[3].startsWith('https://')||d.pages.some(p=>p.path===i[3])||d.assets.includes(i[3]);let state=i[2]==='実装を確認'||i[2]==='記録あり'||i[2]==='GitHubの配置を確認'?(exists?'確認済':'未確認'):i[2];let source=i[3].startsWith('https://')?i[3]:i[3]==='inu-to-izu/'?base+i[3]:gh+i[3];return '<tr><td>'+esc(i[0])+'</td><td>'+esc(i[1])+'</td><td>'+tag(state)+'</td><td>'+esc(d.date)+'</td><td>'+esc(i[4])+'</td><td>'+anchor(source,'確認元')+'</td></tr>'}).join('');
+$('regionRows').innerHTML=regions.map(r=>{let path='inu-to-'+r[1]+'/index.html';let present=d.pages.some(p=>p.path===path);return '<tr><td>'+esc(r[0])+'</td><td>'+tag(present?'確認済':'未確認')+'</td><td>'+tag('未確認')+'</td><td>'+tag('未確認')+'</td><td>'+anchor(gh+path,'GitHub')+'</td></tr>'}).join('');
+const cat=$('category').value;const rows=d.pages.filter(p=>cat==='all'||p.group===cat);$('pageRows').innerHTML=rows.map(p=>'<tr><td>'+esc(p.group)+'</td><td>'+esc(p.label)+'</td><td>'+tag('確認済')+'</td><td>'+tag('未確認')+'</td><td>'+esc(d.date)+'</td><td>'+anchor(p.publicUrl,'公開URL')+' / '+anchor(gh+p.path,'GitHub')+'</td></tr>').join('');
+const special=d.pages.filter(p=>p.group==='特集');$('special').innerHTML='<p>GitHubに存在する特集ページ：<b>'+special.length+'</b>件。トップと各特集の文面・実リンク差分は'+tag('未確認')+'。ファイル変更は上の「前回との差分」で表示します。</p>';
+$('historyRows').innerHTML=history.slice().reverse().map((s,j,arr)=>{const older=arr[j+1];return '<tr><td>'+esc(s.date)+'</td><td>'+esc(s.treeSha.slice(0,12))+'</td><td>'+s.pages.length+'</td><td>'+(older?changesBetween(s,older).length+'件':'初回')+'</td></tr>'}).join('')||'<tr><td colspan="4">保存履歴なし</td></tr>';
+}
+async function refresh(){const b=$('refresh');b.disabled=true;status('GitHubから最新のmainを読み取り中です。');try{const res=await fetch(api,{headers:{Accept:'application/vnd.github+json'}});if(!res.ok)throw Error('HTTP '+res.status);const tree=await res.json();if(tree.truncated)throw Error('取得結果が途中で切れました');const items=tree.tree.filter(t=>t.type==='blob');const pages=items.filter(t=>t.path==='inu-to-izu/index.html'||/^inu-to-[^/]+\/index\.html$/.test(t.path)||/^inu-to-izu\/.+\/index\.html$/.test(t.path)).map(t=>({path:t.path,sha:t.sha,group:categories(t.path),label:label(t.path),publicUrl:base+t.path.replace(/index\.html$/,'')})).sort((a,b)=>['トップ','地域','特集','カテゴリ'].indexOf(a.group)-['トップ','地域','特集','カテゴリ'].indexOf(b.group)||a.path.localeCompare(b.path));
+const date=new Date().toLocaleDateString('sv-SE');current={date,treeSha:tree.sha,pages,assets:items.map(t=>t.path)};draw();status('取得完了：'+date+'。これは取得結果で、履歴へ保存するには「今回の点検を履歴保存」を押してください。')}catch(e){status('GitHub取得失敗：'+e.message+'。未確認項目を正常扱いしません。');if(!current&&history.length){current=history[history.length-1];draw()}}finally{b.disabled=false}}
+$('save').onclick=()=>{if(!current){status('まずGitHubの現状を取得してください');return}const last=history[history.length-1];if(last&&last.treeSha===current.treeSha&&last.date===current.date){status('同日の同一状態は既に保存されています');return}history.push(JSON.parse(JSON.stringify(current)));try{localStorage.setItem(key,JSON.stringify(history));draw();status('履歴をこのブラウザに保存しました（'+history.length+'回分）。')}catch(e){history.pop();status('保存できませんでした：'+e.message)}};
+$('refresh').onclick=refresh;$('category').onchange=draw;
+$('export').onclick=()=>{const data=JSON.stringify({schema:'inu-izu-audit-v1',history},null,2);const u=URL.createObjectURL(new Blob([data],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download='inu-izu-audit-history.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
+$('importBtn').onclick=()=>$('importFile').click();$('importFile').onchange=async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(!Array.isArray(data.history)||!data.history.every(s=>typeof s.treeSha==='string'&&Array.isArray(s.pages)&&Array.isArray(s.assets)))throw Error('履歴形式が不正です');history=data.history;localStorage.setItem(key,JSON.stringify(history));if(!current&&history.length)current=history[history.length-1];draw();status('履歴を読み込みました')}catch(err){status('読込失敗：'+err.message)}};
+if(history.length){current=history[history.length-1];draw()}refresh();
+</script></body></html>
