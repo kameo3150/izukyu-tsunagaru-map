@@ -1,0 +1,29 @@
+name: Dog and Izu weekly audit
+on:
+  schedule:
+    - cron: '0 23 * * 0'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit pages and links
+        run: python audit-dashboard/audit.py
+      - name: Save verified audit report
+        run: |
+          if ! git diff --quiet -- audit-dashboard/data/history.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add audit-dashboard/data/history.json
+            git commit -m 'Record weekly Dog and Izu audit'
+            git push
+          fi
