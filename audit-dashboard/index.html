@@ -7,13 +7,13 @@
 <header><h1>犬と伊豆｜運営点検ダッシュボード</h1><p>公開サイト・GitHubを照合する、読み取り専用の週次点検台帳</p>
 <div class="muted">対象：<a href="https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/" target="_blank" rel="noopener">公開トップ</a> ／ <a href="https://github.com/kameo3150/izukyu-tsunagaru-map" target="_blank" rel="noopener">GitHub main</a></div>
 <div class="actions"><button class="primary" id="refresh">GitHubの現状を確認</button><button id="save">今回の点検を履歴保存</button><button id="export">履歴JSONを書き出す</button><button id="importBtn">履歴JSONを読み込む</button><input hidden type="file" accept=".json,application/json" id="importFile"></div><p id="message" class="status" role="status"></p></header>
-<main><div class="note">「ファイルあり」は「公開URLが正常」「リンク切れなし」を意味しません。GitHubから見えないGA4受信・A8提携・成果報酬は未確認のまま記録します。履歴はこの端末・このブラウザに保存されます。別端末との共有はJSONを使用してください。</div>
+<main><div class="note">「ファイルあり」は「公開URLが正常」「リンク切れなし」を意味しません。GitHubから見えないGA4受信・A8提携・成果報酬は未確認のまま記録します。自動点検履歴はGitHubに保存されます。手動で保存した履歴のみ、このブラウザ内に保存されます。</div>
 <div class="cards"><div class="card"><div class="label">前回からのファイル差分</div><div class="num" id="changes">—</div></div><div class="card"><div class="label">GitHubで検出した管理ページ</div><div class="num" id="pages">—</div></div><div class="card"><div class="label">地域別ページ</div><div class="num" id="regions">—</div></div><div class="card"><div class="label">未確認・未完了項目</div><div class="num" id="outstanding">—</div></div></div>
 <section><h2>前回との差分（優先）</h2><p class="muted" id="compareInfo">前回の履歴がないため比較対象なし。</p><div class="tablewrap"><table><thead><tr><th>変化</th><th>ファイル</th><th>確認元</th></tr></thead><tbody id="diffRows"></tbody></table></div></section>
 <section><h2>点検項目・未完了事項</h2><p class="muted">GitHubで確認できる実装と、GA4・A8など外部管理画面でしか確認できない実績を区別しています。</p><div class="tablewrap"><table><thead><tr><th>確認区分</th><th>点検項目</th><th>ステータス</th><th>確認日</th><th>根拠・未確認理由</th><th>確認元</th></tr></thead><tbody id="checkRows"></tbody></table></div></section>
 <section><h2>地域別の整備状況</h2><div class="tablewrap"><table><thead><tr><th>地域</th><th>GitHub掲載</th><th>公開動作</th><th>内容の最新性</th><th>確認元</th></tr></thead><tbody id="regionRows"></tbody></table></div></section>
 <section><h2>公開ページ一覧と特集ページ</h2><p class="muted">GitHub mainのindex.htmlを列挙。リンク切れ・HTTP応答は、実際に確認していなければ「未確認」のままです。</p><label>種別 <select id="category"><option value="all">すべて</option><option value="トップ">トップ</option><option value="地域">地域</option><option value="特集">特集</option><option value="カテゴリ">カテゴリ</option></select></label><div class="tablewrap"><table><thead><tr><th>区分</th><th>ページ</th><th>GitHub上</th><th>公開・リンク</th><th>最終確認日</th><th>確認元URL</th></tr></thead><tbody id="pageRows"></tbody></table></div></section>
-<section><h2>トップページと特集ページの差分</h2><p class="muted">現時点では、各HTMLのファイルSHAの比較による更新検知のみ。文言・導線・画像の実際の差分解析は未実施です。</p><div id="special"></div></section>
+<section><h2>トップページと特集ページの差分</h2><p class="muted">GitHubのHTMLファイルSHAで追加・更新・削除を比較します。内容の意味や予約導線の機能までは、この比較で保証しません。</p><div id="special"></div></section>
 <section><h2>週次点検履歴</h2><div class="tablewrap"><table><thead><tr><th>確認日（端末時刻）</th><th>GitHubツリーSHA</th><th>ページ数</th><th>対前回ファイル変更</th></tr></thead><tbody id="historyRows"></tbody></table></div></section>
 <footer><small>運用方針：公開サイト・GitHubのファイルは変更しません。データの取得エラーは正常と判定しません。最新のブラウザ取得と履歴保存は別操作です。</small></footer></main>
 <script>
@@ -72,7 +72,7 @@ if(history.length){current=history[history.length-1];draw()}refresh();
 <div class="cards"><div class="card"><div class="label">最終自動点検（UTC）</div><div id="autoDate">未確認</div></div><div class="card"><div class="label">公開ページのHTTP確認</div><div class="num" id="autoPages">—</div></div><div class="card"><div class="label">リンク切れ検出</div><div class="num" id="autoBroken">—</div></div><div class="card"><div class="label">リンク応答不明</div><div class="num" id="autoUnknown">—</div></div></div>
 <div class="tablewrap"><table><thead><tr><th>確認項目</th><th>結果</th><th>確認元URL</th></tr></thead><tbody id="autoRows"><tr><td colspan="3">未確認</td></tr></tbody></table></div>
 <div class="tablewrap"><table><thead><tr><th>実行日</th><th>ページ数</th><th>リンク切れ</th><th>応答不明</th></tr></thead><tbody id="autoHistory"></tbody></table></div>
-<p class="muted">HTTP検査は対象リポジトリのHTMLに記載された内部リンクを中心に最大300件。JavaScriptが実行時に生成するリンクや外部予約先の到達性は別途確認が必要です。</p>
+<p class="muted">HTTP検査は対象ページのHTMLに記載された内部リンクを中心に最大300件。JavaScriptが実行時に生成するリンクや外部予約先の到達性は別途確認が必要です。</p>
 <p><a href="https://github.com/kameo3150/izukyu-tsunagaru-map/actions/workflows/dog-izu-audit.yml" target="_blank" rel="noopener">週次点検の実行記録</a> ／ <a href="./data/history.json" target="_blank" rel="noopener">点検結果JSON</a></p></section>
 <script>
 (async function(){
@@ -88,7 +88,53 @@ document.getElementById('autoUnknown').textContent=s.linksUnknown??'—';
 const errors=[...Object.values(x.pageChecks||{}),...(x.links||[])].filter(z=>z.status!=='ok');
 rows.innerHTML=errors.length?errors.map(z=>'<tr><td>'+esc(z.status==='broken'?'リンクエラー':'応答未確認')+'</td><td>'+esc(z.http||z.error||'未確認')+'</td><td>'+anchor(z.url,z.url)+'</td></tr>').join(''):'<tr><td colspan="3">取得対象でエラー未検出（未検査リンクは含まれません）</td></tr>';
 document.getElementById('autoHistory').innerHTML=data.snapshots.slice().reverse().map(h=>'<tr><td>'+esc(h.checkedAt)+'</td><td>'+esc(h.summary?.pagesListed??'—')+'</td><td>'+esc(h.summary?.linksBroken??'—')+'</td><td>'+esc(h.summary?.linksUnknown??'—')+'</td></tr>').join('');
+
+const pageState=x.pageChecks||{};
+const byPath=new Map((current?.pages||[]).map(p=>[p.path,p]));
+document.querySelectorAll('#pageRows tr').forEach(tr=>{
+ const href=tr.querySelector('td:last-child a')?.href;
+ if(!href)return;
+ const check=pageState[href];
+ if(!check)return;
+ const statusCell=tr.children[3];
+ if(statusCell)statusCell.innerHTML=tag(check.status==='ok'?'確認済':check.status==='broken'?'未完了':'未確認')+
+  ' <small>HTTP '+esc(check.http||'不明')+'／動作未検証</small>';
+});
+const regionTrs=document.querySelectorAll('#regionRows tr');
+for(let i=0;i<regionTrs.length&&i<regions.length;i++){
+ const u=base+'inu-to-'+regions[i][1]+'/';
+ const check=pageState[u];
+ const c=regionTrs[i].children[2];
+ if(check&&c)c.innerHTML=tag(check.status==='ok'?'確認済':check.status==='broken'?'未完了':'未確認')+
+ ' <small>HTTP応答のみ</small>';
+}
+const prior=data.snapshots.length>1?data.snapshots[data.snapshots.length-2]:null;
+const changeInfo=document.createElement('div');
+changeInfo.id='autoDiff';
+let changes=[];
+if(prior){
+ const before=prior.pages||{},after=x.pages||{};
+ for(const [p,sha] of Object.entries(after))if(!(p in before)||before[p]!==sha)changes.push({path:p,kind:p in before?'更新':'追加'});
+ for(const p of Object.keys(before))if(!(p in after))changes.push({path:p,kind:'削除'});
+}
+const previousDiff=document.getElementById('autoDiff');
+if(previousDiff)previousDiff.remove();
+changeInfo.innerHTML='<h3>自動点検：前回からの変更</h3>'+
+(prior?(changes.length?'<table><thead><tr><th>変更</th><th>対象ファイル</th><th>確認元</th></tr></thead><tbody>'+
+changes.map(c=>'<tr><td>'+esc(c.kind)+'</td><td>'+esc(c.path)+'</td><td>'+anchor(gh+c.path,'GitHub')+'</td></tr>').join('')+'</tbody></table>':
+'<p>対象HTMLの変更は検出されませんでした。</p>'):'<p>初回記録です。次回から変更を表示します。</p>');
+document.getElementById('serverAudit').insertBefore(changeInfo,document.getElementById('autoHistory').closest('.tablewrap'));
+const featureItems=Object.keys(x.pages||{}).filter(p=>p.startsWith('inu-to-izu/feature/')&&p.endsWith('/index.html'));
+const topChanged=changes.some(c=>c.path==='inu-to-izu/index.html');
+const changedFeatures=changes.filter(c=>c.path.startsWith('inu-to-izu/feature/'));
+document.getElementById('special').innerHTML='<p>特集ページ <b>'+featureItems.length+'</b>件。トップHTML '+(prior?(topChanged?'更新あり':'更新なし'):'初回基準')+'、特集HTML '+(prior?changedFeatures.length+'件の追加・更新・削除':'初回基準')+'。</p>'+
+'<p class="muted">文面・画像・導線が実際に変化したかは個別調査が必要です。HTTP成功とクリック動作の成功は別判定です。</p>';
+const autoFooter=document.createElement('p');
+autoFooter.className='muted';
+autoFooter.textContent='最終自動点検 '+x.checkedAt+'。確認元：'+x.source;
+document.getElementById('autoHistory').closest('.tablewrap').after(autoFooter);
 area.textContent='GitHub保存履歴を表示中。GA4実受信・A8の成果は引き続き未確認です。';
+
 }catch(e){area.textContent='自動点検の保存履歴は未確認：'+e.message;rows.innerHTML='<tr><td colspan="3">結果がないため正常とは判定できません。</td></tr>'}
 })();
 </script>
