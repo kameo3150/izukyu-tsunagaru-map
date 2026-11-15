@@ -65,4 +65,31 @@ $('refresh').onclick=refresh;$('category').onchange=draw;
 $('export').onclick=()=>{const data=JSON.stringify({schema:'inu-izu-audit-v1',history},null,2);const u=URL.createObjectURL(new Blob([data],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download='inu-izu-audit-history.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
 $('importBtn').onclick=()=>$('importFile').click();$('importFile').onchange=async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(!Array.isArray(data.history)||!data.history.every(s=>typeof s.treeSha==='string'&&Array.isArray(s.pages)&&Array.isArray(s.assets)))throw Error('履歴形式が不正です');history=data.history;localStorage.setItem(key,JSON.stringify(history));if(!current&&history.length)current=history[history.length-1];draw();status('履歴を読み込みました')}catch(err){status('読込失敗：'+err.message)}};
 if(history.length){current=history[history.length-1];draw()}refresh();
-</script></body></html>
+</script>
+<section id="serverAudit"><h2>週次自動点検（GitHub Actions）</h2>
+<p class="muted">月曜08:00（日本時間）を予定。Actionsの実行が失敗した場合は履歴が更新されません。GitHubに保存されたレポートのみ表示します。</p>
+<p id="autoState" role="status">保存された点検レポートを確認中…</p>
+<div class="cards"><div class="card"><div class="label">最終自動点検（UTC）</div><div id="autoDate">未確認</div></div><div class="card"><div class="label">公開ページのHTTP確認</div><div class="num" id="autoPages">—</div></div><div class="card"><div class="label">リンク切れ検出</div><div class="num" id="autoBroken">—</div></div><div class="card"><div class="label">リンク応答不明</div><div class="num" id="autoUnknown">—</div></div></div>
+<div class="tablewrap"><table><thead><tr><th>確認項目</th><th>結果</th><th>確認元URL</th></tr></thead><tbody id="autoRows"><tr><td colspan="3">未確認</td></tr></tbody></table></div>
+<div class="tablewrap"><table><thead><tr><th>実行日</th><th>ページ数</th><th>リンク切れ</th><th>応答不明</th></tr></thead><tbody id="autoHistory"></tbody></table></div>
+<p class="muted">HTTP検査は対象リポジトリのHTMLに記載された内部リンクを中心に最大300件。JavaScriptが実行時に生成するリンクや外部予約先の到達性は別途確認が必要です。</p>
+<p><a href="https://github.com/kameo3150/izukyu-tsunagaru-map/actions/workflows/dog-izu-audit.yml" target="_blank" rel="noopener">週次点検の実行記録</a> ／ <a href="./data/history.json" target="_blank" rel="noopener">点検結果JSON</a></p></section>
+<script>
+(async function(){
+const area=document.getElementById('autoState'),rows=document.getElementById('autoRows'),link='data/history.json';
+try{
+const r=await fetch(link+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);
+const data=await r.json();if(!Array.isArray(data.snapshots)||!data.snapshots.length)throw Error('履歴なし');
+const x=data.snapshots[data.snapshots.length-1],s=x.summary||{};
+document.getElementById('autoDate').textContent=x.checkedAt||'未確認';
+document.getElementById('autoPages').textContent=(s.pageHttpOK??'—')+'/'+(s.pagesListed??'—');
+document.getElementById('autoBroken').textContent=s.linksBroken??'—';
+document.getElementById('autoUnknown').textContent=s.linksUnknown??'—';
+const errors=[...Object.values(x.pageChecks||{}),...(x.links||[])].filter(z=>z.status!=='ok');
+rows.innerHTML=errors.length?errors.map(z=>'<tr><td>'+esc(z.status==='broken'?'リンクエラー':'応答未確認')+'</td><td>'+esc(z.http||z.error||'未確認')+'</td><td>'+anchor(z.url,z.url)+'</td></tr>').join(''):'<tr><td colspan="3">取得対象でエラー未検出（未検査リンクは含まれません）</td></tr>';
+document.getElementById('autoHistory').innerHTML=data.snapshots.slice().reverse().map(h=>'<tr><td>'+esc(h.checkedAt)+'</td><td>'+esc(h.summary?.pagesListed??'—')+'</td><td>'+esc(h.summary?.linksBroken??'—')+'</td><td>'+esc(h.summary?.linksUnknown??'—')+'</td></tr>').join('');
+area.textContent='GitHub保存履歴を表示中。GA4実受信・A8の成果は引き続き未確認です。';
+}catch(e){area.textContent='自動点検の保存履歴は未確認：'+e.message;rows.innerHTML='<tr><td colspan="3">結果がないため正常とは判定できません。</td></tr>'}
+})();
+</script>
+</body></html>
