@@ -2,9 +2,9 @@
   "schema": "inu-izu-audit-history-v2",
   "snapshots": [
     {
-      "checkedAt": "2026-11-15T00:47:23+00:00",
+      "checkedAt": "2026-11-15T00:52:36+00:00",
       "source": "https://api.github.com/repos/kameo3150/izukyu-tsunagaru-map/git/trees/main?recursive=1",
-      "treeSha": "7612e44d2e0324467a16370e4f53f460b2b8a6be",
+      "treeSha": "058f440d2d7d45605657f107a29538d4af9c4166",
       "pages": {
         "inu-to-atami/index.html": "176245c3db512bc7fc8943701603f157a7aae165",
         "inu-to-higashiizu/index.html": "e8fb620106f25dcb7c3d0de14e862f8b1a5f6d65",
@@ -707,128 +707,7 @@
           "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/sitemap.xml"
         }
       ],
-      "diffs": [
-        {
-          "path": "inu-to-atami/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-higashiizu/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-ito/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/dogrun/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/eat/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/experience/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/dog-amusement-parks/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/dog-price/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/dog-starter-goods/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/dog-winter-illumination-2026-2027/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/large-dog-izu/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/newyear-dog-stay-2026-2027/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/nijinosato-autumn-2026/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/petshop-vs-breeder/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/popular-dog-breeds/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/rainy-day-izukogen/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/feature/train-with-dog/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/promo/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/reviews/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/site-map/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/stay/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/walk/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-izu/water/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-kawazu/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-matsuzaki/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-minamiizu/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-nakaizu/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-nishiizu/index.html",
-          "change": "added"
-        },
-        {
-          "path": "inu-to-shimoda/index.html",
-          "change": "added"
-        }
-      ],
+      "diffs": [],
       "summary": {
         "pagesListed": 30,
         "pageHttpOK": 30,
