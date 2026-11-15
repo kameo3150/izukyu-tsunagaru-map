@@ -2,9 +2,9 @@
   "schema": "inu-izu-audit-history-v2",
   "snapshots": [
     {
-      "checkedAt": "2026-11-15T00:58:50+00:00",
+      "checkedAt": "2026-11-15T00:59:36+00:00",
       "source": "https://api.github.com/repos/kameo3150/izukyu-tsunagaru-map/git/trees/main?recursive=1",
-      "treeSha": "6326a65a90c55b95b2c24342e619ceaf45557c45",
+      "treeSha": "398f6f571b84b73c364998843622ac63063a0830",
       "pages": {
         "inu-to-atami/index.html": "176245c3db512bc7fc8943701603f157a7aae165",
         "inu-to-higashiizu/index.html": "e8fb620106f25dcb7c3d0de14e862f8b1a5f6d65",
@@ -217,6 +217,1122 @@
           "status": "ok",
           "http": 200,
           "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/"
+        }
+      },
+      "pageDetails": {
+        "inu-to-atami/index.html": {
+          "title": "犬と熱海。｜電車でも行きやすい犬連れ熱海ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と熱海。"
+            },
+            {
+              "level": "h2",
+              "text": "熱海梅園"
+            },
+            {
+              "level": "h2",
+              "text": "Blue nine cafe"
+            },
+            {
+              "level": "h2",
+              "text": "Café & Restaurant Nagisa"
+            },
+            {
+              "level": "h2",
+              "text": "ACAO FOREST"
+            },
+            {
+              "level": "h2",
+              "text": "熱海城 ヒルトップテラス"
+            },
+            {
+              "level": "h2",
+              "text": "犬と泊まる場所を探す"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 43,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-higashiizu/index.html": {
+          "title": "犬と東伊豆。｜熱川・稲取の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と東伊豆。"
+            },
+            {
+              "level": "h2",
+              "text": "熱川オーシャンリゾート"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆アニマルキングダム"
+            },
+            {
+              "level": "h2",
+              "text": "稲取細野高原"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 20,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-ito/index.html": {
+          "title": "犬と伊東。｜伊豆高原の犬連れスポット地図",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と伊東 ●"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 16,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/dogrun/index.html": {
+          "title": "伊豆で犬と走る｜ドッグラン・犬が遊べる場所22件｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と走る。"
+            },
+            {
+              "level": "h2",
+              "text": "下田"
+            },
+            {
+              "level": "h2",
+              "text": "河津"
+            },
+            {
+              "level": "h2",
+              "text": "東伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "南伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺・中伊豆・天城｜6件"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 37,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/eat/index.html": {
+          "title": "伊豆で犬と食べる｜犬同伴OKのカフェ・食事13件｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と一緒に食べる。"
+            },
+            {
+              "level": "h2",
+              "text": "熱海｜2件"
+            },
+            {
+              "level": "h2",
+              "text": "下田｜9件"
+            },
+            {
+              "level": "h2",
+              "text": "中伊豆｜1件"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原｜1件"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 28,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/experience/index.html": {
+          "title": "犬と伊豆で何する？料金・犬の条件で選ぶ10の体験｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と伊豆で、何しよう？"
+            },
+            {
+              "level": "h2",
+              "text": "約1時間で楽しむ"
+            },
+            {
+              "level": "h2",
+              "text": "動物や景色を、一緒に楽しむ"
+            },
+            {
+              "level": "h2",
+              "text": "自分たちで体験する"
+            },
+            {
+              "level": "h2",
+              "text": "行き先が決まったら"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 41,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/dog-amusement-parks/index.html": {
+          "title": "犬と行ける伊豆の遊園地・テーマパーク4選｜一緒に乗れる？ドッグランは？｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と行ける伊豆の 遊園地・テーマパーク4選"
+            },
+            {
+              "level": "h2",
+              "text": "遊園地から、犬連れ旅行の行程を組む"
+            },
+            {
+              "level": "h2",
+              "text": "4施設を犬連れ目線で比較"
+            },
+            {
+              "level": "h2",
+              "text": "① 伊豆ぐらんぱる公園"
+            },
+            {
+              "level": "h2",
+              "text": "犬と伊豆。ならこう選ぶ"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/dog-price/index.html": {
+          "title": "いま犬はいくら？人気10犬種の子犬価格一覧【2026年10月】｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "いま犬はいくら？ 人気10犬種の子犬価格"
+            },
+            {
+              "level": "h2",
+              "text": "まず、数字だけ。"
+            },
+            {
+              "level": "h2",
+              "text": "人気10犬種の価格一覧"
+            },
+            {
+              "level": "h2",
+              "text": "なんで同じ犬種なのに、こんなに違う？"
+            },
+            {
+              "level": "h2",
+              "text": "この数字は「ペットショップ平均」ではありません"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 13,
+          "a8LinkCount": 3,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/dog-starter-goods/index.html": {
+          "title": "犬を迎えるとき最初に揃えるもの｜最低限の犬グッズ一覧｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬を迎えるとき 最初に揃えるもの"
+            },
+            {
+              "level": "h2",
+              "text": "まず揃えたい7つ"
+            },
+            {
+              "level": "h2",
+              "text": "これは暮らし始めてからでもいい"
+            },
+            {
+              "level": "h2",
+              "text": "最初から買いすぎない方がいい理由"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 12,
+          "a8LinkCount": 3,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/dog-winter-illumination-2026-2027/index.html": {
+          "title": "犬と行ける冬のイルミネーション4選｜静岡・神奈川・千葉 2026–2027｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "今年の冬は、 犬とイルミネーションへ。"
+            },
+            {
+              "level": "h2",
+              "text": "イルミの夜、どこに泊まる？"
+            },
+            {
+              "level": "h2",
+              "text": "犬と、どんな夜を過ごそう？"
+            },
+            {
+              "level": "h2",
+              "text": "ひかりのすみか 御殿場高原 時之栖"
+            },
+            {
+              "level": "h2",
+              "text": "はままつフルーツパーク時之栖 ウィンターイルミネーション"
+            },
+            {
+              "level": "h2",
+              "text": "さがみ湖イルミリオン さがみ湖MORI MORI"
+            },
+            {
+              "level": "h2",
+              "text": "マザーイルミ マザー牧場"
+            },
+            {
+              "level": "h2",
+              "text": "夜のお出かけ前に。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆で、犬と夜のお出かけなら。"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬と泊まる冬の旅行を予約へ。"
+            },
+            {
+              "level": "h2",
+              "text": "掲載情報について"
+            }
+          ],
+          "anchors": 44,
+          "a8LinkCount": 10,
+          "bookingLinkCount": 12,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/large-dog-izu/index.html": {
+          "title": "大型犬と伊豆へ。走る・絶景・食事の同伴条件で選ぶ3施設｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "大型犬と伊豆へ。 うちの犬と、何ができる？"
+            },
+            {
+              "level": "h2",
+              "text": "したいことから、行き先を選ぶ。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆ぐらんぱる公園"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬の駅 伊豆高原"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆パノラマパーク"
+            },
+            {
+              "level": "h2",
+              "text": "宿は「大型犬可」の客室から。"
+            },
+            {
+              "level": "h2",
+              "text": "確認元"
+            }
+          ],
+          "anchors": 19,
+          "a8LinkCount": 0,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/newyear-dog-stay-2026-2027/index.html": {
+          "title": "年末年始は、愛犬と伊豆へ。温泉・海・ドッグランで過ごす冬の宿旅｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "今年の締めくくりも、 新年のはじまりも。 きみと伊豆へ。"
+            },
+            {
+              "level": "h2",
+              "text": "年末年始、どんな時間を過ごそう。"
+            },
+            {
+              "level": "h2",
+              "text": "行きたいエリアから、愛犬との宿旅を。"
+            },
+            {
+              "level": "h2",
+              "text": "熱海"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原"
+            },
+            {
+              "level": "h2",
+              "text": "東伊豆・熱川"
+            },
+            {
+              "level": "h2",
+              "text": "河津"
+            },
+            {
+              "level": "h2",
+              "text": "下田・白浜"
+            },
+            {
+              "level": "h2",
+              "text": "南伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "西伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "松崎・雲見"
+            },
+            {
+              "level": "h2",
+              "text": "中伊豆・修善寺・伊豆長岡"
+            },
+            {
+              "level": "h2",
+              "text": "今年は、愛犬も一緒に。"
+            },
+            {
+              "level": "h2",
+              "text": "ほかのエリアも見てみたい？"
+            }
+          ],
+          "anchors": 92,
+          "a8LinkCount": 31,
+          "bookingLinkCount": 64,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/nijinosato-autumn-2026/index.html": {
+          "title": "犬と紅葉を見るなら修善寺・虹の郷へ｜2026もみじライトアップ｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と秋の伊豆なら、虹の郷へ。"
+            },
+            {
+              "level": "h2",
+              "text": "夜の紅葉へ行くなら、昼の過ごし方と宿も。"
+            },
+            {
+              "level": "h2",
+              "text": "夜の紅葉のあと、修善寺に泊まる。"
+            },
+            {
+              "level": "h2",
+              "text": "今年は、ここを推します。"
+            },
+            {
+              "level": "h2",
+              "text": "犬連れでうれしいところ。"
+            },
+            {
+              "level": "h2",
+              "text": "花火の日、狙ってみる？"
+            },
+            {
+              "level": "h2",
+              "text": "ここは先に知っておいて。"
+            },
+            {
+              "level": "h2",
+              "text": "犬と伊豆。ならこうする。"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 3,
+          "bookingLinkCount": 1,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/petshop-vs-breeder/index.html": {
+          "title": "犬を迎えるならペットショップ？ブリーダー？違いを比較｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬を迎えるなら ペットショップ？ブリーダー？"
+            },
+            {
+              "level": "h2",
+              "text": "先に結論。"
+            },
+            {
+              "level": "h2",
+              "text": "何が違う？ざっくり比較"
+            },
+            {
+              "level": "h2",
+              "text": "ペットショップの良さ"
+            },
+            {
+              "level": "h2",
+              "text": "ブリーダーの良さ"
+            },
+            {
+              "level": "h2",
+              "text": "実は、どちらにも共通するルールがある"
+            },
+            {
+              "level": "h2",
+              "text": "店でも犬舎でも、これだけは聞きたい5つ"
+            },
+            {
+              "level": "h2",
+              "text": "結局どっち？"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 12,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/popular-dog-breeds/index.html": {
+          "title": "2026年、いま人気の犬は？人気犬種TOP10｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "2026年、いま人気の犬は？"
+            },
+            {
+              "level": "h2",
+              "text": "まず結論。"
+            },
+            {
+              "level": "h2",
+              "text": "2026年 人気犬種TOP10"
+            },
+            {
+              "level": "h2",
+              "text": "「人気犬1位」は、調べ方で変わる。"
+            },
+            {
+              "level": "h2",
+              "text": "ここがちょっと面白い。"
+            },
+            {
+              "level": "h2",
+              "text": "ただし「飼いやすいランキング」ではない。"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 13,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/rainy-day-izukogen/index.html": {
+          "title": "雨の日も犬と伊豆高原へ｜屋内の遊び・カフェ・犬宿を選ぶ｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "雨予報でも、 きみと伊豆高原へ。"
+            },
+            {
+              "level": "h2",
+              "text": "今日は、どう過ごそう？"
+            },
+            {
+              "level": "h2",
+              "text": "泊まるなら、雨の日も遊べる宿に。"
+            },
+            {
+              "level": "h2",
+              "text": "全部まわらず、ひとつ選ぶ。"
+            },
+            {
+              "level": "h2",
+              "text": "確認元と掲載情報"
+            }
+          ],
+          "anchors": 22,
+          "a8LinkCount": 1,
+          "bookingLinkCount": 1,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/train-with-dog/index.html": {
+          "title": "犬と電車で伊豆へ。10kg・ケース・手回り品きっぷを出発前に確認｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と電車で伊豆へ。 出発前に、これだけ確認。"
+            },
+            {
+              "level": "h2",
+              "text": "JR東日本・伊豆急の、基本の3条件。"
+            },
+            {
+              "level": "h2",
+              "text": "車なしなら、駅から先まで決めておく。"
+            },
+            {
+              "level": "h2",
+              "text": "まずは、滞在するエリアから。"
+            },
+            {
+              "level": "h2",
+              "text": "泊まる宿と、駅からの移動を一緒に選ぶ。"
+            },
+            {
+              "level": "h2",
+              "text": "確認元"
+            }
+          ],
+          "anchors": 16,
+          "a8LinkCount": 0,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/index.html": {
+          "title": "犬と伊豆。｜週末は、きみと遠出しよう。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "週末は、 きみと 遠出 しよう。"
+            },
+            {
+              "level": "h2",
+              "text": "年末年始は、愛犬と伊豆へ。"
+            },
+            {
+              "level": "h2",
+              "text": "こんな一日、どう？"
+            },
+            {
+              "level": "h2",
+              "text": "次は、どこへ行こう。"
+            },
+            {
+              "level": "h2",
+              "text": "犬と楽しむ、伊豆の特集。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆の外にも、犬と行きたい冬がある。"
+            },
+            {
+              "level": "h2",
+              "text": "帰り道を、 気にしない旅に。"
+            },
+            {
+              "level": "h2",
+              "text": "犬との旅を、 もっと選びやすく。"
+            },
+            {
+              "level": "h2",
+              "text": "アクセス計測について"
+            },
+            {
+              "level": "h2",
+              "text": "写真について"
+            }
+          ],
+          "anchors": 24,
+          "a8LinkCount": 1,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/promo/index.html": {
+          "title": "犬と伊豆｜X投稿を1タップで準備",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Xの投稿文は、ここで選ぶだけ。"
+            },
+            {
+              "level": "h2",
+              "text": "まず週末の旅行を考える人へ"
+            },
+            {
+              "level": "h2",
+              "text": "犬と遊園地に行ける？"
+            },
+            {
+              "level": "h2",
+              "text": "秋の紅葉・虹の郷"
+            },
+            {
+              "level": "h2",
+              "text": "犬と泊まる宿の口コミ比較"
+            },
+            {
+              "level": "h2",
+              "text": "犬と熱海の日帰り・旅行"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原の犬連れ散歩"
+            },
+            {
+              "level": "h2",
+              "text": "下田の海を犬と歩く"
+            },
+            {
+              "level": "h2",
+              "text": "自分のアクセスを数えない設定"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 10,
+          "a8LinkCount": 1,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": true
+        },
+        "inu-to-izu/reviews/index.html": {
+          "title": "伊豆の犬宿 口コミランキング｜Google・じゃらん・楽天を比較｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆の犬宿 口コミランキング"
+            },
+            {
+              "level": "h2",
+              "text": "Google クチコミ"
+            },
+            {
+              "level": "h2",
+              "text": "じゃらん クチコミ"
+            },
+            {
+              "level": "h2",
+              "text": "楽天トラベル クチコミ"
+            },
+            {
+              "level": "h2",
+              "text": "同じ宿を横断して見る"
+            },
+            {
+              "level": "h2",
+              "text": "口コミを見たら、犬と泊まれる宿も探してみる"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 33,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 10,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/site-map/index.html": {
+          "title": "犬と伊豆。サイトマップ｜エリア・遊び・特集から探す",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と伊豆。全ページ案内"
+            },
+            {
+              "level": "h2",
+              "text": "🐕 犬と何して遊ぶ？"
+            },
+            {
+              "level": "h2",
+              "text": "🗺️ エリアから探す"
+            },
+            {
+              "level": "h2",
+              "text": "🍁 今季・おすすめ特集"
+            },
+            {
+              "level": "h2",
+              "text": "番外編・伊豆以外のお出かけ"
+            },
+            {
+              "level": "h2",
+              "text": "🐶 旅行のついでに読む「犬の今。」"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 36,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/stay/index.html": {
+          "title": "伊豆で犬と泊まる｜犬宿33件をエリア別に探す｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と泊まる。"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            },
+            {
+              "level": "h2",
+              "text": "下田｜5件"
+            },
+            {
+              "level": "h2",
+              "text": "河津｜5件"
+            },
+            {
+              "level": "h2",
+              "text": "東伊豆｜1件"
+            },
+            {
+              "level": "h2",
+              "text": "南伊豆｜4件"
+            },
+            {
+              "level": "h2",
+              "text": "西伊豆｜3件"
+            },
+            {
+              "level": "h2",
+              "text": "松崎｜5件"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺・中伊豆｜4件"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原｜6件"
+            }
+          ],
+          "anchors": 49,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/walk/index.html": {
+          "title": "伊豆で犬と散歩｜海・高原・自然を歩く｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と歩く。"
+            },
+            {
+              "level": "h2",
+              "text": "熱海｜2件"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺・中伊豆・天城｜3件"
+            },
+            {
+              "level": "h2",
+              "text": "東伊豆・伊東"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 24,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/water/index.html": {
+          "title": "伊豆で犬と泳ぐ・水遊び｜海・SUP・カヤック｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と泳ぐ・水遊び。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆の水遊び"
+            },
+            {
+              "level": "h2",
+              "text": "南伊豆・弓ヶ浜｜犬とシーカヤック"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-kawazu/index.html": {
+          "title": "犬と河津。｜河津の犬連れ・ペット可宿泊地図",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と河津 ●"
+            },
+            {
+              "level": "h2",
+              "text": "施設名"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 16,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-matsuzaki/index.html": {
+          "title": "犬と松崎。｜松崎・雲見の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と松崎。"
+            },
+            {
+              "level": "h2",
+              "text": "へんな村キャンプ場"
+            },
+            {
+              "level": "h2",
+              "text": "山芳園"
+            },
+            {
+              "level": "h2",
+              "text": "なか川"
+            },
+            {
+              "level": "h2",
+              "text": "浜道楽"
+            },
+            {
+              "level": "h2",
+              "text": "御宿あさか"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 20,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-minamiizu/index.html": {
+          "title": "犬と南伊豆。｜弓ヶ浜・下賀茂の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と南伊豆。"
+            },
+            {
+              "level": "h2",
+              "text": "ペットと泊まれる温泉宿 バロン"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬と癒しのアジアンリゾート 海宿 太陽人"
+            },
+            {
+              "level": "h2",
+              "text": "ログハウス愛犬かしま"
+            },
+            {
+              "level": "h2",
+              "text": "ペンション弓ヶ浜"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-nakaizu/index.html": {
+          "title": "犬と中伊豆。｜修善寺・中伊豆の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と中伊豆。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆ドッグランド"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺 虹の郷"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺 絆＋"
+            },
+            {
+              "level": "h2",
+              "text": "ホテルラフォーレ修善寺 ドッグコテージ"
+            },
+            {
+              "level": "h2",
+              "text": "中伊豆 EAST WINDS VILLAGE"
+            },
+            {
+              "level": "h2",
+              "text": "LScamp中伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "グリーンポケット"
+            },
+            {
+              "level": "h2",
+              "text": "中伊豆フィッシュファーム"
+            },
+            {
+              "level": "h2",
+              "text": "浄蓮の滝"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 30,
+          "a8LinkCount": 3,
+          "bookingLinkCount": 1,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-nishiizu/index.html": {
+          "title": "犬と西伊豆。｜堂ヶ島・仁科の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と西伊豆。"
+            },
+            {
+              "level": "h2",
+              "text": "きがるな・・宿・シーガル"
+            },
+            {
+              "level": "h2",
+              "text": "IZU GLAMPING RESORT Ishiki 385"
+            },
+            {
+              "level": "h2",
+              "text": "堂ヶ島ランドホピア"
+            },
+            {
+              "level": "h2",
+              "text": "Dog salon & Hotel SANTA"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-shimoda/index.html": {
+          "title": "下田の犬連れ旅行ガイド｜犬と泊まれる宿・ランチ・観光スポット【2026】",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と下田 ●"
+            },
+            {
+              "level": "h2",
+              "text": "施設名"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            },
+            {
+              "level": "h1",
+              "text": "犬と下田。｜下田の犬連れ旅行ガイド"
+            },
+            {
+              "level": "h2",
+              "text": "掲載中の犬連れスポット"
+            }
+          ],
+          "anchors": 19,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
         }
       },
       "links": [
@@ -715,7 +1831,8 @@
         "pageHttpBroken": 0,
         "linksChecked": 81,
         "linksBroken": 0,
-        "linksUnknown": 0
+        "linksUnknown": 0,
+        "pagesWithA8Markup": 28
       },
       "external": {
         "ga4Events": "unverified",
