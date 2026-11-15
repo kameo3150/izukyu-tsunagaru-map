@@ -46,6 +46,29 @@ jobs:
           for i, part in enumerate(x.parts): Path('/tmp/audit-js-%s.js'%i).write_text(part)
           PY
           for f in /tmp/audit-js-*.js; do node --check "$f"; done
+      - name: Headless browser dashboard smoke test
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/izu-server.log 2>&1 &
+          trap 'kill $! 2>/dev/null || true' EXIT
+          python - <<'PY'
+          import time,urllib.request
+          for attempt in range(30):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:8765/audit-dashboard/', timeout=1)
+                  break
+              except Exception:time.sleep(.2)
+          else:raise SystemExit('Local dashboard server did not start')
+          PY
+          CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          test -n "$CHROME" || { echo 'Chrome not available'; exit 1; }
+          "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --virtual-time-budget=10000 --dump-dom http://127.0.0.1:8765/audit-dashboard/ > /tmp/izu-dashboard-rendered.html 2>/tmp/izu-chrome.log
+          python - <<'PY'
+          from pathlib import Path
+          page=Path('/tmp/izu-dashboard-rendered.html').read_text()
+          for phrase in ['犬と伊豆｜運営点検ダッシュボード','週次自動点検','点検項目・未完了事項','公開ページ一覧と特集ページ','GitHub保存履歴']:
+              assert phrase in page, 'Missing rendered text: '+phrase
+          print('Dashboard rendered in headless Chrome; audit panel present')
+          PY
       - name: Audit pages and links
         run: python audit-dashboard/audit.py
       - name: Save verified audit report
