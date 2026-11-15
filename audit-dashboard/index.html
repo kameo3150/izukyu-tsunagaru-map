@@ -9,13 +9,13 @@
 <div class="actions"><button class="primary" id="refresh">GitHubの現状を確認</button><button id="save">今回の点検を履歴保存</button><button id="export">履歴JSONを書き出す</button><button id="importBtn">履歴JSONを読み込む</button><input hidden type="file" accept=".json,application/json" id="importFile"></div><p id="message" class="status" role="status"></p></header>
 <main><div class="note">「ファイルあり」は「公開URLが正常」「リンク切れなし」を意味しません。GitHubから見えないGA4受信・A8提携・成果報酬は未確認のまま記録します。自動点検履歴はGitHubに保存されます。手動で保存した履歴のみ、このブラウザ内に保存されます。</div>
 <div class="cards"><div class="card"><div class="label">前回からのファイル差分</div><div class="num" id="changes">—</div></div><div class="card"><div class="label">GitHubで検出した管理ページ</div><div class="num" id="pages">—</div></div><div class="card"><div class="label">地域別ページ</div><div class="num" id="regions">—</div></div><div class="card"><div class="label">未確認・未完了項目</div><div class="num" id="outstanding">—</div></div></div>
-<section><h2>前回との差分（優先）</h2><p class="muted" id="compareInfo">前回の履歴がないため比較対象なし。</p><div class="tablewrap"><table><thead><tr><th>変化</th><th>ファイル</th><th>確認元</th></tr></thead><tbody id="diffRows"></tbody></table></div></section>
+<section><h2>手動取得の前回差分</h2><p class="muted" id="compareInfo">前回の履歴がないため比較対象なし。</p><div class="tablewrap"><table><thead><tr><th>変化</th><th>ファイル</th><th>確認元</th></tr></thead><tbody id="diffRows"></tbody></table></div></section>
 <section><h2>点検項目・未完了事項</h2><p class="muted">GitHubで確認できる実装と、GA4・A8など外部管理画面でしか確認できない実績を区別しています。</p><div class="tablewrap"><table><thead><tr><th>確認区分</th><th>点検項目</th><th>ステータス</th><th>確認日</th><th>根拠・未確認理由</th><th>確認元</th></tr></thead><tbody id="checkRows"></tbody></table></div></section>
 <section><h2>地域別の整備状況</h2><div class="tablewrap"><table><thead><tr><th>地域</th><th>GitHub掲載</th><th>公開動作</th><th>内容の最新性</th><th>確認元</th></tr></thead><tbody id="regionRows"></tbody></table></div></section>
 <section><h2>公開ページ一覧と特集ページ</h2><p class="muted">GitHub mainのindex.htmlを列挙。リンク切れ・HTTP応答は、実際に確認していなければ「未確認」のままです。</p><label>種別 <select id="category"><option value="all">すべて</option><option value="トップ">トップ</option><option value="地域">地域</option><option value="特集">特集</option><option value="カテゴリ">カテゴリ</option></select></label><div class="tablewrap"><table><thead><tr><th>区分</th><th>ページ</th><th>GitHub上</th><th>公開・リンク</th><th>最終確認日</th><th>確認元URL</th></tr></thead><tbody id="pageRows"></tbody></table></div></section>
 <section><h2>トップページと特集ページの差分</h2><p class="muted">GitHubのHTMLファイルSHAで追加・更新・削除を比較します。内容の意味や予約導線の機能までは、この比較で保証しません。</p><div id="special"></div></section>
 <section><h2>週次点検履歴</h2><div class="tablewrap"><table><thead><tr><th>確認日（端末時刻）</th><th>GitHubツリーSHA</th><th>ページ数</th><th>対前回ファイル変更</th></tr></thead><tbody id="historyRows"></tbody></table></div></section>
-<footer><small>運用方針：公開サイト・GitHubのファイルは変更しません。データの取得エラーは正常と判定しません。最新のブラウザ取得と履歴保存は別操作です。</small></footer></main>
+<footer><small>運用方針：この画面と検査プログラムは公開サイトのコンテンツを変更しません。週次の検査履歴のみGitHubに追加します。データの取得エラーは正常と判定しません。最新のブラウザ取得と履歴保存は別操作です。</small></footer></main>
 <script>
 'use strict';
 const base='https://kameo3150.github.io/izukyu-tsunagaru-map/';
@@ -76,6 +76,9 @@ if(history.length){current=history[history.length-1];draw()}refresh();
 <p><a href="https://github.com/kameo3150/izukyu-tsunagaru-map/actions/workflows/dog-izu-audit.yml" target="_blank" rel="noopener">週次点検の実行記録</a> ／ <a href="./data/history.json" target="_blank" rel="noopener">点検結果JSON</a></p></section>
 <script>
 (async function(){
+const node=document.getElementById('serverAudit');
+const main=document.querySelector('main');
+if(node&&main)main.insertBefore(node,main.querySelector('section'));
 const area=document.getElementById('autoState'),rows=document.getElementById('autoRows'),link='data/history.json';
 try{
 const r=await fetch(link+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);
