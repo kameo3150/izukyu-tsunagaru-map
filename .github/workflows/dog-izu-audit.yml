@@ -7,6 +7,7 @@ on:
     paths:
       - 'audit-dashboard/audit.py'
       - '.github/workflows/dog-izu-audit.yml'
+      - 'audit-dashboard/index.html'
 permissions:
   contents: write
 jobs:
@@ -20,6 +21,31 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Validate dashboard JavaScript and markup
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class Scripts(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.inscript=False; self.parts=[]; self.buf=[]; self.ids=set()
+              def handle_starttag(self, tag, attrs):
+                  attrs=dict(attrs)
+                  if attrs.get('id'): self.ids.add(attrs['id'])
+                  if tag=='script' and not attrs.get('src'):
+                      self.inscript=True; self.buf=[]
+              def handle_data(self, data):
+                  if self.inscript: self.buf.append(data)
+              def handle_endtag(self, tag):
+                  if tag=='script' and self.inscript:
+                      self.parts.append(''.join(self.buf)); self.inscript=False
+          x=Scripts(); x.feed(Path('audit-dashboard/index.html').read_text())
+          assert len(x.parts)>=2
+          for id in ('pageRows','regionRows','autoRows','autoHistory','autoState','serverAudit'):
+              assert id in x.ids, id
+          for i, part in enumerate(x.parts): Path('/tmp/audit-js-%s.js'%i).write_text(part)
+          PY
+          for f in /tmp/audit-js-*.js; do node --check "$f"; done
       - name: Audit pages and links
         run: python audit-dashboard/audit.py
       - name: Save verified audit report
