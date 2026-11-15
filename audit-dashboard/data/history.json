@@ -2,9 +2,9 @@
   "schema": "inu-izu-audit-history-v2",
   "snapshots": [
     {
-      "checkedAt": "2026-11-15T00:53:43+00:00",
+      "checkedAt": "2026-11-15T00:58:50+00:00",
       "source": "https://api.github.com/repos/kameo3150/izukyu-tsunagaru-map/git/trees/main?recursive=1",
-      "treeSha": "c622e924327af75d70728b3112c9478fe609ff9a",
+      "treeSha": "6326a65a90c55b95b2c24342e619ceaf45557c45",
       "pages": {
         "inu-to-atami/index.html": "176245c3db512bc7fc8943701603f157a7aae165",
         "inu-to-higashiizu/index.html": "e8fb620106f25dcb7c3d0de14e862f8b1a5f6d65",
