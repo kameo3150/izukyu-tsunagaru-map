@@ -1,0 +1,848 @@
+{
+  "schema": "inu-izu-audit-history-v2",
+  "snapshots": [
+    {
+      "checkedAt": "2026-11-15T00:47:23+00:00",
+      "source": "https://api.github.com/repos/kameo3150/izukyu-tsunagaru-map/git/trees/main?recursive=1",
+      "treeSha": "7612e44d2e0324467a16370e4f53f460b2b8a6be",
+      "pages": {
+        "inu-to-atami/index.html": "176245c3db512bc7fc8943701603f157a7aae165",
+        "inu-to-higashiizu/index.html": "e8fb620106f25dcb7c3d0de14e862f8b1a5f6d65",
+        "inu-to-ito/index.html": "b61923a2d95cb0df28219270978072a0c5daa137",
+        "inu-to-izu/dogrun/index.html": "b0358458d77fd37d1c686c22ef41eee10972e105",
+        "inu-to-izu/eat/index.html": "1611bfcf0fb37ffe1ad04cbde565d905cf04aed2",
+        "inu-to-izu/experience/index.html": "13b13344aadc0c0e4402bc02c762075493c36346",
+        "inu-to-izu/feature/dog-amusement-parks/index.html": "3b6baa40a6d01743a0c4750a8c143e18188611de",
+        "inu-to-izu/feature/dog-price/index.html": "b677cbf591a04a016835b55c00054237ad115cd7",
+        "inu-to-izu/feature/dog-starter-goods/index.html": "d0450b9d12a68c52e4dd22d10193174dda159006",
+        "inu-to-izu/feature/dog-winter-illumination-2026-2027/index.html": "549a499313c8663ab0dfc665b3be1437964d81e1",
+        "inu-to-izu/feature/large-dog-izu/index.html": "83adf5c43a838d0ec8f6ebb792df1bf5ef56d453",
+        "inu-to-izu/feature/newyear-dog-stay-2026-2027/index.html": "fcba4008b52864d610283e230a7ef0e24466ba15",
+        "inu-to-izu/feature/nijinosato-autumn-2026/index.html": "35dd24c9c3c797bb5cd6d67bfaeb3ba5ecbab422",
+        "inu-to-izu/feature/petshop-vs-breeder/index.html": "e5642d7f440cef468ed4075408f433d79bbd9c66",
+        "inu-to-izu/feature/popular-dog-breeds/index.html": "425bf5a6dcdbb3da368b48145426785b459530ff",
+        "inu-to-izu/feature/rainy-day-izukogen/index.html": "62578b25010c18ffe45d6fff928c3ebd55f1b66c",
+        "inu-to-izu/feature/train-with-dog/index.html": "55380a7e21a5b489c7ac0e2a06f7d68836012ed3",
+        "inu-to-izu/index.html": "5e95ad3f0f28adabc2e70fdfb32faeaf9e8e97d5",
+        "inu-to-izu/promo/index.html": "9c33b016ef804fb658e115d2eb8b8a509963e64b",
+        "inu-to-izu/reviews/index.html": "e94a9f2d6a4053ac271951cf6a79e298fba0f3ea",
+        "inu-to-izu/site-map/index.html": "79fed84bfb39857c897fbf6a3269761108caeb47",
+        "inu-to-izu/stay/index.html": "bef74bfa7a04bcff0ce625ee5312876ff0955c28",
+        "inu-to-izu/walk/index.html": "783f58515aa4ab529b4cb960b30723af36bbbc08",
+        "inu-to-izu/water/index.html": "da11fc64f6a31d122c375dbebc563be3b8e3653e",
+        "inu-to-kawazu/index.html": "24b0ba08c74559beb1d268d06925e40343a1ab8f",
+        "inu-to-matsuzaki/index.html": "033bed524c6996d7bd18726bf31f2e363b5eeb2c",
+        "inu-to-minamiizu/index.html": "a96a60ba3e40ee463bbc7f6427f43bdcfe608b4c",
+        "inu-to-nakaizu/index.html": "f6b13ace50bc6a824cac687afd177ff1dd7dca10",
+        "inu-to-nishiizu/index.html": "bd6d35195fad880827a63d94d040d4a623de49d9",
+        "inu-to-shimoda/index.html": "6406e5281e008552ef16fe0bdfc123323df3239b"
+      },
+      "pageChecks": {
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/promo/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/promo/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/promo/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/"
+        }
+      },
+      "links": [
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%81%BB%E3%81%A3%E3%81%9F%E3%82%89%E3%81%8B%E3%81%97%E3%81%AE%E5%AE%BF%20%E3%82%86%E3%81%86%E3%81%B5%E3%82%8A%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%81%BB%E3%81%A3%E3%81%9F%E3%82%89%E3%81%8B%E3%81%97%E3%81%AE%E5%AE%BF%20%E3%82%86%E3%81%86%E3%81%B5%E3%82%8A%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9%20%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9%20%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%A6%E3%83%96%E3%83%89%E3%81%AE%E6%A3%AE%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%A6%E3%83%96%E3%83%89%E3%81%AE%E6%A3%AE%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%83%AC%E3%82%B8%E3%83%BC%E3%83%8A%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E4%BC%8A%E8%B1%86%E7%84%A1%E9%84%B0",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%83%AC%E3%82%B8%E3%83%BC%E3%83%8A%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E4%BC%8A%E8%B1%86%E7%84%A1%E9%84%B0"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E4%BC%8A%E8%B1%86%E3%81%90%E3%82%89%E3%82%93%E3%81%B1%E3%82%8B%E5%85%AC%E5%9C%92",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E4%BC%8A%E8%B1%86%E3%81%90%E3%82%89%E3%82%93%E3%81%B1%E3%82%8B%E5%85%AC%E5%9C%92"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E5%A4%A7%E5%AE%A4%E5%B1%B1%E7%99%BB%E5%B1%B1%E3%83%AA%E3%83%95%E3%83%88",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E5%A4%A7%E5%AE%A4%E5%B1%B1%E7%99%BB%E5%B1%B1%E3%83%AA%E3%83%95%E3%83%88"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E6%84%9B%E7%8A%AC%E3%81%8A%E5%AE%BF%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E6%84%9B%E7%8A%AC%E3%81%8A%E5%AE%BF%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E6%84%9B%E7%8A%AC%E3%81%AE%E9%A7%85%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E6%84%9B%E7%8A%AC%E3%81%AE%E9%A7%85%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/app.js?v=20260925-ito01",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/app.js?v=20260925-ito01"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/styles.css?v=20260925-ito01",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/styles.css?v=20260925-ito01"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/analytics-settings.js?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/analytics-settings.js?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.css?v=20261024",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.css?v=20261024"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261024",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261024"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261030-jalan-plan",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261030-jalan-plan"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/feature.js?v=20261105",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/feature.js?v=20261105"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/og.jpg",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/og.jpg"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/feature.js?v=20261030",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/feature.js?v=20261030"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/travel-guide.css",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/travel-guide.css"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/analytics.js?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/analytics.js?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/app.js?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/app.js?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/coast.webp",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/coast.webp"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/dog-run.webp",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/dog-run.webp"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/mountain.webp",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/mountain.webp"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/config.js?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/config.js?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/style.css?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/style.css?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-nav.css",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-nav.css"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E3%82%8F%E3%82%93%E3%81%93%E3%81%A8%E5%AE%B6%E6%97%8F%E3%81%AE%E5%AE%BF%20%E6%B5%AC%E4%B8%96%E4%BA%BA%EF%BC%88%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%EF%BC%89",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E3%82%8F%E3%82%93%E3%81%93%E3%81%A8%E5%AE%B6%E6%97%8F%E3%81%AE%E5%AE%BF%20%E6%B5%AC%E4%B8%96%E4%BA%BA%EF%BC%88%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%EF%BC%89"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E3%83%9B%E3%83%86%E3%83%AB%E5%9B%9B%E5%AD%A3%E3%81%AE%E8%94%B5",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E3%83%9B%E3%83%86%E3%83%AB%E5%9B%9B%E5%AD%A3%E3%81%AE%E8%94%B5"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E5%92%8C%E3%81%BF%E3%81%AE%E7%8A%AC%E5%AE%BF%20%E3%82%80%E3%81%A4%E3%81%BF%E5%BA%B5",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E5%92%8C%E3%81%BF%E3%81%AE%E7%8A%AC%E5%AE%BF%20%E3%82%80%E3%81%A4%E3%81%BF%E5%BA%B5"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E6%B9%AF%E5%AE%BF%20%E6%A1%9C%E3%81%96%E3%81%8B",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E6%B9%AF%E5%AE%BF%20%E6%A1%9C%E3%81%96%E3%81%8B"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=Sea%20Shell%20KAWAZU%20House",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=Sea%20Shell%20KAWAZU%20House"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/app.js?v=20260923-2300",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/app.js?v=20260923-2300"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/styles.css?v=20260923-2300",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/styles.css?v=20260923-2300"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%81%8A%E3%81%8A%E3%81%AF%E3%81%97%E7%B7%91%E6%B0%B4%E8%8B%91",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%81%8A%E3%81%8A%E3%81%AF%E3%81%97%E7%B7%91%E6%B0%B4%E8%8B%91"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%82%80%E3%81%95%E3%81%97",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%82%80%E3%81%95%E3%81%97"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%83%89%E3%83%83%E3%82%B0%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%20%E3%81%B3%E3%82%8F%E3%81%AE%E6%9C%A8",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%83%89%E3%83%83%E3%82%B0%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%20%E3%81%B3%E3%82%8F%E3%81%AE%E6%9C%A8"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%83%8F%E3%83%8A%E3%82%AB%E3%83%95%E3%82%A7",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%83%8F%E3%83%8A%E3%82%AB%E3%83%95%E3%82%A7"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%B8%8B%E7%94%B0%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%B8%8B%E7%94%B0%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%B8%8B%E7%94%B0%E6%99%82%E8%A8%88%E5%8F%B0%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%B8%8B%E7%94%B0%E6%99%82%E8%A8%88%E5%8F%B0%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%BC%8A%E8%B1%86%E6%B5%B7%E9%AE%AE%20%E7%80%A7",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%BC%8A%E8%B1%86%E6%B5%B7%E9%AE%AE%20%E7%80%A7"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E6%99%B4%E3%83%AC%E5%B1%8B",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E6%99%B4%E3%83%AC%E5%B1%8B"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E6%B4%BB%E9%AD%9A%E6%96%99%E7%90%86%20%E6%96%B0%E7%94%B0",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E6%B4%BB%E9%AD%9A%E6%96%99%E7%90%86%20%E6%96%B0%E7%94%B0"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E8%B2%B8%E5%88%A5%E8%8D%98%20%E3%83%93%E3%83%A9%E5%B0%8F%E6%B2%A2",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E8%B2%B8%E5%88%A5%E8%8D%98%20%E3%83%93%E3%83%A9%E5%B0%8F%E6%B2%A2"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=AMMOS%20PET%20FRIENDLY%20HOTEL",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=AMMOS%20PET%20FRIENDLY%20HOTEL"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=Beach%20Front%20Seretis",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=Beach%20Front%20Seretis"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=FermenCo.",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=FermenCo."
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=south%20cafe",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=south%20cafe"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/app.js?v=20260923-2235",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/app.js?v=20260923-2235"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/styles.css?v=20260923-2300",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/styles.css?v=20260923-2300"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/sitemap.xml",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/sitemap.xml"
+        }
+      ],
+      "diffs": [
+        {
+          "path": "inu-to-atami/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-higashiizu/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-ito/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/dogrun/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/eat/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/experience/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/dog-amusement-parks/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/dog-price/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/dog-starter-goods/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/dog-winter-illumination-2026-2027/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/large-dog-izu/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/newyear-dog-stay-2026-2027/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/nijinosato-autumn-2026/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/petshop-vs-breeder/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/popular-dog-breeds/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/rainy-day-izukogen/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/train-with-dog/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/promo/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/reviews/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/site-map/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/stay/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/walk/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/water/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-kawazu/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-matsuzaki/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-minamiizu/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-nakaizu/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-nishiizu/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-shimoda/index.html",
+          "change": "added"
+        }
+      ],
+      "summary": {
+        "pagesListed": 30,
+        "pageHttpOK": 30,
+        "pageHttpUnknown": 0,
+        "pageHttpBroken": 0,
+        "linksChecked": 81,
+        "linksBroken": 0,
+        "linksUnknown": 0
+      },
+      "external": {
+        "ga4Events": "unverified",
+        "a8Agreement": "unverified",
+        "a8Conversions": "unverified"
+      }
+    }
+  ]
+}
