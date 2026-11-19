@@ -150,5 +150,7 @@
   }
   window.addEventListener('popstate',()=>{applyUrl();render();});
   applyUrl();syncSaved();
-  fetch(new URL('data/spots.json', document.currentScript.src)).then(response=>{if(!response.ok)throw Error('data');return response.json();}).then(data=>{spots=data;render();}).catch(()=>{$('error').hidden=false;$('result-count').textContent='情報を取得できませんでした';});
+  const dataUrl = new URL('data/spots.json', document.currentScript.src);
+  dataUrl.search = new URL(document.currentScript.src).search;
+  fetch(dataUrl).then(response=>{if(!response.ok)throw Error('data');return response.json();}).then(data=>{spots=data;render();}).catch(()=>{$('error').hidden=false;$('result-count').textContent='情報を取得できませんでした';});
 })();
