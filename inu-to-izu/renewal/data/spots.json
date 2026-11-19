@@ -2278,5 +2278,54 @@
     "locationSource": "https://www.seakayaking.jp/?page_id=2145",
     "locationMapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1849791432987!2d138.97214546068074!3d34.6752805994326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60175f2443a090b3%3A0x76af31394a2cc4b8!2zS0FJJ1RP44K344O844Kr44Ok44OD44Kv44K544Kv44O844Or!5e0!3m2!1sja!2sjp!4v1721092694841!5m2!1sja!2sjp",
     "locationChecked": "2026/10/26"
+  },
+  {
+    "id": "naka-hachinobo",
+    "name": "小松家 八の坊",
+    "area": "伊豆長岡温泉",
+    "type": "stay",
+    "emoji": "♨️",
+    "filters": [
+      "stay"
+    ],
+    "tags": [
+      "犬専用温泉足湯",
+      "屋上ドッグラン",
+      "温泉付き客室あり"
+    ],
+    "note": "愛犬と泊まれる伊豆長岡の温泉宿。犬専用足湯や屋上ドッグランがあり、風呂・食事場所は客室ごとに異なります。",
+    "details": [
+      "屋上ドッグランへは途中に階段があります。",
+      "511号室は人用半露天風呂・犬専用露天風呂・専用ドッグラン付き。全室共通ではありません。",
+      "客室に犬だけで留守番する場合はケージを使用。",
+      "犬の頭数・追加料金・入浴・寝具利用は客室とプランの条件を確認。"
+    ],
+    "rule": "接種または抗体検査の条件がある室内犬が対象。特別な事情がある場合は宿へ相談。館内はリード着用。",
+    "price": "人の宿泊費・犬の追加料金は日程とプランで確認",
+    "hours": "チェックイン・チェックアウトは予約するプランで確認",
+    "parking": "台数・利用条件は宿へ確認",
+    "sourceUrl": "https://hachinobo.com/dog/",
+    "sourceLabel": "八の坊 公式の犬同伴案内",
+    "sources": [
+      [
+        "公式：犬同伴条件・足湯・屋上ラン",
+        "https://hachinobo.com/dog/"
+      ],
+      [
+        "公式：511号室の設備",
+        "https://hachinobo.com/room/special_511.php?id=lead"
+      ]
+    ],
+    "featureUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/hachinobo-dog-onsen/",
+    "region": "naka",
+    "regionLabel": "中伊豆",
+    "reviewStatus": "reviewed",
+    "checked": "2026/11/19",
+    "categories": [
+      "stay",
+      "run"
+    ],
+    "largeEvidence": false,
+    "indoorEvidence": true
   }
 ]
