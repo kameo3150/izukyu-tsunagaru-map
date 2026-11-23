@@ -1839,6 +1839,2036 @@
         "a8Agreement": "unverified",
         "a8Conversions": "unverified"
       }
+    },
+    {
+      "checkedAt": "2026-11-23T03:35:26+00:00",
+      "source": "https://api.github.com/repos/kameo3150/izukyu-tsunagaru-map/git/trees/main?recursive=1",
+      "treeSha": "675d80a41957fe0326e93917b092fa8123c87629",
+      "pages": {
+        "inu-to-atami/index.html": "176245c3db512bc7fc8943701603f157a7aae165",
+        "inu-to-higashiizu/index.html": "e8fb620106f25dcb7c3d0de14e862f8b1a5f6d65",
+        "inu-to-ito/index.html": "b61923a2d95cb0df28219270978072a0c5daa137",
+        "inu-to-izu/dogrun/index.html": "b0358458d77fd37d1c686c22ef41eee10972e105",
+        "inu-to-izu/eat/index.html": "1611bfcf0fb37ffe1ad04cbde565d905cf04aed2",
+        "inu-to-izu/experience/index.html": "13b13344aadc0c0e4402bc02c762075493c36346",
+        "inu-to-izu/feature/ammos-review-2026/index.html": "ae5f7240ec63bcb4f45e8009a42b07f1a402b47a",
+        "inu-to-izu/feature/dog-amusement-parks/index.html": "3b6baa40a6d01743a0c4750a8c143e18188611de",
+        "inu-to-izu/feature/dog-price/index.html": "b677cbf591a04a016835b55c00054237ad115cd7",
+        "inu-to-izu/feature/dog-starter-goods/index.html": "d0450b9d12a68c52e4dd22d10193174dda159006",
+        "inu-to-izu/feature/dog-winter-illumination-2026-2027/index.html": "549a499313c8663ab0dfc665b3be1437964d81e1",
+        "inu-to-izu/feature/hachinobo-dog-onsen/index.html": "994fe807e7f4a49a93c691738210bf9ade0e6988",
+        "inu-to-izu/feature/large-dog-izu/index.html": "83adf5c43a838d0ec8f6ebb792df1bf5ef56d453",
+        "inu-to-izu/feature/newyear-dog-stay-2026-2027/index.html": "74c9f29bebd4104946712bc5b739b41aa36fa7c5",
+        "inu-to-izu/feature/nijinosato-autumn-2026/index.html": "35dd24c9c3c797bb5cd6d67bfaeb3ba5ecbab422",
+        "inu-to-izu/feature/petshop-vs-breeder/index.html": "e5642d7f440cef468ed4075408f433d79bbd9c66",
+        "inu-to-izu/feature/popular-dog-breeds/index.html": "425bf5a6dcdbb3da368b48145426785b459530ff",
+        "inu-to-izu/feature/rainy-day-izukogen/index.html": "62578b25010c18ffe45d6fff928c3ebd55f1b66c",
+        "inu-to-izu/feature/train-with-dog/index.html": "55380a7e21a5b489c7ac0e2a06f7d68836012ed3",
+        "inu-to-izu/feature/ubudnomori-dog-stay/index.html": "49bb390ea112f45c3e3b71ced1a1598bbb2d7983",
+        "inu-to-izu/index.html": "40e453c275d30ba81eab3af5927497b2bad91f62",
+        "inu-to-izu/promo/index.html": "9c33b016ef804fb658e115d2eb8b8a509963e64b",
+        "inu-to-izu/reviews/index.html": "e94a9f2d6a4053ac271951cf6a79e298fba0f3ea",
+        "inu-to-izu/site-map/index.html": "a79a86bea59e57867bce30be7b6f3a810f32de8e",
+        "inu-to-izu/stay/index.html": "bef74bfa7a04bcff0ce625ee5312876ff0955c28",
+        "inu-to-izu/walk/index.html": "783f58515aa4ab529b4cb960b30723af36bbbc08",
+        "inu-to-izu/water/index.html": "da11fc64f6a31d122c375dbebc563be3b8e3653e",
+        "inu-to-kawazu/index.html": "24b0ba08c74559beb1d268d06925e40343a1ab8f",
+        "inu-to-matsuzaki/index.html": "033bed524c6996d7bd18726bf31f2e363b5eeb2c",
+        "inu-to-minamiizu/index.html": "a96a60ba3e40ee463bbc7f6427f43bdcfe608b4c",
+        "inu-to-nakaizu/index.html": "f6b13ace50bc6a824cac687afd177ff1dd7dca10",
+        "inu-to-nishiizu/index.html": "bd6d35195fad880827a63d94d040d4a623de49d9",
+        "inu-to-shimoda/index.html": "6406e5281e008552ef16fe0bdfc123323df3239b"
+      },
+      "pageChecks": {
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ammos-review-2026/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ammos-review-2026/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ammos-review-2026/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/hachinobo-dog-onsen/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/hachinobo-dog-onsen/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/hachinobo-dog-onsen/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ubudnomori-dog-stay/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ubudnomori-dog-stay/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ubudnomori-dog-stay/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/promo/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/promo/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/promo/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/"
+        },
+        "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/": {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/"
+        }
+      },
+      "pageDetails": {
+        "inu-to-atami/index.html": {
+          "title": "犬と熱海。｜電車でも行きやすい犬連れ熱海ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と熱海。"
+            },
+            {
+              "level": "h2",
+              "text": "熱海梅園"
+            },
+            {
+              "level": "h2",
+              "text": "Blue nine cafe"
+            },
+            {
+              "level": "h2",
+              "text": "Café & Restaurant Nagisa"
+            },
+            {
+              "level": "h2",
+              "text": "ACAO FOREST"
+            },
+            {
+              "level": "h2",
+              "text": "熱海城 ヒルトップテラス"
+            },
+            {
+              "level": "h2",
+              "text": "犬と泊まる場所を探す"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 43,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-higashiizu/index.html": {
+          "title": "犬と東伊豆。｜熱川・稲取の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と東伊豆。"
+            },
+            {
+              "level": "h2",
+              "text": "熱川オーシャンリゾート"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆アニマルキングダム"
+            },
+            {
+              "level": "h2",
+              "text": "稲取細野高原"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 20,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-ito/index.html": {
+          "title": "犬と伊東。｜伊豆高原の犬連れスポット地図",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と伊東 ●"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 16,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/dogrun/index.html": {
+          "title": "伊豆で犬と走る｜ドッグラン・犬が遊べる場所22件｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と走る。"
+            },
+            {
+              "level": "h2",
+              "text": "下田"
+            },
+            {
+              "level": "h2",
+              "text": "河津"
+            },
+            {
+              "level": "h2",
+              "text": "東伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "南伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺・中伊豆・天城｜6件"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 37,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/eat/index.html": {
+          "title": "伊豆で犬と食べる｜犬同伴OKのカフェ・食事13件｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と一緒に食べる。"
+            },
+            {
+              "level": "h2",
+              "text": "熱海｜2件"
+            },
+            {
+              "level": "h2",
+              "text": "下田｜9件"
+            },
+            {
+              "level": "h2",
+              "text": "中伊豆｜1件"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原｜1件"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 28,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/experience/index.html": {
+          "title": "犬と伊豆で何する？料金・犬の条件で選ぶ10の体験｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と伊豆で、何しよう？"
+            },
+            {
+              "level": "h2",
+              "text": "約1時間で楽しむ"
+            },
+            {
+              "level": "h2",
+              "text": "動物や景色を、一緒に楽しむ"
+            },
+            {
+              "level": "h2",
+              "text": "自分たちで体験する"
+            },
+            {
+              "level": "h2",
+              "text": "行き先が決まったら"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 41,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/ammos-review-2026/index.html": {
+          "title": "愛犬と過ごす海辺のホテル｜口コミ高評価のAMMOSが選ばれる理由｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "愛犬と過ごす、海辺の小さなホテル。口コミ高評価4.9の「AMMOS」が選ばれる理由"
+            },
+            {
+              "level": "h2",
+              "text": "口コミ総合4.9。特に評価されているのは料理と客室"
+            },
+            {
+              "level": "h2",
+              "text": "旅の楽しみになる、下田ならではの食事"
+            },
+            {
+              "level": "h2",
+              "text": "窓の向こうには外浦の海。客室で過ごす時間も旅の楽しみに"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬も一緒に。犬連れ旅行で気になる設備と過ごしやすさ"
+            },
+            {
+              "level": "h2",
+              "text": "全6室だからこそ、滞在そのものを楽しみたい"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬との宿泊料金と予約前の確認事項"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬と過ごす下田の休日に"
+            },
+            {
+              "level": "h2",
+              "text": "AMMOS PET FRIENDLY HOTEL"
+            }
+          ],
+          "anchors": 8,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 5,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/dog-amusement-parks/index.html": {
+          "title": "犬と行ける伊豆の遊園地・テーマパーク4選｜一緒に乗れる？ドッグランは？｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と行ける伊豆の 遊園地・テーマパーク4選"
+            },
+            {
+              "level": "h2",
+              "text": "遊園地から、犬連れ旅行の行程を組む"
+            },
+            {
+              "level": "h2",
+              "text": "4施設を犬連れ目線で比較"
+            },
+            {
+              "level": "h2",
+              "text": "① 伊豆ぐらんぱる公園"
+            },
+            {
+              "level": "h2",
+              "text": "犬と伊豆。ならこう選ぶ"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/dog-price/index.html": {
+          "title": "いま犬はいくら？人気10犬種の子犬価格一覧【2026年10月】｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "いま犬はいくら？ 人気10犬種の子犬価格"
+            },
+            {
+              "level": "h2",
+              "text": "まず、数字だけ。"
+            },
+            {
+              "level": "h2",
+              "text": "人気10犬種の価格一覧"
+            },
+            {
+              "level": "h2",
+              "text": "なんで同じ犬種なのに、こんなに違う？"
+            },
+            {
+              "level": "h2",
+              "text": "この数字は「ペットショップ平均」ではありません"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 13,
+          "a8LinkCount": 3,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/dog-starter-goods/index.html": {
+          "title": "犬を迎えるとき最初に揃えるもの｜最低限の犬グッズ一覧｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬を迎えるとき 最初に揃えるもの"
+            },
+            {
+              "level": "h2",
+              "text": "まず揃えたい7つ"
+            },
+            {
+              "level": "h2",
+              "text": "これは暮らし始めてからでもいい"
+            },
+            {
+              "level": "h2",
+              "text": "最初から買いすぎない方がいい理由"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 12,
+          "a8LinkCount": 3,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/dog-winter-illumination-2026-2027/index.html": {
+          "title": "犬と行ける冬のイルミネーション4選｜静岡・神奈川・千葉 2026–2027｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "今年の冬は、 犬とイルミネーションへ。"
+            },
+            {
+              "level": "h2",
+              "text": "イルミの夜、どこに泊まる？"
+            },
+            {
+              "level": "h2",
+              "text": "犬と、どんな夜を過ごそう？"
+            },
+            {
+              "level": "h2",
+              "text": "ひかりのすみか 御殿場高原 時之栖"
+            },
+            {
+              "level": "h2",
+              "text": "はままつフルーツパーク時之栖 ウィンターイルミネーション"
+            },
+            {
+              "level": "h2",
+              "text": "さがみ湖イルミリオン さがみ湖MORI MORI"
+            },
+            {
+              "level": "h2",
+              "text": "マザーイルミ マザー牧場"
+            },
+            {
+              "level": "h2",
+              "text": "夜のお出かけ前に。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆で、犬と夜のお出かけなら。"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬と泊まる冬の旅行を予約へ。"
+            },
+            {
+              "level": "h2",
+              "text": "掲載情報について"
+            }
+          ],
+          "anchors": 44,
+          "a8LinkCount": 10,
+          "bookingLinkCount": 12,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/hachinobo-dog-onsen/index.html": {
+          "title": "犬も足湯、飼い主は温泉。伊豆長岡「小松家 八の坊」で冬の宿旅｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬も足湯、 飼い主は温泉。 「小松家 八の坊」へ。"
+            },
+            {
+              "level": "h2",
+              "text": "旅の楽しみに、愛犬の足湯も。"
+            },
+            {
+              "level": "h2",
+              "text": "部屋のお風呂は、過ごし方に合わせて。"
+            },
+            {
+              "level": "h2",
+              "text": "夕食まで、宿でゆっくり。"
+            },
+            {
+              "level": "h2",
+              "text": "次の休日は、愛犬と温泉宿へ。"
+            },
+            {
+              "level": "h2",
+              "text": "予約前に確認しておきたいこと。"
+            },
+            {
+              "level": "h2",
+              "text": "確認元"
+            }
+          ],
+          "anchors": 10,
+          "a8LinkCount": 1,
+          "bookingLinkCount": 2,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/large-dog-izu/index.html": {
+          "title": "大型犬と伊豆へ。走る・絶景・食事の同伴条件で選ぶ3施設｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "大型犬と伊豆へ。 うちの犬と、何ができる？"
+            },
+            {
+              "level": "h2",
+              "text": "したいことから、行き先を選ぶ。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆ぐらんぱる公園"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬の駅 伊豆高原"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆パノラマパーク"
+            },
+            {
+              "level": "h2",
+              "text": "宿は「大型犬可」の客室から。"
+            },
+            {
+              "level": "h2",
+              "text": "確認元"
+            }
+          ],
+          "anchors": 19,
+          "a8LinkCount": 0,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/newyear-dog-stay-2026-2027/index.html": {
+          "title": "年末年始は、愛犬と伊豆へ。温泉・海・ドッグランで過ごす冬の宿旅｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "今年の締めくくりも、 新年のはじまりも。 きみと伊豆へ。"
+            },
+            {
+              "level": "h2",
+              "text": "年末年始、どんな時間を過ごそう。"
+            },
+            {
+              "level": "h2",
+              "text": "行きたいエリアから、愛犬との宿旅を。"
+            },
+            {
+              "level": "h2",
+              "text": "熱海"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原"
+            },
+            {
+              "level": "h2",
+              "text": "東伊豆・熱川"
+            },
+            {
+              "level": "h2",
+              "text": "河津"
+            },
+            {
+              "level": "h2",
+              "text": "下田・白浜"
+            },
+            {
+              "level": "h2",
+              "text": "南伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "西伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "松崎・雲見"
+            },
+            {
+              "level": "h2",
+              "text": "中伊豆・修善寺・伊豆長岡"
+            },
+            {
+              "level": "h2",
+              "text": "今年は、愛犬も一緒に。"
+            },
+            {
+              "level": "h2",
+              "text": "ほかのエリアも見てみたい？"
+            }
+          ],
+          "anchors": 93,
+          "a8LinkCount": 61,
+          "bookingLinkCount": 64,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/nijinosato-autumn-2026/index.html": {
+          "title": "犬と紅葉を見るなら修善寺・虹の郷へ｜2026もみじライトアップ｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と秋の伊豆なら、虹の郷へ。"
+            },
+            {
+              "level": "h2",
+              "text": "夜の紅葉へ行くなら、昼の過ごし方と宿も。"
+            },
+            {
+              "level": "h2",
+              "text": "夜の紅葉のあと、修善寺に泊まる。"
+            },
+            {
+              "level": "h2",
+              "text": "今年は、ここを推します。"
+            },
+            {
+              "level": "h2",
+              "text": "犬連れでうれしいところ。"
+            },
+            {
+              "level": "h2",
+              "text": "花火の日、狙ってみる？"
+            },
+            {
+              "level": "h2",
+              "text": "ここは先に知っておいて。"
+            },
+            {
+              "level": "h2",
+              "text": "犬と伊豆。ならこうする。"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 3,
+          "bookingLinkCount": 1,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/petshop-vs-breeder/index.html": {
+          "title": "犬を迎えるならペットショップ？ブリーダー？違いを比較｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬を迎えるなら ペットショップ？ブリーダー？"
+            },
+            {
+              "level": "h2",
+              "text": "先に結論。"
+            },
+            {
+              "level": "h2",
+              "text": "何が違う？ざっくり比較"
+            },
+            {
+              "level": "h2",
+              "text": "ペットショップの良さ"
+            },
+            {
+              "level": "h2",
+              "text": "ブリーダーの良さ"
+            },
+            {
+              "level": "h2",
+              "text": "実は、どちらにも共通するルールがある"
+            },
+            {
+              "level": "h2",
+              "text": "店でも犬舎でも、これだけは聞きたい5つ"
+            },
+            {
+              "level": "h2",
+              "text": "結局どっち？"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 12,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/popular-dog-breeds/index.html": {
+          "title": "2026年、いま人気の犬は？人気犬種TOP10｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "2026年、いま人気の犬は？"
+            },
+            {
+              "level": "h2",
+              "text": "まず結論。"
+            },
+            {
+              "level": "h2",
+              "text": "2026年 人気犬種TOP10"
+            },
+            {
+              "level": "h2",
+              "text": "「人気犬1位」は、調べ方で変わる。"
+            },
+            {
+              "level": "h2",
+              "text": "ここがちょっと面白い。"
+            },
+            {
+              "level": "h2",
+              "text": "ただし「飼いやすいランキング」ではない。"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 13,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/rainy-day-izukogen/index.html": {
+          "title": "雨の日も犬と伊豆高原へ｜屋内の遊び・カフェ・犬宿を選ぶ｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "雨予報でも、 きみと伊豆高原へ。"
+            },
+            {
+              "level": "h2",
+              "text": "今日は、どう過ごそう？"
+            },
+            {
+              "level": "h2",
+              "text": "泊まるなら、雨の日も遊べる宿に。"
+            },
+            {
+              "level": "h2",
+              "text": "全部まわらず、ひとつ選ぶ。"
+            },
+            {
+              "level": "h2",
+              "text": "確認元と掲載情報"
+            }
+          ],
+          "anchors": 22,
+          "a8LinkCount": 1,
+          "bookingLinkCount": 1,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/train-with-dog/index.html": {
+          "title": "犬と電車で伊豆へ。10kg・ケース・手回り品きっぷを出発前に確認｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と電車で伊豆へ。 出発前に、これだけ確認。"
+            },
+            {
+              "level": "h2",
+              "text": "JR東日本・伊豆急の、基本の3条件。"
+            },
+            {
+              "level": "h2",
+              "text": "車なしなら、駅から先まで決めておく。"
+            },
+            {
+              "level": "h2",
+              "text": "まずは、滞在するエリアから。"
+            },
+            {
+              "level": "h2",
+              "text": "泊まる宿と、駅からの移動を一緒に選ぶ。"
+            },
+            {
+              "level": "h2",
+              "text": "確認元"
+            }
+          ],
+          "anchors": 16,
+          "a8LinkCount": 0,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/feature/ubudnomori-dog-stay/index.html": {
+          "title": "愛犬と食事も一緒に。森の温泉宿「ウブドの森 伊豆高原」｜犬と伊豆。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "愛犬と食事も一緒に。 森の温泉宿 「ウブドの森 伊豆高原」"
+            },
+            {
+              "level": "h2",
+              "text": "夕食も朝食も、愛犬と同じ時間を。"
+            },
+            {
+              "level": "h2",
+              "text": "温泉の時間も、愛犬を近くに。"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬もたっぷり遊べる、屋内外のドッグラン。"
+            },
+            {
+              "level": "h2",
+              "text": "本館・離れ・別館。犬の体重から客室を選ぶ。"
+            },
+            {
+              "level": "h2",
+              "text": "犬の追加料金も、先に確認。"
+            },
+            {
+              "level": "h2",
+              "text": "予約価格が気になる方へ。じゃらんの「最安値保証」"
+            },
+            {
+              "level": "h2",
+              "text": "次の休日は、宿でゆっくり。"
+            },
+            {
+              "level": "h2",
+              "text": "確認元"
+            }
+          ],
+          "anchors": 14,
+          "a8LinkCount": 1,
+          "bookingLinkCount": 2,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/index.html": {
+          "title": "犬と伊豆。｜次の休みは、きみと遠出しよう。",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "次の休みは、 きみと 遠出 しよう。"
+            },
+            {
+              "level": "h2",
+              "text": "年末年始は、愛犬と伊豆へ。"
+            },
+            {
+              "level": "h2",
+              "text": "こんな一日、どう？"
+            },
+            {
+              "level": "h2",
+              "text": "次は、どこへ行こう。"
+            },
+            {
+              "level": "h2",
+              "text": "犬と楽しむ、伊豆の特集。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆の外にも、犬と行きたい冬がある。"
+            },
+            {
+              "level": "h2",
+              "text": "帰り道を、 気にしない旅に。"
+            },
+            {
+              "level": "h2",
+              "text": "犬との旅を、 もっと選びやすく。"
+            },
+            {
+              "level": "h2",
+              "text": "アクセス計測について"
+            },
+            {
+              "level": "h2",
+              "text": "写真について"
+            }
+          ],
+          "anchors": 27,
+          "a8LinkCount": 1,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/promo/index.html": {
+          "title": "犬と伊豆｜X投稿を1タップで準備",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Xの投稿文は、ここで選ぶだけ。"
+            },
+            {
+              "level": "h2",
+              "text": "まず週末の旅行を考える人へ"
+            },
+            {
+              "level": "h2",
+              "text": "犬と遊園地に行ける？"
+            },
+            {
+              "level": "h2",
+              "text": "秋の紅葉・虹の郷"
+            },
+            {
+              "level": "h2",
+              "text": "犬と泊まる宿の口コミ比較"
+            },
+            {
+              "level": "h2",
+              "text": "犬と熱海の日帰り・旅行"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原の犬連れ散歩"
+            },
+            {
+              "level": "h2",
+              "text": "下田の海を犬と歩く"
+            },
+            {
+              "level": "h2",
+              "text": "自分のアクセスを数えない設定"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 10,
+          "a8LinkCount": 1,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": true
+        },
+        "inu-to-izu/reviews/index.html": {
+          "title": "伊豆の犬宿 口コミランキング｜Google・じゃらん・楽天を比較｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆の犬宿 口コミランキング"
+            },
+            {
+              "level": "h2",
+              "text": "Google クチコミ"
+            },
+            {
+              "level": "h2",
+              "text": "じゃらん クチコミ"
+            },
+            {
+              "level": "h2",
+              "text": "楽天トラベル クチコミ"
+            },
+            {
+              "level": "h2",
+              "text": "同じ宿を横断して見る"
+            },
+            {
+              "level": "h2",
+              "text": "口コミを見たら、犬と泊まれる宿も探してみる"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 33,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 10,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/site-map/index.html": {
+          "title": "犬と伊豆。サイトマップ｜エリア・遊び・特集から探す",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と伊豆。全ページ案内"
+            },
+            {
+              "level": "h2",
+              "text": "🐕 犬と何して遊ぶ？"
+            },
+            {
+              "level": "h2",
+              "text": "🗺️ エリアから探す"
+            },
+            {
+              "level": "h2",
+              "text": "🍁 今季・おすすめ特集"
+            },
+            {
+              "level": "h2",
+              "text": "番外編・伊豆以外のお出かけ"
+            },
+            {
+              "level": "h2",
+              "text": "🐶 旅行のついでに読む「犬の今。」"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 37,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/stay/index.html": {
+          "title": "伊豆で犬と泊まる｜犬宿33件をエリア別に探す｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と泊まる。"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            },
+            {
+              "level": "h2",
+              "text": "下田｜5件"
+            },
+            {
+              "level": "h2",
+              "text": "河津｜5件"
+            },
+            {
+              "level": "h2",
+              "text": "東伊豆｜1件"
+            },
+            {
+              "level": "h2",
+              "text": "南伊豆｜4件"
+            },
+            {
+              "level": "h2",
+              "text": "西伊豆｜3件"
+            },
+            {
+              "level": "h2",
+              "text": "松崎｜5件"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺・中伊豆｜4件"
+            },
+            {
+              "level": "h2",
+              "text": "伊東・伊豆高原｜6件"
+            }
+          ],
+          "anchors": 49,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/walk/index.html": {
+          "title": "伊豆で犬と散歩｜海・高原・自然を歩く｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と歩く。"
+            },
+            {
+              "level": "h2",
+              "text": "熱海｜2件"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺・中伊豆・天城｜3件"
+            },
+            {
+              "level": "h2",
+              "text": "東伊豆・伊東"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 24,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-izu/water/index.html": {
+          "title": "伊豆で犬と泳ぐ・水遊び｜海・SUP・カヤック｜犬と伊豆",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "伊豆で犬と泳ぐ・水遊び。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆の水遊び"
+            },
+            {
+              "level": "h2",
+              "text": "南伊豆・弓ヶ浜｜犬とシーカヤック"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-kawazu/index.html": {
+          "title": "犬と河津。｜河津の犬連れ・ペット可宿泊地図",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と河津 ●"
+            },
+            {
+              "level": "h2",
+              "text": "施設名"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 16,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-matsuzaki/index.html": {
+          "title": "犬と松崎。｜松崎・雲見の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と松崎。"
+            },
+            {
+              "level": "h2",
+              "text": "へんな村キャンプ場"
+            },
+            {
+              "level": "h2",
+              "text": "山芳園"
+            },
+            {
+              "level": "h2",
+              "text": "なか川"
+            },
+            {
+              "level": "h2",
+              "text": "浜道楽"
+            },
+            {
+              "level": "h2",
+              "text": "御宿あさか"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 20,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-minamiizu/index.html": {
+          "title": "犬と南伊豆。｜弓ヶ浜・下賀茂の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と南伊豆。"
+            },
+            {
+              "level": "h2",
+              "text": "ペットと泊まれる温泉宿 バロン"
+            },
+            {
+              "level": "h2",
+              "text": "愛犬と癒しのアジアンリゾート 海宿 太陽人"
+            },
+            {
+              "level": "h2",
+              "text": "ログハウス愛犬かしま"
+            },
+            {
+              "level": "h2",
+              "text": "ペンション弓ヶ浜"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-nakaizu/index.html": {
+          "title": "犬と中伊豆。｜修善寺・中伊豆の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と中伊豆。"
+            },
+            {
+              "level": "h2",
+              "text": "伊豆ドッグランド"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺 虹の郷"
+            },
+            {
+              "level": "h2",
+              "text": "修善寺 絆＋"
+            },
+            {
+              "level": "h2",
+              "text": "ホテルラフォーレ修善寺 ドッグコテージ"
+            },
+            {
+              "level": "h2",
+              "text": "中伊豆 EAST WINDS VILLAGE"
+            },
+            {
+              "level": "h2",
+              "text": "LScamp中伊豆"
+            },
+            {
+              "level": "h2",
+              "text": "グリーンポケット"
+            },
+            {
+              "level": "h2",
+              "text": "中伊豆フィッシュファーム"
+            },
+            {
+              "level": "h2",
+              "text": "浄蓮の滝"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 30,
+          "a8LinkCount": 3,
+          "bookingLinkCount": 1,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-nishiizu/index.html": {
+          "title": "犬と西伊豆。｜堂ヶ島・仁科の犬連れ旅行ガイド",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と西伊豆。"
+            },
+            {
+              "level": "h2",
+              "text": "きがるな・・宿・シーガル"
+            },
+            {
+              "level": "h2",
+              "text": "IZU GLAMPING RESORT Ishiki 385"
+            },
+            {
+              "level": "h2",
+              "text": "堂ヶ島ランドホピア"
+            },
+            {
+              "level": "h2",
+              "text": "Dog salon & Hotel SANTA"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            }
+          ],
+          "anchors": 21,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        },
+        "inu-to-shimoda/index.html": {
+          "title": "下田の犬連れ旅行ガイド｜犬と泊まれる宿・ランチ・観光スポット【2026】",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "犬と下田 ●"
+            },
+            {
+              "level": "h2",
+              "text": "施設名"
+            },
+            {
+              "level": "h2",
+              "text": "遊びの次は、泊まる場所を。"
+            },
+            {
+              "level": "h1",
+              "text": "犬と下田。｜下田の犬連れ旅行ガイド"
+            },
+            {
+              "level": "h2",
+              "text": "掲載中の犬連れスポット"
+            }
+          ],
+          "anchors": 19,
+          "a8LinkCount": 2,
+          "bookingLinkCount": 0,
+          "hasGa4MeasurementId": false
+        }
+      },
+      "links": [
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-atami/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-higashiizu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%81%BB%E3%81%A3%E3%81%9F%E3%82%89%E3%81%8B%E3%81%97%E3%81%AE%E5%AE%BF%20%E3%82%86%E3%81%86%E3%81%B5%E3%82%8A%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%81%BB%E3%81%A3%E3%81%9F%E3%82%89%E3%81%8B%E3%81%97%E3%81%AE%E5%AE%BF%20%E3%82%86%E3%81%86%E3%81%B5%E3%82%8A%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9%20%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9%20%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%A6%E3%83%96%E3%83%89%E3%81%AE%E6%A3%AE%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%82%A6%E3%83%96%E3%83%89%E3%81%AE%E6%A3%AE%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%83%AC%E3%82%B8%E3%83%BC%E3%83%8A%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E4%BC%8A%E8%B1%86%E7%84%A1%E9%84%B0",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E3%83%AC%E3%82%B8%E3%83%BC%E3%83%8A%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E4%BC%8A%E8%B1%86%E7%84%A1%E9%84%B0"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E4%BC%8A%E8%B1%86%E3%81%90%E3%82%89%E3%82%93%E3%81%B1%E3%82%8B%E5%85%AC%E5%9C%92",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E4%BC%8A%E8%B1%86%E3%81%90%E3%82%89%E3%82%93%E3%81%B1%E3%82%8B%E5%85%AC%E5%9C%92"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E5%A4%A7%E5%AE%A4%E5%B1%B1%E7%99%BB%E5%B1%B1%E3%83%AA%E3%83%95%E3%83%88",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E5%A4%A7%E5%AE%A4%E5%B1%B1%E7%99%BB%E5%B1%B1%E3%83%AA%E3%83%95%E3%83%88"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E6%84%9B%E7%8A%AC%E3%81%8A%E5%AE%BF%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E6%84%9B%E7%8A%AC%E3%81%8A%E5%AE%BF%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E6%84%9B%E7%8A%AC%E3%81%AE%E9%A7%85%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/?spot=%E6%84%9B%E7%8A%AC%E3%81%AE%E9%A7%85%20%E4%BC%8A%E8%B1%86%E9%AB%98%E5%8E%9F"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/app.js?v=20260925-ito01",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/app.js?v=20260925-ito01"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/styles.css?v=20260925-ito01",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-ito/styles.css?v=20260925-ito01"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/analytics-settings.js?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/analytics-settings.js?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.css?v=20261024",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.css?v=20261024"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261024",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261024"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261030-jalan-plan",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/booking.js?v=20261030-jalan-plan"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/dogrun/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/eat/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/experience/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ammos-review-2026/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ammos-review-2026/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-amusement-parks/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-price/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-starter-goods/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/feature.js?v=20261105",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/dog-winter-illumination-2026-2027/feature.js?v=20261105"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/hachinobo-dog-onsen/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/hachinobo-dog-onsen/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/large-dog-izu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/newyear-dog-stay-2026-2027/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/og.jpg",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/nijinosato-autumn-2026/og.jpg"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/petshop-vs-breeder/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/popular-dog-breeds/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/feature.js?v=20261030",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/rainy-day-izukogen/feature.js?v=20261030"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/train-with-dog/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/travel-guide.css",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/travel-guide.css"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ubudnomori-dog-stay/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/feature/ubudnomori-dog-stay/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/analytics.js?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/analytics.js?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/app.js?v=20261119-hachinobo-search",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/app.js?v=20261119-hachinobo-search"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/coast.webp",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/coast.webp"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/dog-run.webp",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/dog-run.webp"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/mountain.webp",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/assets/mountain.webp"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/config.js?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/config.js?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/style.css?v=20261027-consent",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/renewal/style.css?v=20261027-consent"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/reviews/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-map/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-nav.css",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/site-nav.css"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/stay/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/walk/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-izu/water/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E3%82%8F%E3%82%93%E3%81%93%E3%81%A8%E5%AE%B6%E6%97%8F%E3%81%AE%E5%AE%BF%20%E6%B5%AC%E4%B8%96%E4%BA%BA%EF%BC%88%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%EF%BC%89",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E3%82%8F%E3%82%93%E3%81%93%E3%81%A8%E5%AE%B6%E6%97%8F%E3%81%AE%E5%AE%BF%20%E6%B5%AC%E4%B8%96%E4%BA%BA%EF%BC%88%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%EF%BC%89"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E3%83%9B%E3%83%86%E3%83%AB%E5%9B%9B%E5%AD%A3%E3%81%AE%E8%94%B5",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E3%83%9B%E3%83%86%E3%83%AB%E5%9B%9B%E5%AD%A3%E3%81%AE%E8%94%B5"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E5%92%8C%E3%81%BF%E3%81%AE%E7%8A%AC%E5%AE%BF%20%E3%82%80%E3%81%A4%E3%81%BF%E5%BA%B5",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E5%92%8C%E3%81%BF%E3%81%AE%E7%8A%AC%E5%AE%BF%20%E3%82%80%E3%81%A4%E3%81%BF%E5%BA%B5"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E6%B9%AF%E5%AE%BF%20%E6%A1%9C%E3%81%96%E3%81%8B",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=%E6%B9%AF%E5%AE%BF%20%E6%A1%9C%E3%81%96%E3%81%8B"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=Sea%20Shell%20KAWAZU%20House",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/?spot=Sea%20Shell%20KAWAZU%20House"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/app.js?v=20260923-2300",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/app.js?v=20260923-2300"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/styles.css?v=20260923-2300",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-kawazu/styles.css?v=20260923-2300"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-matsuzaki/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-minamiizu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nakaizu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-nishiizu/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%81%8A%E3%81%8A%E3%81%AF%E3%81%97%E7%B7%91%E6%B0%B4%E8%8B%91",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%81%8A%E3%81%8A%E3%81%AF%E3%81%97%E7%B7%91%E6%B0%B4%E8%8B%91"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%82%80%E3%81%95%E3%81%97",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%82%80%E3%81%95%E3%81%97"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%83%89%E3%83%83%E3%82%B0%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%20%E3%81%B3%E3%82%8F%E3%81%AE%E6%9C%A8",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%83%89%E3%83%83%E3%82%B0%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%20%E3%81%B3%E3%82%8F%E3%81%AE%E6%9C%A8"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%83%8F%E3%83%8A%E3%82%AB%E3%83%95%E3%82%A7",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E3%83%8F%E3%83%8A%E3%82%AB%E3%83%95%E3%82%A7"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%B8%8B%E7%94%B0%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%B8%8B%E7%94%B0%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%B8%8B%E7%94%B0%E6%99%82%E8%A8%88%E5%8F%B0%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%B8%8B%E7%94%B0%E6%99%82%E8%A8%88%E5%8F%B0%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%BC%8A%E8%B1%86%E6%B5%B7%E9%AE%AE%20%E7%80%A7",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E4%BC%8A%E8%B1%86%E6%B5%B7%E9%AE%AE%20%E7%80%A7"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E6%99%B4%E3%83%AC%E5%B1%8B",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E6%99%B4%E3%83%AC%E5%B1%8B"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E6%B4%BB%E9%AD%9A%E6%96%99%E7%90%86%20%E6%96%B0%E7%94%B0",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E6%B4%BB%E9%AD%9A%E6%96%99%E7%90%86%20%E6%96%B0%E7%94%B0"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E8%B2%B8%E5%88%A5%E8%8D%98%20%E3%83%93%E3%83%A9%E5%B0%8F%E6%B2%A2",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=%E8%B2%B8%E5%88%A5%E8%8D%98%20%E3%83%93%E3%83%A9%E5%B0%8F%E6%B2%A2"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=AMMOS%20PET%20FRIENDLY%20HOTEL",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=AMMOS%20PET%20FRIENDLY%20HOTEL"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=Beach%20Front%20Seretis",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=Beach%20Front%20Seretis"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=FermenCo.",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=FermenCo."
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=south%20cafe",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/?spot=south%20cafe"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/app.js?v=20260923-2235",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/app.js?v=20260923-2235"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/styles.css?v=20260923-2300",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/inu-to-shimoda/styles.css?v=20260923-2300"
+        },
+        {
+          "url": "https://kameo3150.github.io/izukyu-tsunagaru-map/sitemap.xml",
+          "status": "ok",
+          "http": 200,
+          "finalUrl": "https://kameo3150.github.io/izukyu-tsunagaru-map/sitemap.xml"
+        }
+      ],
+      "diffs": [
+        {
+          "path": "inu-to-izu/feature/ammos-review-2026/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/hachinobo-dog-onsen/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/feature/newyear-dog-stay-2026-2027/index.html",
+          "change": "changed"
+        },
+        {
+          "path": "inu-to-izu/feature/ubudnomori-dog-stay/index.html",
+          "change": "added"
+        },
+        {
+          "path": "inu-to-izu/index.html",
+          "change": "changed"
+        },
+        {
+          "path": "inu-to-izu/site-map/index.html",
+          "change": "changed"
+        }
+      ],
+      "summary": {
+        "pagesListed": 33,
+        "pageHttpOK": 33,
+        "pageHttpUnknown": 0,
+        "pageHttpBroken": 0,
+        "linksChecked": 84,
+        "linksBroken": 0,
+        "linksUnknown": 0,
+        "pagesWithA8Markup": 31
+      },
+      "external": {
+        "ga4Events": "unverified",
+        "a8Agreement": "unverified",
+        "a8Conversions": "unverified"
+      }
     }
   ]
 }
