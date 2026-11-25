@@ -42,3 +42,24 @@ test('loading booking twice never doubles the event listener',()=>{
 test('plain links and other advertisers are not reported as Jalan clicks',()=>{
   const e=setup('yes','0');for(const href of ['https://www.jalan.net/','https://example.com/','https://px.a8.net/svt/ejp?a8mat=OTHER'])e.click(href,'test');assert.equal(e.events().length,0);
 });
+test('AMMOS feature loads the shared consent and booking modules in order',()=>{
+  const html=fs.readFileSync(path.join(root,'feature/ammos-review-2026/index.html'),'utf8');
+  const scripts=[...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(m=>m[1].split('?')[0]);
+  assert.deepEqual(scripts,['../../renewal/analytics.js','../../analytics-settings.js','../../booking.js']);
+});
+test('AMMOS introduction and lower hotel links respect consent and retain their placement',()=>{
+  const html=fs.readFileSync(path.join(root,'feature/ammos-review-2026/index.html'),'utf8');
+  const ctas=[...html.matchAll(/<a\b([^>]*data-booking-placement="ammos-review-(?:intro|primary)"[^>]*)>/g)].map(m=>({
+    href:m[1].match(/href="([^"]+)"/)[1].replaceAll('&amp;','&'),
+    placement:m[1].match(/data-booking-placement="([^"]+)"/)[1]
+  }));
+  assert.equal(ctas.length,2);
+  for(const cta of ctas){
+    const allowed=setup('yes','0');allowed.click(cta.href,cta.placement);
+    assert.equal(allowed.events().length,1);
+    assert.equal(allowed.events()[0][2].placement,cta.placement);
+    for(const [consent,owner] of [[null,null],['no','0'],['yes','1']]){
+      const blocked=setup(consent,owner);blocked.click(cta.href,cta.placement);assert.equal(blocked.events().length,0);
+    }
+  }
+});
